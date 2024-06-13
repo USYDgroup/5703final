@@ -4,7 +4,6 @@ Subdirectories and Files:
 3.	.idea: Configuration files for an IDE (Integrated Development Environment), probably IntelliJ IDEA or PyCharm.
 4.	.vscode: Configuration files for Visual Studio Code.
 5.	configs: Contains configuration files for the models and experiments.
-   
   1.	bert_config.json: Configuration file for a BERT model.
   2.	vqa.yaml: Configuration file specific to VQA.
   3.	wandb_config.txt: Configuration file for Weights & Biases, a tool for experiment tracking.
