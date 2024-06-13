@@ -1,0 +1,12 @@
+8-epoch.pth filter=lfs diff=lfs merge=lfs -text
+ALBEF.pth filter=lfs diff=lfs merge=lfs -text
+optimal.pth filter=lfs diff=lfs merge=lfs -text
+pre_finetuened.pth filter=lfs diff=lfs merge=lfs -text
+pre_finetuened_origin_data.pth filter=lfs diff=lfs merge=lfs -text
+vqa2.pth filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+Transformer_VQA_COCO/train2014/*.jpg filter=lfs diff=lfs merge=lfs -text
+Transformer_VQA_COCO/val2014/*.jpg filter=lfs diff=lfs merge=lfs -text
+Transformer_VQA_COCO/vqa_test.json filter=lfs diff=lfs merge=lfs -text
+Transformer_VQA_COCO/vqa_train.json filter=lfs diff=lfs merge=lfs -text
+Transformer_VQA_COCO/vqa_val.json filter=lfs diff=lfs merge=lfs -text
