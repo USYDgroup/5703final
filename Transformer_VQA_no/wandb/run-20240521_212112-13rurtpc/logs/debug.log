@@ -1,0 +1,76 @@
+2024-05-21 21:21:12,224 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Current SDK version is 0.16.5
+2024-05-21 21:21:12,224 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Configure stats pid to 36456
+2024-05-21 21:21:12,224 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Loading settings from /home/admin1/.config/wandb/settings
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Loading settings from /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/settings
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'my-first-sweep'}
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'run.py', 'program_abspath': '/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py', 'program': '/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py'}
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_init.py:_log_setup():527] Logging user logs to /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_212112-13rurtpc/logs/debug.log
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_init.py:_log_setup():528] Logging internal logs to /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_212112-13rurtpc/logs/debug-internal.log
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_init.py:init():567] calling init triggers
+2024-05-21 21:21:12,225 INFO    MainThread:36456 [wandb_init.py:init():574] wandb.init called with sweep_config: {}
+config: {'config': 'config2'}
+2024-05-21 21:21:12,226 INFO    MainThread:36456 [wandb_init.py:init():617] starting backend
+2024-05-21 21:21:12,226 INFO    MainThread:36456 [wandb_init.py:init():621] setting up manager
+2024-05-21 21:21:12,229 INFO    MainThread:36456 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-21 21:21:12,231 INFO    MainThread:36456 [wandb_init.py:init():629] backend started and connected
+2024-05-21 21:21:12,235 INFO    MainThread:36456 [wandb_init.py:init():721] updated telemetry
+2024-05-21 21:21:12,236 INFO    MainThread:36456 [wandb_init.py:init():754] communicating run to backend with 90.0 second timeout
+2024-05-21 21:21:13,346 INFO    MainThread:36456 [wandb_run.py:_on_init():2344] communicating current version
+2024-05-21 21:21:17,230 INFO    MainThread:36456 [wandb_run.py:_on_init():2353] got version response upgrade_message: "wandb version 0.17.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-05-21 21:21:17,230 INFO    MainThread:36456 [wandb_init.py:init():805] starting run threads in backend
+2024-05-21 21:21:19,974 INFO    MainThread:36456 [wandb_run.py:_console_start():2323] atexit reg
+2024-05-21 21:21:19,974 INFO    MainThread:36456 [wandb_run.py:_redirect():2178] redirect: wrap_raw
+2024-05-21 21:21:19,974 INFO    MainThread:36456 [wandb_run.py:_redirect():2243] Wrapping output streams.
+2024-05-21 21:21:19,975 INFO    MainThread:36456 [wandb_run.py:_redirect():2268] Redirects installed.
+2024-05-21 21:21:19,976 INFO    MainThread:36456 [wandb_init.py:init():848] run started, returning control to user process
+2024-05-21 21:28:54,896 INFO    MainThread:36456 [wandb_agent.py:run():217] Running runs: []
+2024-05-21 21:28:55,272 INFO    MainThread:36456 [wandb_agent.py:_process_command():313] Agent received command: run
+2024-05-21 21:28:55,272 INFO    MainThread:36456 [wandb_agent.py:_command_run():346] Agent starting run with config:
+	batch_size_test: 32
+	batch_size_train: 16
+	optimizer.opt: RMSprop
+	scheduler.sched: ReduceLROnPlateau
+2024-05-21 21:28:55,278 INFO    MainThread:36456 [wandb_agent.py:_command_run():418] About to run command: /usr/bin/env python  --batch_size_test=32 --batch_size_train=16 --optimizer.opt=RMSprop --scheduler.sched=ReduceLROnPlateau
+2024-05-21 21:29:00,403 INFO    MainThread:36456 [wandb_agent.py:run():217] Running runs: ['6o43m0kh']
+2024-05-21 21:29:00,404 INFO    MainThread:36456 [wandb_agent.py:run():252] Cleaning up finished run: 6o43m0kh
+2024-05-21 21:29:27,604 WARNING MsgRouterThr:36456 [router.py:message_loop():77] message_loop has been closed
+2024-05-21 21:29:28,293 INFO    MainThread:36456 [wandb_agent.py:_process_command():313] Agent received command: run
+2024-05-21 21:29:28,293 INFO    MainThread:36456 [wandb_agent.py:_command_run():346] Agent starting run with config:
+	batch_size_test: 16
+	batch_size_train: 16
+	optimizer.opt: RMSprop
+	scheduler.sched: ReduceLROnPlateau
+2024-05-21 21:29:28,296 INFO    MainThread:36456 [wandb_agent.py:_command_run():418] About to run command: /usr/bin/env python  --batch_size_test=16 --batch_size_train=16 --optimizer.opt=RMSprop --scheduler.sched=ReduceLROnPlateau
+2024-05-21 21:29:33,437 INFO    MainThread:36456 [wandb_agent.py:run():217] Running runs: ['dw1guq77']
+2024-05-21 21:29:33,438 INFO    MainThread:36456 [wandb_agent.py:run():252] Cleaning up finished run: dw1guq77
+2024-05-21 21:29:33,846 INFO    MainThread:36456 [wandb_agent.py:_process_command():313] Agent received command: run
+2024-05-21 21:29:33,847 INFO    MainThread:36456 [wandb_agent.py:_command_run():346] Agent starting run with config:
+	batch_size_test: 32
+	batch_size_train: 8
+	optimizer.opt: Lookahead
+	scheduler.sched: StepLR
+2024-05-21 21:29:33,850 INFO    MainThread:36456 [wandb_agent.py:_command_run():418] About to run command: /usr/bin/env python  --batch_size_test=32 --batch_size_train=8 --optimizer.opt=Lookahead --scheduler.sched=StepLR
+2024-05-21 21:29:38,987 INFO    MainThread:36456 [wandb_agent.py:run():217] Running runs: ['lqm4kmzb']
+2024-05-21 21:29:38,989 INFO    MainThread:36456 [wandb_agent.py:run():252] Cleaning up finished run: lqm4kmzb
+2024-05-21 21:29:39,962 INFO    MainThread:36456 [wandb_agent.py:_process_command():313] Agent received command: run
+2024-05-21 21:29:39,962 INFO    MainThread:36456 [wandb_agent.py:_command_run():346] Agent starting run with config:
+	batch_size_test: 16
+	batch_size_train: 16
+	optimizer.opt: adamW
+	scheduler.sched: cosine
+2024-05-21 21:29:39,965 INFO    MainThread:36456 [wandb_agent.py:_command_run():418] About to run command: /usr/bin/env python  --batch_size_test=16 --batch_size_train=16 --optimizer.opt=adamW --scheduler.sched=cosine
+2024-05-21 21:29:45,092 INFO    MainThread:36456 [wandb_agent.py:run():217] Running runs: ['qcpm83hk']
+2024-05-21 21:29:45,094 INFO    MainThread:36456 [wandb_agent.py:run():252] Cleaning up finished run: qcpm83hk
+2024-05-21 21:29:45,497 INFO    MainThread:36456 [wandb_agent.py:_process_command():313] Agent received command: run
+2024-05-21 21:29:45,498 INFO    MainThread:36456 [wandb_agent.py:_command_run():346] Agent starting run with config:
+	batch_size_test: 8
+	batch_size_train: 16
+	optimizer.opt: RMSprop
+	scheduler.sched: cosine
+2024-05-21 21:29:45,501 INFO    MainThread:36456 [wandb_agent.py:_command_run():418] About to run command: /usr/bin/env python  --batch_size_test=8 --batch_size_train=16 --optimizer.opt=RMSprop --scheduler.sched=cosine
+2024-05-21 21:29:50,628 INFO    MainThread:36456 [wandb_agent.py:run():217] Running runs: ['jo4q8njb']
+2024-05-21 21:29:50,630 ERROR   MainThread:36456 [wandb_agent.py:run():243] Detected 5 failed runs in a row, shutting down.
+2024-05-21 21:29:50,630 INFO    MainThread:36456 [wandb_agent.py:run():247] To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val

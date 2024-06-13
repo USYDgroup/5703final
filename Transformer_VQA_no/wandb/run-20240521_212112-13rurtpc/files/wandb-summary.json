@@ -1,0 +1,1 @@
+{"learning_rate": 2e-05, "_timestamp": 1716298128.9321628, "_runtime": 456.70079278945923, "_step": 588, "loss": 0.2070947852730751, "macro_prec": 0.7633837531029177, "macro_recall": 0.7241804859215671, "macro_f1": 0.7342895974192596, "weighted_prec": 0.8069770963790717, "weighted_recall": 0.8049645390070922, "weighted_f1": 0.8001143314406028, "_wandb": {"runtime": 463}}

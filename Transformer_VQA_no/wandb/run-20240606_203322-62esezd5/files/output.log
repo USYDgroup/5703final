@@ -1,0 +1,32 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/output_vqa2/vqa/checkpoint_07.pth ,evaluate.
+<All keys matched successfully>
+Start training
+tensor(123)
+tensor(123)
+tensor(123)
+tensor(123)
+tensor(123)
+tensor(123)
+tensor(123)
+tensor(123)
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 398, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 357, in main
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 136, in evaluation
+    for n, (image, question, question_id,ans) in enumerate(metric_logger.log_every(data_loader, print_freq, header)):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/utils.py", line 147, in log_every
+    meters=str(self),
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/utils.py", line 97, in __str__
+    "{}: {}".format(name, str(meter))
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/utils.py", line 68, in __str__
+    global_avg=self.global_avg,
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/utils.py", line 54, in global_avg
+    return self.total / self.count
+ZeroDivisionError: float division by zero

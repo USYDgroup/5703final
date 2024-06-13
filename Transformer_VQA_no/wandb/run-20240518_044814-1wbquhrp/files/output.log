@@ -1,0 +1,208 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [  0/563]  eta: 0:27:48  lr: 0.000010  loss: 0.6989  time: 2.9638  data: 1.2346  max mem: 11149
+Train Epoch: [0]  [ 50/563]  eta: 0:05:10  lr: 0.000010  loss: 0.4896  time: 0.5639  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [100/563]  eta: 0:04:29  lr: 0.000010  loss: 0.3095  time: 0.5585  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [150/563]  eta: 0:03:57  lr: 0.000013  loss: 0.2139  time: 0.5617  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [200/563]  eta: 0:03:27  lr: 0.000013  loss: 0.1792  time: 0.5616  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [250/563]  eta: 0:02:57  lr: 0.000015  loss: 0.2451  time: 0.5561  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [300/563]  eta: 0:02:28  lr: 0.000015  loss: 0.1871  time: 0.5491  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [350/563]  eta: 0:02:00  lr: 0.000018  loss: 0.2118  time: 0.5548  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [400/563]  eta: 0:01:31  lr: 0.000018  loss: 0.2024  time: 0.5566  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [450/563]  eta: 0:01:03  lr: 0.000020  loss: 0.2326  time: 0.5589  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [500/563]  eta: 0:00:35  lr: 0.000020  loss: 0.0713  time: 0.5563  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [550/563]  eta: 0:00:07  lr: 0.000020  loss: 0.0950  time: 0.5611  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [562/563]  eta: 0:00:00  lr: 0.000020  loss: 0.0711  time: 0.5547  data: 0.0001  max mem: 14771
+Train Epoch: [0] Total time: 0:05:16 (0.5627 s / it)
+Averaged stats: lr: 0.0000  loss: 0.2866
+Generate VQA test result:  [  0/282]  eta: 0:04:01    time: 0.8577  data: 0.3483  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:49    time: 0.2016  data: 0.0001  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2025  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2015  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2018  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2016  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2005  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2043 s / it)
+{'1': {'precision': 0.9961538461538462, 'recall': 1.0, 'f1-score': 0.9980732177263969, 'support': 518.0}, '2': {'precision': 0.9682926829268292, 'recall': 0.9778325123152709, 'f1-score': 0.9730392156862745, 'support': 406.0}, '3': {'precision': 0.847887323943662, 'recall': 0.9525316455696202, 'f1-score': 0.8971684053651267, 'support': 316.0}, '4': {'precision': 0.7723880597014925, 'recall': 0.8117647058823529, 'f1-score': 0.7915869980879541, 'support': 255.0}, '5': {'precision': 0.6938775510204082, 'recall': 0.7391304347826086, 'f1-score': 0.7157894736842105, 'support': 230.0}, '6': {'precision': 0.8515625, 'recall': 0.5828877005347594, 'f1-score': 0.692063492063492, 'support': 187.0}, '7': {'precision': 0.6363636363636364, 'recall': 0.8484848484848485, 'f1-score': 0.7272727272727273, 'support': 132.0}, '8': {'precision': 0.5, 'recall': 0.5, 'f1-score': 0.5, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 0.3958333333333333, 'f1-score': 0.5671641791044776, 'support': 96.0}, 'accuracy': 0.8466312056737588, 'macro avg': {'precision': 0.8073917333455416, 'recall': 0.7564961312114216, 'f1-score': 0.7624619676656289, 'support': 2256.0}, 'weighted avg': {'precision': 0.8558776132095552, 'recall': 0.8466312056737588, 'f1-score': 0.842159114413112, 'support': 2256.0}}
+Train Epoch: [1]  [  0/563]  eta: 0:16:44  lr: 0.000019  loss: 0.0821  time: 1.7841  data: 0.9721  max mem: 14771
+Train Epoch: [1]  [ 50/563]  eta: 0:05:01  lr: 0.000019  loss: 0.1365  time: 0.5614  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [100/563]  eta: 0:04:24  lr: 0.000019  loss: 0.1438  time: 0.5458  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [150/563]  eta: 0:03:54  lr: 0.000019  loss: 0.1227  time: 0.5690  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [200/563]  eta: 0:03:25  lr: 0.000019  loss: 0.0669  time: 0.5617  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [250/563]  eta: 0:02:57  lr: 0.000019  loss: 0.2105  time: 0.5641  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [300/563]  eta: 0:02:28  lr: 0.000019  loss: 0.2920  time: 0.5553  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [350/563]  eta: 0:02:00  lr: 0.000019  loss: 0.0404  time: 0.5722  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [400/563]  eta: 0:01:31  lr: 0.000019  loss: 0.0991  time: 0.5688  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [450/563]  eta: 0:01:03  lr: 0.000019  loss: 0.2436  time: 0.5693  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [500/563]  eta: 0:00:35  lr: 0.000019  loss: 0.0559  time: 0.5642  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [550/563]  eta: 0:00:07  lr: 0.000019  loss: 0.0127  time: 0.5640  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [562/563]  eta: 0:00:00  lr: 0.000019  loss: 0.0165  time: 0.5559  data: 0.0001  max mem: 14771
+Train Epoch: [1] Total time: 0:05:17 (0.5640 s / it)
+Averaged stats: lr: 0.0000  loss: 0.1376
+Generate VQA test result:  [  0/282]  eta: 0:02:36    time: 0.5563  data: 0.3389  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2020  data: 0.0002  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2030  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2031  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2031  data: 0.0002  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2019  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2043 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 0.9440559440559441, 'recall': 0.9975369458128078, 'f1-score': 0.9700598802395209, 'support': 406.0}, '3': {'precision': 0.9182389937106918, 'recall': 0.9240506329113924, 'f1-score': 0.9211356466876972, 'support': 316.0}, '4': {'precision': 0.9742489270386266, 'recall': 0.8901960784313725, 'f1-score': 0.930327868852459, 'support': 255.0}, '5': {'precision': 0.9862385321100917, 'recall': 0.9347826086956522, 'f1-score': 0.9598214285714286, 'support': 230.0}, '6': {'precision': 0.9473684210526315, 'recall': 0.9625668449197861, 'f1-score': 0.9549071618037135, 'support': 187.0}, '7': {'precision': 0.948905109489051, 'recall': 0.9848484848484849, 'f1-score': 0.966542750929368, 'support': 132.0}, '8': {'precision': 0.9914529914529915, 'recall': 1.0, 'f1-score': 0.9957081545064378, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.9658687943262412, 'macro avg': {'precision': 0.9678343243233365, 'recall': 0.9659979550688329, 'f1-score': 0.9665003212878472, 'support': 2256.0}, 'weighted avg': {'precision': 0.9663743307967227, 'recall': 0.9658687943262412, 'f1-score': 0.96567780991227, 'support': 2256.0}}
+Train Epoch: [2]  [  0/563]  eta: 0:16:26  lr: 0.000017  loss: 0.0361  time: 1.7529  data: 0.9178  max mem: 14771
+Train Epoch: [2]  [ 50/563]  eta: 0:04:58  lr: 0.000017  loss: 0.0417  time: 0.5538  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [100/563]  eta: 0:04:24  lr: 0.000017  loss: 0.0426  time: 0.5596  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [150/563]  eta: 0:03:54  lr: 0.000017  loss: 0.0137  time: 0.5610  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [200/563]  eta: 0:03:25  lr: 0.000017  loss: 0.2298  time: 0.5556  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [250/563]  eta: 0:02:56  lr: 0.000017  loss: 0.0339  time: 0.5548  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [300/563]  eta: 0:02:27  lr: 0.000017  loss: 0.0184  time: 0.5562  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [350/563]  eta: 0:01:59  lr: 0.000017  loss: 0.0558  time: 0.5641  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [400/563]  eta: 0:01:31  lr: 0.000017  loss: 0.0033  time: 0.5614  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [450/563]  eta: 0:01:03  lr: 0.000017  loss: 0.0035  time: 0.5579  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [500/563]  eta: 0:00:35  lr: 0.000017  loss: 0.0798  time: 0.5650  data: 0.0001  max mem: 14771
+Train Epoch: [2]  [550/563]  eta: 0:00:07  lr: 0.000017  loss: 0.0142  time: 0.5639  data: 0.0002  max mem: 14771
+Train Epoch: [2]  [562/563]  eta: 0:00:00  lr: 0.000017  loss: 0.0166  time: 0.5553  data: 0.0001  max mem: 14771
+Train Epoch: [2] Total time: 0:05:16 (0.5617 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0699
+Generate VQA test result:  [  0/282]  eta: 0:02:32    time: 0.5416  data: 0.3200  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2027  data: 0.0001  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2033  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2031  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2017  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2045 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 1.0, 'recall': 0.9802955665024631, 'f1-score': 0.9900497512437811, 'support': 406.0}, '3': {'precision': 0.9751552795031055, 'recall': 0.9936708860759493, 'f1-score': 0.9843260188087775, 'support': 316.0}, '4': {'precision': 0.9844961240310077, 'recall': 0.996078431372549, 'f1-score': 0.9902534113060428, 'support': 255.0}, '5': {'precision': 0.9955357142857143, 'recall': 0.9695652173913043, 'f1-score': 0.9823788546255506, 'support': 230.0}, '6': {'precision': 0.96875, 'recall': 0.9946524064171123, 'f1-score': 0.9815303430079155, 'support': 187.0}, '7': {'precision': 0.9924242424242424, 'recall': 0.9924242424242424, 'f1-score': 0.9924242424242424, 'support': 132.0}, '8': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.9911347517730497, 'macro avg': {'precision': 0.9907068178048966, 'recall': 0.9918540833537356, 'f1-score': 0.9912180690462566, 'support': 2256.0}, 'weighted avg': {'precision': 0.9912788316651606, 'recall': 0.9911347517730497, 'f1-score': 0.9911414678802954, 'support': 2256.0}}
+Train Epoch: [3]  [  0/563]  eta: 0:17:19  lr: 0.000014  loss: 0.0027  time: 1.8456  data: 1.2355  max mem: 14771
+Train Epoch: [3]  [ 50/563]  eta: 0:05:01  lr: 0.000014  loss: 0.0081  time: 0.5571  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [100/563]  eta: 0:04:26  lr: 0.000014  loss: 0.1435  time: 0.5637  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [150/563]  eta: 0:03:55  lr: 0.000014  loss: 0.0741  time: 0.5646  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [200/563]  eta: 0:03:26  lr: 0.000014  loss: 0.1850  time: 0.5615  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [250/563]  eta: 0:02:57  lr: 0.000014  loss: 0.1195  time: 0.5632  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [300/563]  eta: 0:02:29  lr: 0.000014  loss: 0.2130  time: 0.5648  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [350/563]  eta: 0:02:00  lr: 0.000014  loss: 0.0748  time: 0.5554  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [400/563]  eta: 0:01:32  lr: 0.000014  loss: 0.0031  time: 0.5566  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [450/563]  eta: 0:01:03  lr: 0.000014  loss: 0.0109  time: 0.5592  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [500/563]  eta: 0:00:35  lr: 0.000014  loss: 0.0584  time: 0.5542  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [550/563]  eta: 0:00:07  lr: 0.000014  loss: 0.0128  time: 0.5588  data: 0.0001  max mem: 14771
+Train Epoch: [3]  [562/563]  eta: 0:00:00  lr: 0.000014  loss: 0.1362  time: 0.5478  data: 0.0001  max mem: 14771
+Train Epoch: [3] Total time: 0:05:16 (0.5630 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0426
+Generate VQA test result:  [  0/282]  eta: 0:02:55    time: 0.6207  data: 0.3998  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:49    time: 0.2035  data: 0.0002  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2026  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2034  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2019  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2047 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 0.9901719901719902, 'recall': 0.9926108374384236, 'f1-score': 0.991389913899139, 'support': 406.0}, '3': {'precision': 0.9688473520249221, 'recall': 0.9841772151898734, 'f1-score': 0.9764521193092621, 'support': 316.0}, '4': {'precision': 0.8848920863309353, 'recall': 0.9647058823529412, 'f1-score': 0.9230769230769231, 'support': 255.0}, '5': {'precision': 0.8963963963963963, 'recall': 0.8652173913043478, 'f1-score': 0.8805309734513275, 'support': 230.0}, '6': {'precision': 0.9764705882352941, 'recall': 0.8877005347593583, 'f1-score': 0.9299719887955182, 'support': 187.0}, '7': {'precision': 1.0, 'recall': 0.9696969696969697, 'f1-score': 0.9846153846153847, 'support': 132.0}, '8': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.9676418439716312, 'macro avg': {'precision': 0.9685309347955042, 'recall': 0.9626787589713237, 'f1-score': 0.9651152559052838, 'support': 2256.0}, 'weighted avg': {'precision': 0.9683440799801697, 'recall': 0.9676418439716312, 'f1-score': 0.9675726536778326, 'support': 2256.0}}
+Train Epoch: [4]  [  0/563]  eta: 0:16:38  lr: 0.000011  loss: 0.1796  time: 1.7742  data: 0.9652  max mem: 14771
+Train Epoch: [4]  [ 50/563]  eta: 0:05:02  lr: 0.000011  loss: 0.0049  time: 0.5639  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [100/563]  eta: 0:04:26  lr: 0.000011  loss: 0.0152  time: 0.5547  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [150/563]  eta: 0:03:55  lr: 0.000011  loss: 0.1312  time: 0.5616  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [200/563]  eta: 0:03:26  lr: 0.000011  loss: 0.0038  time: 0.5715  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [250/563]  eta: 0:02:57  lr: 0.000011  loss: 0.0014  time: 0.5652  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [300/563]  eta: 0:02:29  lr: 0.000011  loss: 0.0273  time: 0.5637  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [350/563]  eta: 0:02:00  lr: 0.000011  loss: 0.0132  time: 0.5679  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [400/563]  eta: 0:01:32  lr: 0.000011  loss: 0.0441  time: 0.5593  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [450/563]  eta: 0:01:03  lr: 0.000011  loss: 0.1998  time: 0.5617  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [500/563]  eta: 0:00:35  lr: 0.000011  loss: 0.0134  time: 0.5655  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [550/563]  eta: 0:00:07  lr: 0.000011  loss: 0.0002  time: 0.5559  data: 0.0001  max mem: 14771
+Train Epoch: [4]  [562/563]  eta: 0:00:00  lr: 0.000011  loss: 0.0403  time: 0.5506  data: 0.0001  max mem: 14771
+Train Epoch: [4] Total time: 0:05:17 (0.5647 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0224
+Generate VQA test result:  [  0/282]  eta: 0:02:50    time: 0.6063  data: 0.3926  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2024  data: 0.0001  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2029  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2031  data: 0.0002  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2034  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2033  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2016  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2046 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 1.0, 'recall': 0.9950738916256158, 'f1-score': 0.9975308641975309, 'support': 406.0}, '3': {'precision': 0.9936708860759493, 'recall': 0.9936708860759493, 'f1-score': 0.9936708860759493, 'support': 316.0}, '4': {'precision': 0.9921259842519685, 'recall': 0.9882352941176471, 'f1-score': 0.9901768172888016, 'support': 255.0}, '5': {'precision': 0.9864864864864865, 'recall': 0.9521739130434783, 'f1-score': 0.9690265486725663, 'support': 230.0}, '6': {'precision': 0.9444444444444444, 'recall': 1.0, 'f1-score': 0.9714285714285714, 'support': 187.0}, '7': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 132.0}, '8': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.9920212765957447, 'macro avg': {'precision': 0.9907475334732054, 'recall': 0.9921282205402989, 'f1-score': 0.9913148541848243, 'support': 2256.0}, 'weighted avg': {'precision': 0.9922407486645635, 'recall': 0.9920212765957447, 'f1-score': 0.9920327430517175, 'support': 2256.0}}
+Train Epoch: [5]  [  0/563]  eta: 0:16:45  lr: 0.000007  loss: 0.0051  time: 1.7863  data: 0.9907  max mem: 14771
+Train Epoch: [5]  [ 50/563]  eta: 0:05:00  lr: 0.000007  loss: 0.0061  time: 0.5656  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [100/563]  eta: 0:04:24  lr: 0.000007  loss: 0.0018  time: 0.5553  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [150/563]  eta: 0:03:54  lr: 0.000007  loss: 0.0148  time: 0.5626  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [200/563]  eta: 0:03:25  lr: 0.000007  loss: 0.0143  time: 0.5652  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [250/563]  eta: 0:02:56  lr: 0.000007  loss: 0.0014  time: 0.5622  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [300/563]  eta: 0:02:28  lr: 0.000007  loss: 0.0023  time: 0.5595  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [350/563]  eta: 0:02:00  lr: 0.000007  loss: 0.0048  time: 0.5612  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [400/563]  eta: 0:01:31  lr: 0.000007  loss: 0.0262  time: 0.5649  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [450/563]  eta: 0:01:03  lr: 0.000007  loss: 0.0012  time: 0.5576  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [500/563]  eta: 0:00:35  lr: 0.000007  loss: 0.0078  time: 0.5609  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [550/563]  eta: 0:00:07  lr: 0.000007  loss: 0.0005  time: 0.5681  data: 0.0001  max mem: 14771
+Train Epoch: [5]  [562/563]  eta: 0:00:00  lr: 0.000007  loss: 0.0009  time: 0.5595  data: 0.0002  max mem: 14771
+Train Epoch: [5] Total time: 0:05:16 (0.5623 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0145
+Generate VQA test result:  [  0/282]  eta: 0:02:51    time: 0.6070  data: 0.3821  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2032  data: 0.0001  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2029  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2020  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2019  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2020  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2010  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2040 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 1.0, 'recall': 0.9975369458128078, 'f1-score': 0.998766954377312, 'support': 406.0}, '3': {'precision': 0.9968253968253968, 'recall': 0.9936708860759493, 'f1-score': 0.9952456418383518, 'support': 316.0}, '4': {'precision': 0.9920948616600791, 'recall': 0.984313725490196, 'f1-score': 0.9881889763779528, 'support': 255.0}, '5': {'precision': 0.9829059829059829, 'recall': 1.0, 'f1-score': 0.9913793103448276, 'support': 230.0}, '6': {'precision': 0.9946808510638298, 'recall': 1.0, 'f1-score': 0.9973333333333333, 'support': 187.0}, '7': {'precision': 1.0, 'recall': 0.9924242424242424, 'f1-score': 0.9961977186311787, 'support': 132.0}, '8': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.9964539007092199, 'macro avg': {'precision': 0.9962785658283653, 'recall': 0.9964384222003552, 'f1-score': 0.9963457705447729, 'support': 2256.0}, 'weighted avg': {'precision': 0.9964781517453268, 'recall': 0.9964539007092199, 'f1-score': 0.9964547290986016, 'support': 2256.0}}
+Train Epoch: [6]  [  0/563]  eta: 0:16:27  lr: 0.000004  loss: 0.0066  time: 1.7544  data: 0.8769  max mem: 14771
+Train Epoch: [6]  [ 50/563]  eta: 0:04:59  lr: 0.000004  loss: 0.0003  time: 0.5570  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [100/563]  eta: 0:04:24  lr: 0.000004  loss: 0.0005  time: 0.5596  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [150/563]  eta: 0:03:54  lr: 0.000004  loss: 0.0002  time: 0.5651  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [200/563]  eta: 0:03:25  lr: 0.000004  loss: 0.0004  time: 0.5591  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [250/563]  eta: 0:02:57  lr: 0.000004  loss: 0.0014  time: 0.5632  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [300/563]  eta: 0:02:28  lr: 0.000004  loss: 0.0006  time: 0.5639  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [350/563]  eta: 0:02:00  lr: 0.000004  loss: 0.0004  time: 0.5561  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [400/563]  eta: 0:01:31  lr: 0.000004  loss: 0.0003  time: 0.5548  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [450/563]  eta: 0:01:03  lr: 0.000004  loss: 0.0039  time: 0.5634  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [500/563]  eta: 0:00:35  lr: 0.000004  loss: 0.0525  time: 0.5546  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [550/563]  eta: 0:00:07  lr: 0.000004  loss: 0.0065  time: 0.5673  data: 0.0001  max mem: 14771
+Train Epoch: [6]  [562/563]  eta: 0:00:00  lr: 0.000004  loss: 0.0003  time: 0.5596  data: 0.0001  max mem: 14771
+Train Epoch: [6] Total time: 0:05:16 (0.5629 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0086
+Generate VQA test result:  [  0/282]  eta: 0:02:54    time: 0.6176  data: 0.3975  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2024  data: 0.0001  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2021  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2024  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2025  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2010  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2040 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 1.0, 'recall': 0.9950738916256158, 'f1-score': 0.9975308641975309, 'support': 406.0}, '3': {'precision': 0.9937106918238994, 'recall': 1.0, 'f1-score': 0.9968454258675079, 'support': 316.0}, '4': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 255.0}, '5': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 230.0}, '6': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 187.0}, '7': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 132.0}, '8': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.999113475177305, 'macro avg': {'precision': 0.9993011879804333, 'recall': 0.9994526546250684, 'f1-score': 0.9993751433405598, 'support': 2256.0}, 'weighted avg': {'precision': 0.9991190508051206, 'recall': 0.999113475177305, 'f1-score': 0.999113779006352, 'support': 2256.0}}
+Train Epoch: [7]  [  0/563]  eta: 0:16:20  lr: 0.000002  loss: 0.0011  time: 1.7412  data: 1.0625  max mem: 14771
+Train Epoch: [7]  [ 50/563]  eta: 0:05:01  lr: 0.000002  loss: 0.0009  time: 0.5676  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [100/563]  eta: 0:04:27  lr: 0.000002  loss: 0.0006  time: 0.5666  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [150/563]  eta: 0:03:56  lr: 0.000002  loss: 0.0012  time: 0.5569  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [200/563]  eta: 0:03:27  lr: 0.000002  loss: 0.0004  time: 0.5627  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [250/563]  eta: 0:02:58  lr: 0.000002  loss: 0.0011  time: 0.5652  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [300/563]  eta: 0:02:29  lr: 0.000002  loss: 0.0014  time: 0.5609  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [350/563]  eta: 0:02:00  lr: 0.000002  loss: 0.0005  time: 0.5624  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [400/563]  eta: 0:01:32  lr: 0.000002  loss: 0.0015  time: 0.5613  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [450/563]  eta: 0:01:03  lr: 0.000002  loss: 0.0373  time: 0.5627  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [500/563]  eta: 0:00:35  lr: 0.000002  loss: 0.0004  time: 0.5660  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [550/563]  eta: 0:00:07  lr: 0.000002  loss: 0.0005  time: 0.5642  data: 0.0001  max mem: 14771
+Train Epoch: [7]  [562/563]  eta: 0:00:00  lr: 0.000002  loss: 0.0023  time: 0.5546  data: 0.0001  max mem: 14771
+Train Epoch: [7] Total time: 0:05:17 (0.5647 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0097
+Generate VQA test result:  [  0/282]  eta: 0:03:01    time: 0.6450  data: 0.4323  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2020  data: 0.0002  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2027  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2024  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2029  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2020  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2016  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2043 s / it)
+{'1': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 518.0}, '2': {'precision': 1.0, 'recall': 0.9975369458128078, 'f1-score': 0.998766954377312, 'support': 406.0}, '3': {'precision': 0.9968454258675079, 'recall': 1.0, 'f1-score': 0.9984202211690363, 'support': 316.0}, '4': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 255.0}, '5': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 230.0}, '6': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 187.0}, '7': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 132.0}, '8': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 1.0, 'f1-score': 1.0, 'support': 96.0}, 'accuracy': 0.9995567375886525, 'macro avg': {'precision': 0.9996494917630565, 'recall': 0.9997263273125342, 'f1-score': 0.9996874639495942, 'support': 2256.0}, 'weighted avg': {'precision': 0.9995581358927893, 'recall': 0.9995567375886525, 'f1-score': 0.9995568144355514, 'support': 2256.0}}
+Generate VQA test result:  [  0/282]  eta: 0:02:32    time: 0.5418  data: 0.3230  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2014  data: 0.0002  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2019  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:26    time: 0.2016  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2020  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2021  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2007  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2031 s / it)
+result file saved to output/vqa/result/vqa_result_epoch7.json
+Training time 0:51:43

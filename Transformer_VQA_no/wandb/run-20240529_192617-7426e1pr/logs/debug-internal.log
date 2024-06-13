@@ -1,0 +1,59 @@
+2024-05-29 19:26:17,446 INFO    StreamThr :294168 [internal.py:wandb_internal():86] W&B internal server running at pid: 294168, started at: 2024-05-29 19:26:17.445069
+2024-05-29 19:26:17,448 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: status
+2024-05-29 19:26:17,453 INFO    WriterThread:294168 [datastore.py:open_for_write():87] open: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/run-7426e1pr.wandb
+2024-05-29 19:26:17,456 DEBUG   SenderThread:294168 [sender.py:send():379] send: header
+2024-05-29 19:26:17,456 DEBUG   SenderThread:294168 [sender.py:send():379] send: run
+2024-05-29 19:26:19,402 INFO    SenderThread:294168 [dir_watcher.py:__init__():211] watching files in: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files
+2024-05-29 19:26:19,402 INFO    SenderThread:294168 [sender.py:_start_run_threads():1124] run started: 7426e1pr with start time 1716981977.444523
+2024-05-29 19:26:19,414 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: check_version
+2024-05-29 19:26:19,415 DEBUG   SenderThread:294168 [sender.py:send_request():406] send_request: check_version
+2024-05-29 19:26:24,415 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 19:26:24,416 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 19:26:24,466 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: run_start
+2024-05-29 19:26:24,505 DEBUG   HandlerThread:294168 [system_info.py:__init__():26] System info init
+2024-05-29 19:26:24,505 DEBUG   HandlerThread:294168 [system_info.py:__init__():41] System info init done
+2024-05-29 19:26:24,505 INFO    HandlerThread:294168 [system_monitor.py:start():194] Starting system monitor
+2024-05-29 19:26:24,506 INFO    SystemMonitor:294168 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-29 19:26:24,506 INFO    HandlerThread:294168 [system_monitor.py:probe():214] Collecting system info
+2024-05-29 19:26:24,507 INFO    SystemMonitor:294168 [interfaces.py:start():190] Started cpu monitoring
+2024-05-29 19:26:24,508 INFO    SystemMonitor:294168 [interfaces.py:start():190] Started disk monitoring
+2024-05-29 19:26:24,510 INFO    SystemMonitor:294168 [interfaces.py:start():190] Started gpu monitoring
+2024-05-29 19:26:24,511 INFO    SystemMonitor:294168 [interfaces.py:start():190] Started memory monitoring
+2024-05-29 19:26:24,514 INFO    SystemMonitor:294168 [interfaces.py:start():190] Started network monitoring
+2024-05-29 19:26:24,555 DEBUG   HandlerThread:294168 [system_info.py:probe():150] Probing system
+2024-05-29 19:26:24,555 DEBUG   HandlerThread:294168 [system_info.py:probe():198] Probing system done
+2024-05-29 19:26:24,555 DEBUG   HandlerThread:294168 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-67-generic-x86_64-with-glibc2.31', 'python': '3.9.19', 'heartbeatAt': '2024-05-29T11:26:24.555305', 'startedAt': '2024-05-29T11:26:17.434294', 'docker': None, 'cuda': None, 'args': ('--config', './configs/vqa.yaml', '--output_dir', 'output_vqa2/vqa', '--checkpoint', '/home/admin1/5703-upload/5703/Transformer_VQA_no/ALBEF.pth', '--checkpoint_before_vqa2', '/home/admin1/5703-upload/5703/Transformer_VQA_no/ALBEF.pth'), 'state': 'running', 'program': '/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py', 'codePathLocal': 'run_vqa2.py', 'codePath': 'run_vqa2.py', 'host': 'admin1-desktop', 'username': 'admin1', 'executable': '/home/admin1/anconda3/envs/pytorch2.0/bin/python', 'cpu_count': 14, 'cpu_count_logical': 28, 'cpu_freq': {'current': 1.3068571428571427, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.3, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.225, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.217, 'min': 1200.0, 'max': 3300.0}, {'current': 2.1, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}], 'disk': {'/': {'total': 456.8904724121094, 'used': 186.31949615478516}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.46761703491211}}
+2024-05-29 19:26:24,555 INFO    HandlerThread:294168 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-29 19:26:24,555 INFO    HandlerThread:294168 [system_monitor.py:probe():227] Publishing system info
+2024-05-29 19:26:24,555 DEBUG   HandlerThread:294168 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-29 19:26:25,408 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/conda-environment.yaml
+2024-05-29 19:26:27,283 DEBUG   HandlerThread:294168 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-29 19:26:27,285 INFO    HandlerThread:294168 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-29 19:26:27,290 DEBUG   SenderThread:294168 [sender.py:send():379] send: files
+2024-05-29 19:26:27,290 INFO    SenderThread:294168 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-29 19:26:27,405 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/conda-environment.yaml
+2024-05-29 19:26:27,406 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/wandb-metadata.json
+2024-05-29 19:26:27,420 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-29 19:26:27,420 DEBUG   SenderThread:294168 [sender.py:send_request():406] send_request: python_packages
+2024-05-29 19:26:27,421 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 19:26:27,421 DEBUG   SenderThread:294168 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 19:26:27,426 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 19:26:28,173 DEBUG   SenderThread:294168 [sender.py:send():379] send: telemetry
+2024-05-29 19:26:28,406 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/output.log
+2024-05-29 19:26:28,406 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/requirements.txt
+2024-05-29 19:26:28,722 INFO    wandb-upload_0:294168 [upload_job.py:push():131] Uploaded file /tmp/tmpefhsi4j4wandb/h5at7wec-wandb-metadata.json
+2024-05-29 19:26:30,175 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 19:26:30,407 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/output.log
+2024-05-29 19:26:32,407 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/output.log
+2024-05-29 19:26:36,061 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 19:26:40,411 INFO    Thread-12 :294168 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_192617-7426e1pr/files/output.log
+2024-05-29 19:26:41,454 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 19:26:42,429 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 19:26:42,436 DEBUG   HandlerThread:294168 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 19:26:42,439 DEBUG   SenderThread:294168 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 19:26:45,791 INFO    MainThread:294168 [internal.py:handle_exit():76] Internal process exited
+2024-05-29 19:26:45,793 INFO    memory    :294168 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2024-05-29 19:26:45,793 DEBUG   SystemMonitor:294168 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-29 19:26:45,794 DEBUG   SystemMonitor:294168 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-29 19:26:45,794 DEBUG   SystemMonitor:294168 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-29 19:26:45,807 DEBUG   SenderThread:294168 [sender.py:send():379] send: stats

@@ -1,0 +1,93 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/output_vqa2/vqa/checkpoint_07.pth ,evaluate.
+<All keys matched successfully>
+Start training
+['down[SEP]', 'down[SEP]', 'at table[SEP]', 'skateboard[SEP]', 'down[SEP]', 'table[SEP]', 'down[SEP]', 'down[SEP]', 'down[SEP]', 'down[SEP]'] ground
+['spectating[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]', 'watching[SEP]'] watching
+['table[SEP]', 'table[SEP]', 'table[SEP]', 'picnic table[SEP]', 'picnic table[SEP]', 'picnic table[SEP]', 'picnic table[SEP]', 'picnic table[SEP]', 'skateboard[SEP]', 'picnic table[SEP]'] bench
+['foodiebakercom[SEP]', 'foodiebakercom[SEP]', 'foodiebaker[SEP]', 'foodiebakercom[SEP]', 'foodiebakercom[SEP]', 'http: foodiebakercom[SEP]', 'foodiebakercom[SEP]', 'foodiebakercom[SEP]', 'foodiebakercom[SEP]', 'foodiebaker[SEP]'] i don't know
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['chopsticks[SEP]', 'chopsticks[SEP]', 'chopsticks[SEP]', 'chopsticks[SEP]', 'chopsticks[SEP]', 'shrimp[SEP]', 'chopsticks[SEP]', 'chopsticks[SEP]', 'chopsticks[SEP]', 'chopsticks spoon[SEP]'] chopsticks
+['crossing it[SEP]', 'walking[SEP]', 'walking[SEP]', 'crossing[SEP]', 'crossing road[SEP]', 'walking[SEP]', 'crossing[SEP]', 'walking[SEP]', 'crossing[SEP]', 'walking[SEP]'] walking
+Generate VQA test result:  [    0/26794]  eta: 7:08:28  acc: 0.0000  time: 0.9595  data: 0.3566  max mem: 4164
+['1[SEP]', '1[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '1[SEP]', '1[SEP]', '4[SEP]', '1[SEP]', '1[SEP]'] 1
+['ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]', 'ice cream[SEP]'] ice cream
+['ventilation[SEP]', 'provide air[SEP]', 'keep cow safe[SEP]', 'airflow[SEP]', 'to let sunlight in[SEP]', 'yes[SEP]', 'yes[SEP]', 'for air[SEP]', 'air[SEP]'] roof
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['tired[SEP]', 'tired[SEP]', '4[SEP]', 'resting[SEP]', 'tired[SEP]', 'tired[SEP]', 'resting[SEP]', 'tired[SEP]', "it's tired[SEP]", 'tired[SEP]'] tired
+['gray[SEP]', 'green[SEP]', 'green[SEP]', 'black white[SEP]', 'green[SEP]', 'gray[SEP]', 'green[SEP]', 'brown[SEP]', 'gray[SEP]', 'green[SEP]'] gray
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'no[SEP]', 'yes[SEP]'] yes
+['1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', 'boy[SEP]'] 1
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '10[SEP]', '1[SEP]', '1[SEP]', '1[SEP]'] 1
+['beige[SEP]', 'white[SEP]', 'pink[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]', 'yellow[SEP]', 'yellow[SEP]', 'beige[SEP]', 'yellow[SEP]'] yellow
+['7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]'] 6
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no it is queen[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '2[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '2[SEP]'] 2
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] no
+['leather[SEP]', 'leather[SEP]', 'plastic[SEP]', 'plastic vinyl metal[SEP]', 'leather[SEP]', 'leather[SEP]', 'leather[SEP]', 'leather[SEP]', 'leather[SEP]', 'leather[SEP]'] leather
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]'] bedroom
+['yes[SEP]', 'yes[SEP]', 'no[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] no
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['yes[SEP]', 'yes[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes just one[SEP]', 'yes[SEP]', 'yes[SEP]', 'no[SEP]'] yes
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]', 'bedroom[SEP]'] bedroom
+['1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]'] 2
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['yes[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]'] yes
+['1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]', '1[SEP]'] 2
+['7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]'] 6
+['white[SEP]', 'off white[SEP]', 'off white[SEP]', 'white[SEP]', 'white[SEP]', 'beige[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]'] white
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['panther[SEP]', 'none[SEP]', 'leather[SEP]', 'dog[SEP]', 'cat[SEP]', 'none[SEP]', 'none[SEP]', 'none[SEP]', 'none[SEP]', 'dog[SEP]'] leopard
+['chair[SEP]', 'chair[SEP]', 'chair[SEP]', 'wall[SEP]', 'chair[SEP]', 'chair[SEP]', 'chair[SEP]', 'chair[SEP]', 'chair[SEP]', 'chair[SEP]'] desk
+['queen[SEP]', 'queen[SEP]', 'queen[SEP]', 'queen sized[SEP]', 'full[SEP]', 'queen[SEP]', 'queen[SEP]', 'double[SEP]', 'king[SEP]', 'queen[SEP]'] queen
+['7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '7[SEP]', '6[SEP]', '7[SEP]'] 6
+['yes[SEP]', 'no[SEP]', 'yes[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['donut[SEP]', 'donut[SEP]', 'donut[SEP]', 'doughnut[SEP]', 'donut[SEP]', 'donut[SEP]', 'donut[SEP]', 'donut hole[SEP]', 'donut[SEP]', 'donut[SEP]'] donut
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]', 'blonde[SEP]'] blonde
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['in forest[SEP]', 'in jungle[SEP]', 'park[SEP]', 'forest[SEP]', 'forest[SEP]', 'outside[SEP]', 'forest[SEP]', 'not sure[SEP]', 'outside[SEP]', 'hawaii[SEP]'] forest
+['plant life[SEP]', 'hat[SEP]', 'hat[SEP]', 'hat[SEP]', 'silly hat[SEP]', 'palm leaves[SEP]', 'leaf hat[SEP]', 'hat[SEP]', 'hat[SEP]', 'crown[SEP]'] hat
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]'] no
+['inward[SEP]', 'outward[SEP]', 'inward[SEP]', 'outward[SEP]', 'outward[SEP]', 'not sure[SEP]', 'outward[SEP]', 'out[SEP]', 'inward[SEP]', 'inward[SEP]'] forward
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]', 'this is camping[SEP]'] camping
+['jeep[SEP]', 'bus[SEP]', 'jeep[SEP]', 'brown[SEP]', 'suv[SEP]', 'suv[SEP]', 'car[SEP]', 'jeep[SEP]', 'jeep[SEP]', 'jeep[SEP]'] camper
+['forest[SEP]', 'in wood[SEP]', 'woods[SEP]', 'woods[SEP]', 'in woods[SEP]', 'top picture[SEP]', 'top picture[SEP]', 'top picture[SEP]', 'campground[SEP]', 'woods[SEP]'] background
+['white[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]', 'white and black[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]', 'white[SEP]'] black
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['black[SEP]', 'red[SEP]', 'red[SEP]', 'red[SEP]', 'red and blue[SEP]', 'red[SEP]', 'red[SEP]', 'red[SEP]', 'red[SEP]', 'red[SEP]'] red
+['yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]', 'yes[SEP]'] yes
+['no[SEP]', 'no[SEP]', 'yes[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'no[SEP]', 'yes[SEP]', 'yes[SEP]'] no
+['3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]', '3[SEP]'] 3
+['4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]', '4[SEP]'] 3
+['white with blue lettering[SEP]', 'white and blue[SEP]', 'white[SEP]', 'blue and white[SEP]', 'white brown[SEP]', 'white[SEP]', 'white[SEP]', 'not sure[SEP]', 'white[SEP]', 'white and blue[SEP]'] green
+['ross st[SEP]', 'ross st[SEP]', 'ross st[SEP]', 'ross st[SEP]', 'ross st[SEP]', 'ross street[SEP]', 'ross[SEP]', 'ross st[SEP]', 'ross st[SEP]', 'camperdown ross st[SEP]'] squash
+['red and yellow[SEP]', 'red[SEP]', 'red[SEP]', 'orange yellow white black[SEP]', 'red and yellow[SEP]', 'red yellow[SEP]', 'red orange[SEP]', 'red and orange[SEP]', 'red and yellow[SEP]', 'red[SEP]'] red
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 401, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 360, in main
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 141, in evaluation
+    topk_ids, topk_probs = model(image, question_input, answer_input, train=False, k=config['k_test'])
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 71, in forward
+    new_image_atts = torch.ones(new_image_embeds.size()[:-1],dtype=torch.long).to(image.device)
+KeyboardInterrupt

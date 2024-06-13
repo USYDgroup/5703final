@@ -1,0 +1,49 @@
+method: random 
+metric:
+  name: val_loss  
+  goal: minimize  
+
+# attention_probs_dropout_prob:
+#   value: 0.1
+#   range: [0.1, 0.3]
+#   scale: linear
+
+# hidden_dropout_prob:
+#   value: 0.1
+#   range: [0.1, 0.3]
+#   scale: linear
+
+# hidden_size:
+#   value: 768
+#   range: [512, 1024]
+#   scale: linear
+
+# num_attention_heads:
+#   value: 12
+#   range: [6, 12]
+#   scale: linear
+
+# num_hidden_layers:
+#   value: 12
+#   range: [6, 12]
+#   scale: linear
+
+batch_size_train:
+  value: 16
+  range: [8, 32]
+  scale: linear
+
+batch_size_test:
+  value: 8
+  range: [4, 16]
+  scale: linear
+
+optimizer:
+  value: adamW
+  choices: [adamW, RMSprop, Lookahead]
+
+scheduler:
+  value: cosine
+  choices: [cosine, ReduceLROnPlateau, StepLR]
+
+

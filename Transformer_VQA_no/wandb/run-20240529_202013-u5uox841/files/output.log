@@ -1,0 +1,62 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+reshape position embedding from 256 to 576
+text_encoder.embeddings.position_ids
+text_encoder.embeddings.word_embeddings.weight
+text_encoder.embeddings.position_embeddings.weight
+text_encoder.embeddings.token_type_embeddings.weight
+text_encoder.embeddings.LayerNorm.weight
+text_encoder.embeddings.LayerNorm.bias
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/ALBEF.pth
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias', 'fusion_encoder.embeddings.position_ids', 'fusion_encoder.embeddings.word_embeddings.weight', 'fusion_encoder.embeddings.position_embeddings.weight', 'fusion_encoder.embeddings.token_type_embeddings.weight', 'fusion_encoder.embeddings.LayerNorm.weight', 'fusion_encoder.embeddings.LayerNorm.bias'], unexpected_keys=['temp', 'image_queue', 'text_queue', 'queue_ptr', 'vision_proj.weight', 'vision_proj.bias', 'text_proj.weight', 'text_proj.bias', 'itm_head.weight', 'itm_head.bias', 'vision_proj_m.weight', 'vision_proj_m.bias', 'text_proj_m.weight', 'text_proj_m.bias'])
+Start training
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+    do_one_step()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/multiprocessing/reductions.py", line 307, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 389, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 319, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 87, in train
+    loss = model(image, question_input, answer_input, train=True, alpha=alpha, k=n, weights=weights)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 67, in forward
+    image_embeds = self.visual_encoder(image) #[B,577,768]
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/vision_transformer.py", line 162, in forward
+    x = self.patch_embed(x)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/timm/models/layers/patch_embed.py", line 35, in forward
+    x = self.proj(x)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

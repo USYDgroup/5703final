@@ -1,0 +1,25 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 425, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 256, in main
+    model = PreVQA(config=config, text_encoder=args.text_encoder, text_decoder=args.text_decoder, tokenizer=tokenizer)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 29, in __init__
+    self.text_encoder = BertModel.from_pretrained(text_encoder, config=config_encoder, add_pooling_layer=False)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/transformers/modeling_utils.py", line 3594, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 852, in __init__
+    self.encoder = BertEncoder(config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 530, in __init__
+    self.layer = nn.ModuleList([BertLayer(config,i) for i in range(config.num_hidden_layers)])
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 530, in <listcomp>
+    self.layer = nn.ModuleList([BertLayer(config,i) for i in range(config.num_hidden_layers)])
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 452, in __init__
+    self.attention = BertAttention(config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 370, in __init__
+    self.self = BertSelfAttention(config, is_cross_attention)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 225, in __init__
+    raise ValueError(
+ValueError: The hidden size (512) is not a multiple of the number of attention heads (12)

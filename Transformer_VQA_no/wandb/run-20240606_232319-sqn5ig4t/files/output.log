@@ -1,0 +1,42 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/output_vqa2/vqa/checkpoint_07.pth ,evaluate.
+<All keys matched successfully>
+Start training
+Generate VQA test result:  [    0/26794]  eta: 7:31:19  acc: 0.0000  time: 1.0107  data: 0.4031  max mem: 4164
+Generate VQA test result:  [   50/26794]  eta: 1:37:02  acc: 0.0000  time: 0.2012  data: 0.0002  max mem: 4194
+Generate VQA test result:  [  100/26794]  eta: 1:33:42  acc: 0.0000  time: 0.2035  data: 0.0002  max mem: 4194
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/threading.py", line 980, in _bootstrap_inner
+    self.run()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/threading.py", line 917, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 51, in _pin_memory_loop
+    do_one_step()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/_utils/pin_memory.py", line 28, in do_one_step
+    r = in_queue.get(timeout=MP_STATUS_CHECK_INTERVAL)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/queues.py", line 122, in get
+    return _ForkingPickler.loads(res)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/multiprocessing/reductions.py", line 307, in rebuild_storage_fd
+    fd = df.detach()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/resource_sharer.py", line 57, in detach
+    with _resource_sharer.get_connection(self._id) as conn:
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/resource_sharer.py", line 86, in get_connection
+    c = Client(address, authkey=process.current_process().authkey)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/connection.py", line 502, in Client
+    c = SocketClient(address)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/multiprocessing/connection.py", line 630, in SocketClient
+    s.connect(address)
+FileNotFoundError: [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 401, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 360, in main
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 148, in evaluation
+    pred_text = data_loader.dataset.answer_list[topk_id[pred]]
+KeyboardInterrupt

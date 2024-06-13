@@ -1,0 +1,15 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 426, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 263, in main
+    lr_scheduler, _ = create_scheduler(arg_sche, optimizer)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/scheduler/scheduler_factory.py", line 72, in create_scheduler
+    lr_scheduler = PlateauLRScheduler(
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/scheduler/plateau_lr.py", line 35, in __init__
+    self.lr_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 968, in __init__
+    raise ValueError('Factor should be < 1.0.')
+ValueError: Factor should be < 1.0.

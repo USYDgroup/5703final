@@ -1,0 +1,67 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [  0/887]  eta: 0:40:00  lr: 0.000010  loss: 1.8005  time: 2.7061  data: 1.2610  max mem: 11149
+Train Epoch: [0]  [ 50/887]  eta: 0:08:25  lr: 0.000010  loss: 0.6185  time: 0.5623  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [100/887]  eta: 0:07:41  lr: 0.000010  loss: 0.4647  time: 0.5704  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [150/887]  eta: 0:07:04  lr: 0.000013  loss: 0.4034  time: 0.5581  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [200/887]  eta: 0:06:32  lr: 0.000013  loss: 0.4658  time: 0.5552  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [250/887]  eta: 0:06:02  lr: 0.000015  loss: 0.6800  time: 0.5674  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [300/887]  eta: 0:05:33  lr: 0.000015  loss: 0.6263  time: 0.5587  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [350/887]  eta: 0:05:04  lr: 0.000018  loss: 0.5605  time: 0.5674  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [400/887]  eta: 0:04:35  lr: 0.000018  loss: 0.5240  time: 0.5628  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [450/887]  eta: 0:04:06  lr: 0.000020  loss: 0.5341  time: 0.5450  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [500/887]  eta: 0:03:38  lr: 0.000020  loss: 0.5303  time: 0.5559  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [550/887]  eta: 0:03:10  lr: 0.000020  loss: 0.3954  time: 0.5654  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [600/887]  eta: 0:02:41  lr: 0.000020  loss: 0.2758  time: 0.5569  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [650/887]  eta: 0:02:13  lr: 0.000020  loss: 0.3718  time: 0.5652  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [700/887]  eta: 0:01:45  lr: 0.000020  loss: 0.3255  time: 0.5646  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [750/887]  eta: 0:01:17  lr: 0.000020  loss: 0.2844  time: 0.5645  data: 0.0001  max mem: 14795
+Train Epoch: [0]  [800/887]  eta: 0:00:49  lr: 0.000020  loss: 0.1233  time: 0.5675  data: 0.0001  max mem: 14795
+Train Epoch: [0]  [850/887]  eta: 0:00:20  lr: 0.000020  loss: 0.1854  time: 0.5662  data: 0.0001  max mem: 14795
+Train Epoch: [0]  [886/887]  eta: 0:00:00  lr: 0.000020  loss: 0.3052  time: 0.5540  data: 0.0001  max mem: 14795
+Train Epoch: [0] Total time: 0:08:19 (0.5634 s / it)
+Averaged stats: lr: 0.0000  loss: 0.4410
+Generate VQA test result:  [  0/762]  eta: 0:10:36    time: 0.8348  data: 0.3518  max mem: 14795
+Generate VQA test result:  [ 50/762]  eta: 0:02:31    time: 0.2011  data: 0.0001  max mem: 14795
+Generate VQA test result:  [100/762]  eta: 0:02:17    time: 0.2015  data: 0.0001  max mem: 14795
+Generate VQA test result:  [150/762]  eta: 0:02:05    time: 0.2011  data: 0.0001  max mem: 14795
+Generate VQA test result:  [200/762]  eta: 0:01:54    time: 0.2015  data: 0.0001  max mem: 14795
+Generate VQA test result:  [250/762]  eta: 0:01:44    time: 0.2016  data: 0.0001  max mem: 14795
+Generate VQA test result:  [300/762]  eta: 0:01:34    time: 0.2016  data: 0.0001  max mem: 14795
+Generate VQA test result:  [350/762]  eta: 0:01:23    time: 0.2015  data: 0.0001  max mem: 14795
+Generate VQA test result:  [400/762]  eta: 0:01:13    time: 0.2018  data: 0.0001  max mem: 14795
+Generate VQA test result:  [450/762]  eta: 0:01:03    time: 0.2008  data: 0.0001  max mem: 14795
+Generate VQA test result:  [500/762]  eta: 0:00:53    time: 0.2012  data: 0.0001  max mem: 14795
+Generate VQA test result:  [550/762]  eta: 0:00:42    time: 0.2013  data: 0.0001  max mem: 14795
+Generate VQA test result:  [600/762]  eta: 0:00:32    time: 0.2016  data: 0.0001  max mem: 14795
+Generate VQA test result:  [650/762]  eta: 0:00:22    time: 0.2013  data: 0.0001  max mem: 14795
+Generate VQA test result:  [700/762]  eta: 0:00:12    time: 0.2019  data: 0.0001  max mem: 14795
+Generate VQA test result:  [750/762]  eta: 0:00:02    time: 0.2015  data: 0.0001  max mem: 14795
+Generate VQA test result:  [761/762]  eta: 0:00:00    time: 0.1973  data: 0.0001  max mem: 14795
+Generate VQA test result: Total time: 0:02:34 (0.2023 s / it)
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 418, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 361, in main
+    vqa_result,metric = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 181, in evaluation
+    'micro_prec': metric['micro avg']['precision'],
+KeyError: 'micro avg'

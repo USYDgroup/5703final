@@ -1,0 +1,88 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+reshape position embedding from 256 to 576
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/ALBEF.pth
+_IncompatibleKeys(missing_keys=['text_encoder.encoder.layer.12.attention.self.query.weight', 'text_encoder.encoder.layer.12.attention.self.query.bias', 'text_encoder.encoder.layer.12.attention.self.key.weight', 'text_encoder.encoder.layer.12.attention.self.key.bias', 'text_encoder.encoder.layer.12.attention.self.value.weight', 'text_encoder.encoder.layer.12.attention.self.value.bias', 'text_encoder.encoder.layer.12.attention.output.dense.weight', 'text_encoder.encoder.layer.12.attention.output.dense.bias', 'text_encoder.encoder.layer.12.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.12.crossattention.self.query.weight', 'text_encoder.encoder.layer.12.crossattention.self.query.bias', 'text_encoder.encoder.layer.12.crossattention.self.key.weight', 'text_encoder.encoder.layer.12.crossattention.self.key.bias', 'text_encoder.encoder.layer.12.crossattention.self.value.weight', 'text_encoder.encoder.layer.12.crossattention.self.value.bias', 'text_encoder.encoder.layer.12.crossattention.output.dense.weight', 'text_encoder.encoder.layer.12.crossattention.output.dense.bias', 'text_encoder.encoder.layer.12.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.12.intermediate.dense.weight', 'text_encoder.encoder.layer.12.intermediate.dense.bias', 'text_encoder.encoder.layer.12.output.dense.weight', 'text_encoder.encoder.layer.12.output.dense.bias', 'text_encoder.encoder.layer.12.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.attention.self.query.weight', 'text_encoder.encoder.layer.13.attention.self.query.bias', 'text_encoder.encoder.layer.13.attention.self.key.weight', 'text_encoder.encoder.layer.13.attention.self.key.bias', 'text_encoder.encoder.layer.13.attention.self.value.weight', 'text_encoder.encoder.layer.13.attention.self.value.bias', 'text_encoder.encoder.layer.13.attention.output.dense.weight', 'text_encoder.encoder.layer.13.attention.output.dense.bias', 'text_encoder.encoder.layer.13.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.crossattention.self.query.weight', 'text_encoder.encoder.layer.13.crossattention.self.query.bias', 'text_encoder.encoder.layer.13.crossattention.self.key.weight', 'text_encoder.encoder.layer.13.crossattention.self.key.bias', 'text_encoder.encoder.layer.13.crossattention.self.value.weight', 'text_encoder.encoder.layer.13.crossattention.self.value.bias', 'text_encoder.encoder.layer.13.crossattention.output.dense.weight', 'text_encoder.encoder.layer.13.crossattention.output.dense.bias', 'text_encoder.encoder.layer.13.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.intermediate.dense.weight', 'text_encoder.encoder.layer.13.intermediate.dense.bias', 'text_encoder.encoder.layer.13.output.dense.weight', 'text_encoder.encoder.layer.13.output.dense.bias', 'text_encoder.encoder.layer.13.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.attention.self.query.weight', 'text_encoder.encoder.layer.14.attention.self.query.bias', 'text_encoder.encoder.layer.14.attention.self.key.weight', 'text_encoder.encoder.layer.14.attention.self.key.bias', 'text_encoder.encoder.layer.14.attention.self.value.weight', 'text_encoder.encoder.layer.14.attention.self.value.bias', 'text_encoder.encoder.layer.14.attention.output.dense.weight', 'text_encoder.encoder.layer.14.attention.output.dense.bias', 'text_encoder.encoder.layer.14.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.crossattention.self.query.weight', 'text_encoder.encoder.layer.14.crossattention.self.query.bias', 'text_encoder.encoder.layer.14.crossattention.self.key.weight', 'text_encoder.encoder.layer.14.crossattention.self.key.bias', 'text_encoder.encoder.layer.14.crossattention.self.value.weight', 'text_encoder.encoder.layer.14.crossattention.self.value.bias', 'text_encoder.encoder.layer.14.crossattention.output.dense.weight', 'text_encoder.encoder.layer.14.crossattention.output.dense.bias', 'text_encoder.encoder.layer.14.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.intermediate.dense.weight', 'text_encoder.encoder.layer.14.intermediate.dense.bias', 'text_encoder.encoder.layer.14.output.dense.weight', 'text_encoder.encoder.layer.14.output.dense.bias', 'text_encoder.encoder.layer.14.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.attention.self.query.weight', 'text_encoder.encoder.layer.15.attention.self.query.bias', 'text_encoder.encoder.layer.15.attention.self.key.weight', 'text_encoder.encoder.layer.15.attention.self.key.bias', 'text_encoder.encoder.layer.15.attention.self.value.weight', 'text_encoder.encoder.layer.15.attention.self.value.bias', 'text_encoder.encoder.layer.15.attention.output.dense.weight', 'text_encoder.encoder.layer.15.attention.output.dense.bias', 'text_encoder.encoder.layer.15.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.crossattention.self.query.weight', 'text_encoder.encoder.layer.15.crossattention.self.query.bias', 'text_encoder.encoder.layer.15.crossattention.self.key.weight', 'text_encoder.encoder.layer.15.crossattention.self.key.bias', 'text_encoder.encoder.layer.15.crossattention.self.value.weight', 'text_encoder.encoder.layer.15.crossattention.self.value.bias', 'text_encoder.encoder.layer.15.crossattention.output.dense.weight', 'text_encoder.encoder.layer.15.crossattention.output.dense.bias', 'text_encoder.encoder.layer.15.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.intermediate.dense.weight', 'text_encoder.encoder.layer.15.intermediate.dense.bias', 'text_encoder.encoder.layer.15.output.dense.weight', 'text_encoder.encoder.layer.15.output.dense.bias', 'text_encoder.encoder.layer.15.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.output.LayerNorm.bias', 'inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['temp', 'image_queue', 'text_queue', 'queue_ptr', 'vision_proj.weight', 'vision_proj.bias', 'text_proj.weight', 'text_proj.bias', 'itm_head.weight', 'itm_head.bias', 'vision_proj_m.weight', 'vision_proj_m.bias', 'text_proj_m.weight', 'text_proj_m.bias'])
+Start training
+Train Epoch: [0]  [   0/1125]  eta: 0:50:59  lr: 0.000010  loss: 19.1714  time: 2.7194  data: 1.4142  max mem: 11560
+Train Epoch: [0]  [  50/1125]  eta: 0:11:09  lr: 0.000010  loss: 1.6008  time: 0.5800  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 100/1125]  eta: 0:10:19  lr: 0.000010  loss: 1.0501  time: 0.5816  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 150/1125]  eta: 0:09:44  lr: 0.000013  loss: 0.9925  time: 0.5837  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 200/1125]  eta: 0:09:11  lr: 0.000013  loss: 0.9101  time: 0.5876  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 250/1125]  eta: 0:08:41  lr: 0.000015  loss: 0.9787  time: 0.5919  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 300/1125]  eta: 0:08:10  lr: 0.000015  loss: 1.0285  time: 0.5891  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 350/1125]  eta: 0:07:40  lr: 0.000018  loss: 1.1351  time: 0.5850  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 400/1125]  eta: 0:07:09  lr: 0.000018  loss: 1.0755  time: 0.5886  data: 0.0002  max mem: 15656
+Train Epoch: [0]  [ 450/1125]  eta: 0:06:39  lr: 0.000020  loss: 0.9543  time: 0.5856  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 500/1125]  eta: 0:06:09  lr: 0.000020  loss: 1.2181  time: 0.5860  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 550/1125]  eta: 0:05:39  lr: 0.000020  loss: 1.0780  time: 0.5775  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 600/1125]  eta: 0:05:09  lr: 0.000020  loss: 1.0447  time: 0.5895  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 650/1125]  eta: 0:04:39  lr: 0.000020  loss: 1.1297  time: 0.5774  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 700/1125]  eta: 0:04:10  lr: 0.000020  loss: 1.1330  time: 0.5845  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 750/1125]  eta: 0:03:40  lr: 0.000020  loss: 1.0028  time: 0.5812  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 800/1125]  eta: 0:03:10  lr: 0.000020  loss: 1.0418  time: 0.5744  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 850/1125]  eta: 0:02:41  lr: 0.000020  loss: 1.0791  time: 0.5868  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 900/1125]  eta: 0:02:12  lr: 0.000020  loss: 1.0283  time: 0.5761  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 950/1125]  eta: 0:01:42  lr: 0.000020  loss: 1.0994  time: 0.5888  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [1000/1125]  eta: 0:01:13  lr: 0.000020  loss: 1.0130  time: 0.5883  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [1050/1125]  eta: 0:00:44  lr: 0.000020  loss: 0.9873  time: 0.5837  data: 0.0001  max mem: 15660
+Train Epoch: [0]  [1100/1125]  eta: 0:00:14  lr: 0.000020  loss: 1.0218  time: 0.5801  data: 0.0001  max mem: 15660
+Train Epoch: [0]  [1124/1125]  eta: 0:00:00  lr: 0.000020  loss: 1.2925  time: 0.5695  data: 0.0001  max mem: 15660
+Train Epoch: [0] Total time: 0:10:59 (0.5864 s / it)
+Averaged stats: lr: 0.0000  loss: 1.1333
+Train Epoch: [1]  [   0/1125]  eta: 0:34:31  lr: 0.000019  loss: 1.0186  time: 1.8415  data: 1.0015  max mem: 15660
+Train Epoch: [1]  [  50/1125]  eta: 0:10:50  lr: 0.000019  loss: 1.1273  time: 0.5839  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 100/1125]  eta: 0:10:07  lr: 0.000019  loss: 1.0509  time: 0.5759  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 150/1125]  eta: 0:09:33  lr: 0.000019  loss: 1.1344  time: 0.5805  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 200/1125]  eta: 0:09:03  lr: 0.000019  loss: 1.0848  time: 0.5871  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 250/1125]  eta: 0:08:33  lr: 0.000019  loss: 1.0570  time: 0.5830  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 300/1125]  eta: 0:08:03  lr: 0.000019  loss: 1.0945  time: 0.5816  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 350/1125]  eta: 0:07:33  lr: 0.000019  loss: 1.0740  time: 0.5817  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 400/1125]  eta: 0:07:04  lr: 0.000019  loss: 1.1030  time: 0.5861  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 450/1125]  eta: 0:06:34  lr: 0.000019  loss: 0.9085  time: 0.5786  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 500/1125]  eta: 0:06:05  lr: 0.000019  loss: 1.0830  time: 0.5781  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 550/1125]  eta: 0:05:36  lr: 0.000019  loss: 0.9761  time: 0.5770  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 600/1125]  eta: 0:05:06  lr: 0.000019  loss: 1.0447  time: 0.5787  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 650/1125]  eta: 0:04:37  lr: 0.000019  loss: 0.9935  time: 0.5851  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 700/1125]  eta: 0:04:08  lr: 0.000019  loss: 1.1104  time: 0.5793  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 750/1125]  eta: 0:03:39  lr: 0.000019  loss: 1.0582  time: 0.5809  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 800/1125]  eta: 0:03:09  lr: 0.000019  loss: 0.9911  time: 0.5884  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 850/1125]  eta: 0:02:40  lr: 0.000019  loss: 1.1675  time: 0.5856  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 900/1125]  eta: 0:02:11  lr: 0.000019  loss: 0.9847  time: 0.5798  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 950/1125]  eta: 0:01:42  lr: 0.000019  loss: 0.9738  time: 0.5889  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1000/1125]  eta: 0:01:12  lr: 0.000019  loss: 1.0686  time: 0.5837  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1050/1125]  eta: 0:00:43  lr: 0.000019  loss: 1.1098  time: 0.5799  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1100/1125]  eta: 0:00:14  lr: 0.000019  loss: 1.0768  time: 0.5762  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1124/1125]  eta: 0:00:00  lr: 0.000019  loss: 1.1068  time: 0.5652  data: 0.0002  max mem: 15660
+Train Epoch: [1] Total time: 0:10:56 (0.5832 s / it)
+Averaged stats: lr: 0.0000  loss: 1.0495
+Train Epoch: [2]  [   0/1125]  eta: 0:35:08  lr: 0.000017  loss: 1.0312  time: 1.8744  data: 0.9407  max mem: 15660
+Train Epoch: [2]  [  50/1125]  eta: 0:10:46  lr: 0.000017  loss: 1.0489  time: 0.5812  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 100/1125]  eta: 0:10:02  lr: 0.000017  loss: 0.9620  time: 0.5717  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 150/1125]  eta: 0:09:32  lr: 0.000017  loss: 1.0942  time: 0.5824  data: 0.0002  max mem: 15660
+Train Epoch: [2]  [ 200/1125]  eta: 0:09:00  lr: 0.000017  loss: 1.0417  time: 0.5770  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 250/1125]  eta: 0:08:31  lr: 0.000017  loss: 1.0459  time: 0.5825  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 300/1125]  eta: 0:08:01  lr: 0.000017  loss: 1.0348  time: 0.5868  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 350/1125]  eta: 0:07:32  lr: 0.000017  loss: 1.0631  time: 0.5855  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 400/1125]  eta: 0:07:03  lr: 0.000017  loss: 1.0243  time: 0.5855  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 450/1125]  eta: 0:06:34  lr: 0.000017  loss: 1.1600  time: 0.5856  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 500/1125]  eta: 0:06:04  lr: 0.000017  loss: 0.9833  time: 0.5838  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 550/1125]  eta: 0:05:35  lr: 0.000017  loss: 0.9038  time: 0.5838  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 600/1125]  eta: 0:05:06  lr: 0.000017  loss: 1.0408  time: 0.5744  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 650/1125]  eta: 0:04:36  lr: 0.000017  loss: 1.0681  time: 0.5776  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 700/1125]  eta: 0:04:07  lr: 0.000017  loss: 1.0292  time: 0.5810  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 750/1125]  eta: 0:03:38  lr: 0.000017  loss: 1.0307  time: 0.5743  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 800/1125]  eta: 0:03:09  lr: 0.000017  loss: 1.0941  time: 0.5875  data: 0.0001  max mem: 15660
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 389, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 319, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 90, in train
+    loss.backward()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

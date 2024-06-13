@@ -1,0 +1,91 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+Cosine annealing scheduler will have no effect on the learning rate since t_initial = t_mul = eta_mul = 1.
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [  0/887]  eta: 0:38:46  lr: 0.000010  loss: 1.8005  time: 2.6224  data: 0.8889  max mem: 11149
+Train Epoch: [0]  [ 50/887]  eta: 0:08:24  lr: 0.000010  loss: 0.6173  time: 0.5674  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [100/887]  eta: 0:07:40  lr: 0.000010  loss: 0.4645  time: 0.5635  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [150/887]  eta: 0:07:05  lr: 0.000013  loss: 0.4064  time: 0.5649  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [200/887]  eta: 0:06:34  lr: 0.000013  loss: 0.4562  time: 0.5639  data: 0.0001  max mem: 14788
+Train Epoch: [0]  [250/887]  eta: 0:06:04  lr: 0.000015  loss: 0.6794  time: 0.5637  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [300/887]  eta: 0:05:35  lr: 0.000015  loss: 0.6306  time: 0.5641  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [350/887]  eta: 0:05:05  lr: 0.000018  loss: 0.5652  time: 0.5582  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [400/887]  eta: 0:04:36  lr: 0.000018  loss: 0.4780  time: 0.5545  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [450/887]  eta: 0:04:07  lr: 0.000020  loss: 0.5026  time: 0.5474  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [500/887]  eta: 0:03:38  lr: 0.000020  loss: 0.4919  time: 0.5560  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [550/887]  eta: 0:03:10  lr: 0.000020  loss: 0.3330  time: 0.5601  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [600/887]  eta: 0:02:42  lr: 0.000020  loss: 0.2178  time: 0.5571  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [650/887]  eta: 0:02:13  lr: 0.000020  loss: 0.3464  time: 0.5612  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [700/887]  eta: 0:01:45  lr: 0.000020  loss: 0.3108  time: 0.5622  data: 0.0001  max mem: 14792
+Train Epoch: [0]  [750/887]  eta: 0:01:17  lr: 0.000020  loss: 0.2697  time: 0.5640  data: 0.0001  max mem: 14795
+Train Epoch: [0]  [800/887]  eta: 0:00:49  lr: 0.000020  loss: 0.0873  time: 0.5692  data: 0.0001  max mem: 14795
+Train Epoch: [0]  [850/887]  eta: 0:00:20  lr: 0.000020  loss: 0.1773  time: 0.5664  data: 0.0001  max mem: 14795
+Train Epoch: [0]  [886/887]  eta: 0:00:00  lr: 0.000020  loss: 0.4297  time: 0.5455  data: 0.0002  max mem: 14795
+Train Epoch: [0] Total time: 0:08:20 (0.5642 s / it)
+Averaged stats: lr: 0.0000  loss: 0.4387
+Generate VQA test result:  [  0/762]  eta: 0:10:15    time: 0.8080  data: 0.3210  max mem: 14795
+Generate VQA test result:  [ 50/762]  eta: 0:02:32    time: 0.2017  data: 0.0001  max mem: 14795
+Generate VQA test result:  [100/762]  eta: 0:02:17    time: 0.2023  data: 0.0001  max mem: 14795
+Generate VQA test result:  [150/762]  eta: 0:02:06    time: 0.2017  data: 0.0001  max mem: 14795
+Generate VQA test result:  [200/762]  eta: 0:01:55    time: 0.2019  data: 0.0001  max mem: 14795
+Generate VQA test result:  [250/762]  eta: 0:01:44    time: 0.2022  data: 0.0001  max mem: 14795
+Generate VQA test result:  [300/762]  eta: 0:01:34    time: 0.2021  data: 0.0001  max mem: 14795
+Generate VQA test result:  [350/762]  eta: 0:01:23    time: 0.2023  data: 0.0001  max mem: 14795
+Generate VQA test result:  [400/762]  eta: 0:01:13    time: 0.2021  data: 0.0001  max mem: 14795
+Generate VQA test result:  [450/762]  eta: 0:01:03    time: 0.2011  data: 0.0001  max mem: 14795
+Generate VQA test result:  [500/762]  eta: 0:00:53    time: 0.2019  data: 0.0001  max mem: 14795
+Generate VQA test result:  [550/762]  eta: 0:00:43    time: 0.2019  data: 0.0001  max mem: 14795
+Generate VQA test result:  [600/762]  eta: 0:00:32    time: 0.2022  data: 0.0001  max mem: 14795
+Generate VQA test result:  [650/762]  eta: 0:00:22    time: 0.2022  data: 0.0001  max mem: 14795
+Generate VQA test result:  [700/762]  eta: 0:00:12    time: 0.2021  data: 0.0001  max mem: 14795
+Generate VQA test result:  [750/762]  eta: 0:00:02    time: 0.2017  data: 0.0001  max mem: 14795
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Generate VQA test result:  [761/762]  eta: 0:00:00    time: 0.1976  data: 0.0001  max mem: 14795
+Generate VQA test result: Total time: 0:02:34 (0.2029 s / it)
+0.6469042535720151
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+Generate VQA test result:  [  0/762]  eta: 0:06:46    time: 0.5336  data: 0.3188  max mem: 14795
+Generate VQA test result:  [ 50/762]  eta: 0:02:27    time: 0.2008  data: 0.0001  max mem: 14795
+Generate VQA test result:  [100/762]  eta: 0:02:15    time: 0.2011  data: 0.0001  max mem: 14795
+Generate VQA test result:  [150/762]  eta: 0:02:04    time: 0.2014  data: 0.0001  max mem: 14795
+Generate VQA test result:  [200/762]  eta: 0:01:54    time: 0.2018  data: 0.0001  max mem: 14795
+Generate VQA test result:  [250/762]  eta: 0:01:43    time: 0.2020  data: 0.0001  max mem: 14795
+Generate VQA test result:  [300/762]  eta: 0:01:33    time: 0.2018  data: 0.0001  max mem: 14795
+Generate VQA test result:  [350/762]  eta: 0:01:23    time: 0.2016  data: 0.0001  max mem: 14795
+Generate VQA test result:  [400/762]  eta: 0:01:13    time: 0.2014  data: 0.0001  max mem: 14795
+Generate VQA test result:  [450/762]  eta: 0:01:03    time: 0.2017  data: 0.0001  max mem: 14795
+Generate VQA test result:  [500/762]  eta: 0:00:53    time: 0.2020  data: 0.0001  max mem: 14795
+Generate VQA test result:  [550/762]  eta: 0:00:42    time: 0.2020  data: 0.0001  max mem: 14795
+Generate VQA test result:  [600/762]  eta: 0:00:32    time: 0.2022  data: 0.0001  max mem: 14795
+Generate VQA test result:  [650/762]  eta: 0:00:22    time: 0.2026  data: 0.0001  max mem: 14795
+Generate VQA test result:  [700/762]  eta: 0:00:12    time: 0.2019  data: 0.0001  max mem: 14795
+Generate VQA test result:  [750/762]  eta: 0:00:02    time: 0.2024  data: 0.0001  max mem: 14795
+Generate VQA test result:  [761/762]  eta: 0:00:00    time: 0.1940  data: 0.0001  max mem: 14795
+Generate VQA test result: Total time: 0:02:34 (0.2023 s / it)
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/sklearn/metrics/_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+result file saved to output/vqa/result/vqa_result_epoch0.json
+Training time 0:13:36

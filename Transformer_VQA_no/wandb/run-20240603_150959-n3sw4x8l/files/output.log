@@ -1,0 +1,350 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['text_encoder.encoder.layer.12.attention.self.query.weight', 'text_encoder.encoder.layer.12.attention.self.query.bias', 'text_encoder.encoder.layer.12.attention.self.key.weight', 'text_encoder.encoder.layer.12.attention.self.key.bias', 'text_encoder.encoder.layer.12.attention.self.value.weight', 'text_encoder.encoder.layer.12.attention.self.value.bias', 'text_encoder.encoder.layer.12.attention.output.dense.weight', 'text_encoder.encoder.layer.12.attention.output.dense.bias', 'text_encoder.encoder.layer.12.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.12.crossattention.self.query.weight', 'text_encoder.encoder.layer.12.crossattention.self.query.bias', 'text_encoder.encoder.layer.12.crossattention.self.key.weight', 'text_encoder.encoder.layer.12.crossattention.self.key.bias', 'text_encoder.encoder.layer.12.crossattention.self.value.weight', 'text_encoder.encoder.layer.12.crossattention.self.value.bias', 'text_encoder.encoder.layer.12.crossattention.output.dense.weight', 'text_encoder.encoder.layer.12.crossattention.output.dense.bias', 'text_encoder.encoder.layer.12.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.12.intermediate.dense.weight', 'text_encoder.encoder.layer.12.intermediate.dense.bias', 'text_encoder.encoder.layer.12.output.dense.weight', 'text_encoder.encoder.layer.12.output.dense.bias', 'text_encoder.encoder.layer.12.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.attention.self.query.weight', 'text_encoder.encoder.layer.13.attention.self.query.bias', 'text_encoder.encoder.layer.13.attention.self.key.weight', 'text_encoder.encoder.layer.13.attention.self.key.bias', 'text_encoder.encoder.layer.13.attention.self.value.weight', 'text_encoder.encoder.layer.13.attention.self.value.bias', 'text_encoder.encoder.layer.13.attention.output.dense.weight', 'text_encoder.encoder.layer.13.attention.output.dense.bias', 'text_encoder.encoder.layer.13.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.crossattention.self.query.weight', 'text_encoder.encoder.layer.13.crossattention.self.query.bias', 'text_encoder.encoder.layer.13.crossattention.self.key.weight', 'text_encoder.encoder.layer.13.crossattention.self.key.bias', 'text_encoder.encoder.layer.13.crossattention.self.value.weight', 'text_encoder.encoder.layer.13.crossattention.self.value.bias', 'text_encoder.encoder.layer.13.crossattention.output.dense.weight', 'text_encoder.encoder.layer.13.crossattention.output.dense.bias', 'text_encoder.encoder.layer.13.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.intermediate.dense.weight', 'text_encoder.encoder.layer.13.intermediate.dense.bias', 'text_encoder.encoder.layer.13.output.dense.weight', 'text_encoder.encoder.layer.13.output.dense.bias', 'text_encoder.encoder.layer.13.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.attention.self.query.weight', 'text_encoder.encoder.layer.14.attention.self.query.bias', 'text_encoder.encoder.layer.14.attention.self.key.weight', 'text_encoder.encoder.layer.14.attention.self.key.bias', 'text_encoder.encoder.layer.14.attention.self.value.weight', 'text_encoder.encoder.layer.14.attention.self.value.bias', 'text_encoder.encoder.layer.14.attention.output.dense.weight', 'text_encoder.encoder.layer.14.attention.output.dense.bias', 'text_encoder.encoder.layer.14.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.crossattention.self.query.weight', 'text_encoder.encoder.layer.14.crossattention.self.query.bias', 'text_encoder.encoder.layer.14.crossattention.self.key.weight', 'text_encoder.encoder.layer.14.crossattention.self.key.bias', 'text_encoder.encoder.layer.14.crossattention.self.value.weight', 'text_encoder.encoder.layer.14.crossattention.self.value.bias', 'text_encoder.encoder.layer.14.crossattention.output.dense.weight', 'text_encoder.encoder.layer.14.crossattention.output.dense.bias', 'text_encoder.encoder.layer.14.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.intermediate.dense.weight', 'text_encoder.encoder.layer.14.intermediate.dense.bias', 'text_encoder.encoder.layer.14.output.dense.weight', 'text_encoder.encoder.layer.14.output.dense.bias', 'text_encoder.encoder.layer.14.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.attention.self.query.weight', 'text_encoder.encoder.layer.15.attention.self.query.bias', 'text_encoder.encoder.layer.15.attention.self.key.weight', 'text_encoder.encoder.layer.15.attention.self.key.bias', 'text_encoder.encoder.layer.15.attention.self.value.weight', 'text_encoder.encoder.layer.15.attention.self.value.bias', 'text_encoder.encoder.layer.15.attention.output.dense.weight', 'text_encoder.encoder.layer.15.attention.output.dense.bias', 'text_encoder.encoder.layer.15.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.crossattention.self.query.weight', 'text_encoder.encoder.layer.15.crossattention.self.query.bias', 'text_encoder.encoder.layer.15.crossattention.self.key.weight', 'text_encoder.encoder.layer.15.crossattention.self.key.bias', 'text_encoder.encoder.layer.15.crossattention.self.value.weight', 'text_encoder.encoder.layer.15.crossattention.self.value.bias', 'text_encoder.encoder.layer.15.crossattention.output.dense.weight', 'text_encoder.encoder.layer.15.crossattention.output.dense.bias', 'text_encoder.encoder.layer.15.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.intermediate.dense.weight', 'text_encoder.encoder.layer.15.intermediate.dense.bias', 'text_encoder.encoder.layer.15.output.dense.weight', 'text_encoder.encoder.layer.15.output.dense.bias', 'text_encoder.encoder.layer.15.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.output.LayerNorm.bias', 'inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [   0/1125]  eta: 0:52:26  lr: 0.000010  loss: 1.6340  time: 2.7968  data: 1.1658  max mem: 11560
+Train Epoch: [0]  [  50/1125]  eta: 0:11:11  lr: 0.000010  loss: 0.4804  time: 0.5739  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 100/1125]  eta: 0:10:21  lr: 0.000010  loss: 0.5348  time: 0.5802  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 150/1125]  eta: 0:09:46  lr: 0.000013  loss: 0.2809  time: 0.5838  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 200/1125]  eta: 0:09:15  lr: 0.000013  loss: 0.3160  time: 0.5903  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 250/1125]  eta: 0:08:44  lr: 0.000015  loss: 0.2942  time: 0.6024  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 300/1125]  eta: 0:08:14  lr: 0.000015  loss: 0.3983  time: 0.6122  data: 0.0002  max mem: 15656
+Train Epoch: [0]  [ 350/1125]  eta: 0:07:42  lr: 0.000018  loss: 0.2983  time: 0.5797  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 400/1125]  eta: 0:07:13  lr: 0.000018  loss: 0.4182  time: 0.5922  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 450/1125]  eta: 0:06:42  lr: 0.000020  loss: 0.3975  time: 0.5810  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 500/1125]  eta: 0:06:12  lr: 0.000020  loss: 0.3155  time: 0.5932  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 550/1125]  eta: 0:05:42  lr: 0.000020  loss: 0.1097  time: 0.5842  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 600/1125]  eta: 0:05:13  lr: 0.000020  loss: 0.1602  time: 0.6071  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 650/1125]  eta: 0:04:43  lr: 0.000020  loss: 0.1524  time: 0.6064  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 700/1125]  eta: 0:04:13  lr: 0.000020  loss: 0.2138  time: 0.5952  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 750/1125]  eta: 0:03:43  lr: 0.000020  loss: 0.1089  time: 0.5974  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 800/1125]  eta: 0:03:13  lr: 0.000020  loss: 0.1994  time: 0.5882  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 850/1125]  eta: 0:02:43  lr: 0.000020  loss: 0.1436  time: 0.5830  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 900/1125]  eta: 0:02:14  lr: 0.000020  loss: 0.1814  time: 0.5987  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 950/1125]  eta: 0:01:44  lr: 0.000020  loss: 0.1204  time: 0.6048  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [1000/1125]  eta: 0:01:14  lr: 0.000020  loss: 0.1281  time: 0.6105  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [1050/1125]  eta: 0:00:44  lr: 0.000020  loss: 0.1081  time: 0.5878  data: 0.0001  max mem: 15660
+Train Epoch: [0]  [1100/1125]  eta: 0:00:14  lr: 0.000020  loss: 0.2349  time: 0.5878  data: 0.0001  max mem: 15660
+Train Epoch: [0]  [1124/1125]  eta: 0:00:00  lr: 0.000020  loss: 0.1592  time: 0.5928  data: 0.0002  max mem: 15660
+Train Epoch: [0] Total time: 0:11:10 (0.5959 s / it)
+Averaged stats: lr: 0.0000  loss: 0.2632
+Generate VQA test result:  [  0/563]  eta: 0:07:48    time: 0.8317  data: 0.3064  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:53    time: 0.2092  data: 0.0001  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:39    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:29    time: 0.2092  data: 0.0001  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:17    time: 0.2098  data: 0.0001  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2091  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:56    time: 0.2260  data: 0.0002  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2100  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2093  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:24    time: 0.2090  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2091  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2092  data: 0.0001  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2077  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:59 (0.2127 s / it)
+0.8918738898756661
+Train Epoch: [1]  [   0/1125]  eta: 0:32:07  lr: 0.000019  loss: 0.1965  time: 1.7135  data: 0.9961  max mem: 15660
+Train Epoch: [1]  [  50/1125]  eta: 0:10:56  lr: 0.000019  loss: 0.1086  time: 0.5909  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 100/1125]  eta: 0:10:15  lr: 0.000019  loss: 0.0660  time: 0.5907  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 150/1125]  eta: 0:09:41  lr: 0.000019  loss: 0.0933  time: 0.5913  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 200/1125]  eta: 0:09:09  lr: 0.000019  loss: 0.0921  time: 0.5928  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 250/1125]  eta: 0:08:39  lr: 0.000019  loss: 0.0662  time: 0.5884  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 300/1125]  eta: 0:08:08  lr: 0.000019  loss: 0.0432  time: 0.5816  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 350/1125]  eta: 0:07:37  lr: 0.000019  loss: 0.1714  time: 0.5892  data: 0.0002  max mem: 15660
+Train Epoch: [1]  [ 400/1125]  eta: 0:07:08  lr: 0.000019  loss: 0.0292  time: 0.5835  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 450/1125]  eta: 0:06:38  lr: 0.000019  loss: 0.0311  time: 0.5864  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 500/1125]  eta: 0:06:08  lr: 0.000019  loss: 0.0158  time: 0.5980  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 550/1125]  eta: 0:05:39  lr: 0.000019  loss: 0.0279  time: 0.5859  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 600/1125]  eta: 0:05:09  lr: 0.000019  loss: 0.0536  time: 0.5958  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 650/1125]  eta: 0:04:40  lr: 0.000019  loss: 0.0766  time: 0.5887  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 700/1125]  eta: 0:04:10  lr: 0.000019  loss: 0.1280  time: 0.5933  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 750/1125]  eta: 0:03:41  lr: 0.000019  loss: 0.0350  time: 0.5968  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 800/1125]  eta: 0:03:11  lr: 0.000019  loss: 0.0144  time: 0.5926  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 850/1125]  eta: 0:02:42  lr: 0.000019  loss: 0.1662  time: 0.5851  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 900/1125]  eta: 0:02:12  lr: 0.000019  loss: 0.0334  time: 0.5847  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 950/1125]  eta: 0:01:43  lr: 0.000019  loss: 0.1431  time: 0.5979  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1000/1125]  eta: 0:01:13  lr: 0.000019  loss: 0.2559  time: 0.5835  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1050/1125]  eta: 0:00:44  lr: 0.000019  loss: 0.0022  time: 0.5869  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1100/1125]  eta: 0:00:14  lr: 0.000019  loss: 0.1650  time: 0.5926  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [1124/1125]  eta: 0:00:00  lr: 0.000019  loss: 0.0366  time: 0.5744  data: 0.0002  max mem: 15660
+Train Epoch: [1] Total time: 0:11:02 (0.5893 s / it)
+Averaged stats: lr: 0.0000  loss: 0.1015
+Generate VQA test result:  [  0/563]  eta: 0:05:06    time: 0.5438  data: 0.3117  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:51    time: 0.2097  data: 0.0001  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:39    time: 0.2153  data: 0.0003  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2102  data: 0.0001  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:16    time: 0.2098  data: 0.0002  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2191  data: 0.0002  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2096  data: 0.0002  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2099  data: 0.0002  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2100  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2176  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:59 (0.2116 s / it)
+0.9629218472468917
+Train Epoch: [2]  [   0/1125]  eta: 0:35:35  lr: 0.000017  loss: 0.0133  time: 1.8986  data: 1.1090  max mem: 15660
+Train Epoch: [2]  [  50/1125]  eta: 0:10:59  lr: 0.000017  loss: 0.0461  time: 0.5848  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 100/1125]  eta: 0:10:14  lr: 0.000017  loss: 0.1486  time: 0.5889  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 150/1125]  eta: 0:09:40  lr: 0.000017  loss: 0.0098  time: 0.5800  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 200/1125]  eta: 0:09:09  lr: 0.000017  loss: 0.1049  time: 0.5949  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 250/1125]  eta: 0:08:38  lr: 0.000017  loss: 0.0078  time: 0.5909  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 300/1125]  eta: 0:08:08  lr: 0.000017  loss: 0.0067  time: 0.5841  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 350/1125]  eta: 0:07:38  lr: 0.000017  loss: 0.0055  time: 0.5972  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 400/1125]  eta: 0:07:09  lr: 0.000017  loss: 0.0197  time: 0.5970  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 450/1125]  eta: 0:06:39  lr: 0.000017  loss: 0.0421  time: 0.5941  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 500/1125]  eta: 0:06:10  lr: 0.000017  loss: 0.0044  time: 0.5875  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 550/1125]  eta: 0:05:40  lr: 0.000017  loss: 0.0098  time: 0.5855  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 600/1125]  eta: 0:05:10  lr: 0.000017  loss: 0.0506  time: 0.5846  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 650/1125]  eta: 0:04:40  lr: 0.000017  loss: 0.0052  time: 0.5886  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 700/1125]  eta: 0:04:11  lr: 0.000017  loss: 0.0038  time: 0.5830  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 750/1125]  eta: 0:03:41  lr: 0.000017  loss: 0.0411  time: 0.5832  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 800/1125]  eta: 0:03:11  lr: 0.000017  loss: 0.0036  time: 0.5898  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 850/1125]  eta: 0:02:42  lr: 0.000017  loss: 0.1482  time: 0.5864  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 900/1125]  eta: 0:02:12  lr: 0.000017  loss: 0.0030  time: 0.5937  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [ 950/1125]  eta: 0:01:43  lr: 0.000017  loss: 0.0261  time: 0.5943  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [1000/1125]  eta: 0:01:13  lr: 0.000017  loss: 0.0045  time: 0.5809  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [1050/1125]  eta: 0:00:44  lr: 0.000017  loss: 0.0598  time: 0.5869  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [1100/1125]  eta: 0:00:14  lr: 0.000017  loss: 0.1282  time: 0.5766  data: 0.0001  max mem: 15660
+Train Epoch: [2]  [1124/1125]  eta: 0:00:00  lr: 0.000017  loss: 0.1357  time: 0.5727  data: 0.0002  max mem: 15660
+Train Epoch: [2] Total time: 0:11:02 (0.5891 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0507
+Generate VQA test result:  [  0/563]  eta: 0:05:00    time: 0.5333  data: 0.2992  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:50    time: 0.2104  data: 0.0001  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:39    time: 0.2183  data: 0.0002  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2089  data: 0.0002  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:16    time: 0.2086  data: 0.0001  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2165  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2094  data: 0.0002  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2087  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2086  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2184  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:59 (0.2115 s / it)
+0.9900088809946714
+Train Epoch: [3]  [   0/1125]  eta: 0:34:14  lr: 0.000014  loss: 0.0032  time: 1.8264  data: 1.2024  max mem: 15660
+Train Epoch: [3]  [  50/1125]  eta: 0:11:02  lr: 0.000014  loss: 0.0645  time: 0.5988  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 100/1125]  eta: 0:10:17  lr: 0.000014  loss: 0.0710  time: 0.5901  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 150/1125]  eta: 0:09:42  lr: 0.000014  loss: 0.0022  time: 0.5880  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 200/1125]  eta: 0:09:11  lr: 0.000014  loss: 0.0535  time: 0.5956  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 250/1125]  eta: 0:08:40  lr: 0.000014  loss: 0.0015  time: 0.5918  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 300/1125]  eta: 0:08:09  lr: 0.000014  loss: 0.0014  time: 0.5856  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 350/1125]  eta: 0:07:39  lr: 0.000014  loss: 0.0183  time: 0.5906  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 400/1125]  eta: 0:07:09  lr: 0.000014  loss: 0.0097  time: 0.5901  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 450/1125]  eta: 0:06:39  lr: 0.000014  loss: 0.0057  time: 0.5945  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 500/1125]  eta: 0:06:09  lr: 0.000014  loss: 0.0030  time: 0.5847  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 550/1125]  eta: 0:05:40  lr: 0.000014  loss: 0.0020  time: 0.5945  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 600/1125]  eta: 0:05:10  lr: 0.000014  loss: 0.0013  time: 0.5886  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 650/1125]  eta: 0:04:40  lr: 0.000014  loss: 0.0010  time: 0.5834  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 700/1125]  eta: 0:04:11  lr: 0.000014  loss: 0.0021  time: 0.5989  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 750/1125]  eta: 0:03:41  lr: 0.000014  loss: 0.0058  time: 0.5867  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 800/1125]  eta: 0:03:12  lr: 0.000014  loss: 0.0005  time: 0.6051  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 850/1125]  eta: 0:02:42  lr: 0.000014  loss: 0.0018  time: 0.5878  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [ 900/1125]  eta: 0:02:12  lr: 0.000014  loss: 0.1233  time: 0.5844  data: 0.0002  max mem: 15660
+Train Epoch: [3]  [ 950/1125]  eta: 0:01:43  lr: 0.000014  loss: 0.0155  time: 0.5850  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [1000/1125]  eta: 0:01:13  lr: 0.000014  loss: 0.0053  time: 0.5891  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [1050/1125]  eta: 0:00:44  lr: 0.000014  loss: 0.0872  time: 0.5890  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [1100/1125]  eta: 0:00:14  lr: 0.000014  loss: 0.0028  time: 0.5924  data: 0.0001  max mem: 15660
+Train Epoch: [3]  [1124/1125]  eta: 0:00:00  lr: 0.000014  loss: 0.0190  time: 0.5808  data: 0.0002  max mem: 15660
+Train Epoch: [3] Total time: 0:11:04 (0.5903 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0324
+Generate VQA test result:  [  0/563]  eta: 0:05:01    time: 0.5350  data: 0.3101  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:50    time: 0.2095  data: 0.0002  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:40    time: 0.2148  data: 0.0002  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:28    time: 0.2091  data: 0.0001  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:17    time: 0.2109  data: 0.0002  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2185  data: 0.0002  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2101  data: 0.0001  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2110  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2189  data: 0.0002  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2097  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2159  data: 0.0002  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2141  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:59 (0.2120 s / it)
+0.9866785079928952
+Train Epoch: [4]  [   0/1125]  eta: 0:35:55  lr: 0.000011  loss: 0.0113  time: 1.9156  data: 0.9715  max mem: 15660
+Train Epoch: [4]  [  50/1125]  eta: 0:11:00  lr: 0.000011  loss: 0.0045  time: 0.5857  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 100/1125]  eta: 0:10:18  lr: 0.000011  loss: 0.0009  time: 0.5923  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 150/1125]  eta: 0:09:46  lr: 0.000011  loss: 0.0016  time: 0.6012  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 200/1125]  eta: 0:09:14  lr: 0.000011  loss: 0.2213  time: 0.5906  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 250/1125]  eta: 0:08:43  lr: 0.000011  loss: 0.0070  time: 0.5929  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 300/1125]  eta: 0:08:12  lr: 0.000011  loss: 0.0011  time: 0.5908  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 350/1125]  eta: 0:07:41  lr: 0.000011  loss: 0.0007  time: 0.5824  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 400/1125]  eta: 0:07:11  lr: 0.000011  loss: 0.0125  time: 0.5882  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 450/1125]  eta: 0:06:40  lr: 0.000011  loss: 0.0007  time: 0.5798  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 500/1125]  eta: 0:06:10  lr: 0.000011  loss: 0.0204  time: 0.5845  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 550/1125]  eta: 0:05:40  lr: 0.000011  loss: 0.0037  time: 0.5924  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 600/1125]  eta: 0:05:10  lr: 0.000011  loss: 0.0023  time: 0.5906  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 650/1125]  eta: 0:04:41  lr: 0.000011  loss: 0.0027  time: 0.5945  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 700/1125]  eta: 0:04:11  lr: 0.000011  loss: 0.0003  time: 0.5862  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 750/1125]  eta: 0:03:41  lr: 0.000011  loss: 0.0011  time: 0.5937  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 800/1125]  eta: 0:03:12  lr: 0.000011  loss: 0.0966  time: 0.5950  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 850/1125]  eta: 0:02:42  lr: 0.000011  loss: 0.0008  time: 0.5687  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 900/1125]  eta: 0:02:12  lr: 0.000011  loss: 0.0011  time: 0.5879  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [ 950/1125]  eta: 0:01:43  lr: 0.000011  loss: 0.0059  time: 0.5856  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [1000/1125]  eta: 0:01:13  lr: 0.000011  loss: 0.0424  time: 0.5824  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [1050/1125]  eta: 0:00:44  lr: 0.000011  loss: 0.0025  time: 0.5927  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [1100/1125]  eta: 0:00:14  lr: 0.000011  loss: 0.0052  time: 0.5893  data: 0.0001  max mem: 15660
+Train Epoch: [4]  [1124/1125]  eta: 0:00:00  lr: 0.000011  loss: 0.0055  time: 0.5772  data: 0.0002  max mem: 15660
+Train Epoch: [4] Total time: 0:11:03 (0.5898 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0189
+Generate VQA test result:  [  0/563]  eta: 0:05:02    time: 0.5380  data: 0.3102  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:50    time: 0.2096  data: 0.0002  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:38    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:16    time: 0.2098  data: 0.0002  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2098  data: 0.0001  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:44    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2098  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2104  data: 0.0002  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2097  data: 0.0002  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2145  data: 0.0002  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2083  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:58 (0.2111 s / it)
+0.9957815275310835
+Train Epoch: [5]  [   0/1125]  eta: 0:32:14  lr: 0.000007  loss: 0.0018  time: 1.7192  data: 0.9212  max mem: 15660
+Train Epoch: [5]  [  50/1125]  eta: 0:10:54  lr: 0.000007  loss: 0.0181  time: 0.5833  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 100/1125]  eta: 0:10:14  lr: 0.000007  loss: 0.0054  time: 0.5945  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 150/1125]  eta: 0:09:41  lr: 0.000007  loss: 0.0008  time: 0.5907  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 200/1125]  eta: 0:09:08  lr: 0.000007  loss: 0.0005  time: 0.5840  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 250/1125]  eta: 0:08:38  lr: 0.000007  loss: 0.0014  time: 0.5927  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 300/1125]  eta: 0:08:08  lr: 0.000007  loss: 0.0011  time: 0.5888  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 350/1125]  eta: 0:07:37  lr: 0.000007  loss: 0.0003  time: 0.5829  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 400/1125]  eta: 0:07:08  lr: 0.000007  loss: 0.0021  time: 0.5824  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 450/1125]  eta: 0:06:38  lr: 0.000007  loss: 0.0003  time: 0.5916  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 500/1125]  eta: 0:06:08  lr: 0.000007  loss: 0.0013  time: 0.5881  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 550/1125]  eta: 0:05:39  lr: 0.000007  loss: 0.0004  time: 0.5838  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 600/1125]  eta: 0:05:09  lr: 0.000007  loss: 0.0012  time: 0.5924  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 650/1125]  eta: 0:04:40  lr: 0.000007  loss: 0.0007  time: 0.5875  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 700/1125]  eta: 0:04:10  lr: 0.000007  loss: 0.0035  time: 0.5903  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 750/1125]  eta: 0:03:41  lr: 0.000007  loss: 0.0017  time: 0.5943  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 800/1125]  eta: 0:03:11  lr: 0.000007  loss: 0.0004  time: 0.5897  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 850/1125]  eta: 0:02:42  lr: 0.000007  loss: 0.0010  time: 0.5975  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 900/1125]  eta: 0:02:12  lr: 0.000007  loss: 0.0017  time: 0.5830  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [ 950/1125]  eta: 0:01:43  lr: 0.000007  loss: 0.0001  time: 0.5906  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [1000/1125]  eta: 0:01:13  lr: 0.000007  loss: 0.0005  time: 0.5934  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [1050/1125]  eta: 0:00:44  lr: 0.000007  loss: 0.0003  time: 0.5916  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [1100/1125]  eta: 0:00:14  lr: 0.000007  loss: 0.0093  time: 0.5926  data: 0.0001  max mem: 15660
+Train Epoch: [5]  [1124/1125]  eta: 0:00:00  lr: 0.000007  loss: 0.0025  time: 0.5734  data: 0.0002  max mem: 15660
+Train Epoch: [5] Total time: 0:11:03 (0.5894 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0105
+Generate VQA test result:  [  0/563]  eta: 0:05:34    time: 0.5941  data: 0.3596  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:51    time: 0.2095  data: 0.0002  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:39    time: 0.2091  data: 0.0002  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2094  data: 0.0002  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:17    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2095  data: 0.0002  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2100  data: 0.0002  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2097  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2084  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2098  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2170  data: 0.0002  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2069  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:59 (0.2114 s / it)
+0.9937833037300178
+Train Epoch: [6]  [   0/1125]  eta: 0:32:27  lr: 0.000004  loss: 0.0007  time: 1.7312  data: 0.9262  max mem: 15660
+Train Epoch: [6]  [  50/1125]  eta: 0:10:56  lr: 0.000004  loss: 0.0005  time: 0.5875  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 100/1125]  eta: 0:10:14  lr: 0.000004  loss: 0.0012  time: 0.5861  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 150/1125]  eta: 0:09:42  lr: 0.000004  loss: 0.0013  time: 0.5955  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 200/1125]  eta: 0:09:09  lr: 0.000004  loss: 0.0005  time: 0.5797  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 250/1125]  eta: 0:08:38  lr: 0.000004  loss: 0.0012  time: 0.5827  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 300/1125]  eta: 0:08:08  lr: 0.000004  loss: 0.0004  time: 0.5950  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 350/1125]  eta: 0:07:38  lr: 0.000004  loss: 0.0033  time: 0.5860  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 400/1125]  eta: 0:07:08  lr: 0.000004  loss: 0.0028  time: 0.5870  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 450/1125]  eta: 0:06:39  lr: 0.000004  loss: 0.0013  time: 0.5981  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 500/1125]  eta: 0:06:09  lr: 0.000004  loss: 0.0006  time: 0.5822  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 550/1125]  eta: 0:05:39  lr: 0.000004  loss: 0.0009  time: 0.5887  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 600/1125]  eta: 0:05:10  lr: 0.000004  loss: 0.0005  time: 0.5935  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 650/1125]  eta: 0:04:40  lr: 0.000004  loss: 0.0016  time: 0.5893  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 700/1125]  eta: 0:04:11  lr: 0.000004  loss: 0.0016  time: 0.5806  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 750/1125]  eta: 0:03:41  lr: 0.000004  loss: 0.0016  time: 0.5832  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 800/1125]  eta: 0:03:11  lr: 0.000004  loss: 0.0004  time: 0.5940  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 850/1125]  eta: 0:02:42  lr: 0.000004  loss: 0.0147  time: 0.5871  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 900/1125]  eta: 0:02:12  lr: 0.000004  loss: 0.0003  time: 0.5934  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [ 950/1125]  eta: 0:01:43  lr: 0.000004  loss: 0.0007  time: 0.5875  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [1000/1125]  eta: 0:01:13  lr: 0.000004  loss: 0.0005  time: 0.5847  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [1050/1125]  eta: 0:00:44  lr: 0.000004  loss: 0.0005  time: 0.5842  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [1100/1125]  eta: 0:00:14  lr: 0.000004  loss: 0.2628  time: 0.5825  data: 0.0001  max mem: 15660
+Train Epoch: [6]  [1124/1125]  eta: 0:00:00  lr: 0.000004  loss: 0.0009  time: 0.5800  data: 0.0002  max mem: 15660
+Train Epoch: [6] Total time: 0:11:03 (0.5897 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0108
+Generate VQA test result:  [  0/563]  eta: 0:05:08    time: 0.5478  data: 0.3161  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:50    time: 0.2093  data: 0.0001  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:38    time: 0.2093  data: 0.0002  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2137  data: 0.0002  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:16    time: 0.2106  data: 0.0001  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2171  data: 0.0002  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2104  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2096  data: 0.0002  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2128  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2096  data: 0.0002  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2090  data: 0.0002  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2079  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:58 (0.2108 s / it)
+0.9964476021314387
+Train Epoch: [7]  [   0/1125]  eta: 0:34:07  lr: 0.000002  loss: 0.0108  time: 1.8196  data: 1.0407  max mem: 15660
+Train Epoch: [7]  [  50/1125]  eta: 0:10:54  lr: 0.000002  loss: 0.0011  time: 0.5817  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 100/1125]  eta: 0:10:15  lr: 0.000002  loss: 0.0004  time: 0.5944  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 150/1125]  eta: 0:09:41  lr: 0.000002  loss: 0.0448  time: 0.5861  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 200/1125]  eta: 0:09:10  lr: 0.000002  loss: 0.0014  time: 0.5950  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 250/1125]  eta: 0:08:39  lr: 0.000002  loss: 0.0077  time: 0.5845  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 300/1125]  eta: 0:08:07  lr: 0.000002  loss: 0.0007  time: 0.5754  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 350/1125]  eta: 0:07:37  lr: 0.000002  loss: 0.0008  time: 0.5969  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 400/1125]  eta: 0:07:08  lr: 0.000002  loss: 0.0003  time: 0.5875  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 450/1125]  eta: 0:06:38  lr: 0.000002  loss: 0.0085  time: 0.5910  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 500/1125]  eta: 0:06:08  lr: 0.000002  loss: 0.0013  time: 0.5918  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 550/1125]  eta: 0:05:39  lr: 0.000002  loss: 0.0006  time: 0.5835  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 600/1125]  eta: 0:05:09  lr: 0.000002  loss: 0.0085  time: 0.5862  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 650/1125]  eta: 0:04:39  lr: 0.000002  loss: 0.0005  time: 0.5804  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 700/1125]  eta: 0:04:10  lr: 0.000002  loss: 0.0006  time: 0.5854  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 750/1125]  eta: 0:03:40  lr: 0.000002  loss: 0.0008  time: 0.5833  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 800/1125]  eta: 0:03:11  lr: 0.000002  loss: 0.0004  time: 0.5858  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 850/1125]  eta: 0:02:41  lr: 0.000002  loss: 0.0008  time: 0.5898  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 900/1125]  eta: 0:02:12  lr: 0.000002  loss: 0.0008  time: 0.5807  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [ 950/1125]  eta: 0:01:42  lr: 0.000002  loss: 0.0008  time: 0.5854  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [1000/1125]  eta: 0:01:13  lr: 0.000002  loss: 0.0005  time: 0.5880  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [1050/1125]  eta: 0:00:44  lr: 0.000002  loss: 0.0006  time: 0.5915  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [1100/1125]  eta: 0:00:14  lr: 0.000002  loss: 0.0005  time: 0.5873  data: 0.0001  max mem: 15660
+Train Epoch: [7]  [1124/1125]  eta: 0:00:00  lr: 0.000002  loss: 0.0911  time: 0.5776  data: 0.0002  max mem: 15660
+Train Epoch: [7] Total time: 0:11:01 (0.5879 s / it)
+Averaged stats: lr: 0.0000  loss: 0.0063
+Generate VQA test result:  [  0/563]  eta: 0:04:54    time: 0.5224  data: 0.2903  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:50    time: 0.2091  data: 0.0002  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:38    time: 0.2092  data: 0.0002  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2094  data: 0.0002  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:16    time: 0.2094  data: 0.0001  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2090  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2137  data: 0.0002  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:44    time: 0.2084  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2139  data: 0.0002  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2093  data: 0.0002  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2090  data: 0.0001  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2079  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:58 (0.2103 s / it)
+0.9973357015985791
+Generate VQA test result:  [  0/563]  eta: 0:05:19    time: 0.5667  data: 0.3414  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:50    time: 0.2079  data: 0.0001  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:38    time: 0.2090  data: 0.0002  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:27    time: 0.2102  data: 0.0001  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:16    time: 0.2095  data: 0.0002  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:05    time: 0.2081  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2085  data: 0.0001  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:44    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2087  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2083  data: 0.0001  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2082  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:58 (0.2097 s / it)
+result file saved to output_optimal/vqa/result/vqa_result_epoch7.json
+Training time 1:47:17

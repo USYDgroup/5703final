@@ -1,0 +1,11 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 426, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 263, in main
+    lr_scheduler, _ = create_scheduler(arg_sche, optimizer)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/scheduler/scheduler_factory.py", line 75, in create_scheduler
+    patience_t=args.patience_epochs,
+AttributeError: 'AttrDict' object has no attribute 'patience_epochs'

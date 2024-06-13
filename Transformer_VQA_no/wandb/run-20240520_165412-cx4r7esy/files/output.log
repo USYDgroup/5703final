@@ -1,0 +1,46 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [  0/563]  eta: 0:24:31  lr: 0.000010  loss: 0.6989  time: 2.6131  data: 0.8241  max mem: 11149
+Train Epoch: [0]  [ 50/563]  eta: 0:05:06  lr: 0.000010  loss: 0.4970  time: 0.5557  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [100/563]  eta: 0:04:28  lr: 0.000010  loss: 0.3048  time: 0.5630  data: 0.0002  max mem: 14771
+Train Epoch: [0]  [150/563]  eta: 0:03:57  lr: 0.000013  loss: 0.2058  time: 0.5676  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [200/563]  eta: 0:03:27  lr: 0.000013  loss: 0.1820  time: 0.5696  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [250/563]  eta: 0:02:58  lr: 0.000015  loss: 0.2593  time: 0.5588  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [300/563]  eta: 0:02:29  lr: 0.000015  loss: 0.1670  time: 0.5760  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [350/563]  eta: 0:02:01  lr: 0.000018  loss: 0.1976  time: 0.5631  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [400/563]  eta: 0:01:32  lr: 0.000018  loss: 0.1590  time: 0.5680  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [450/563]  eta: 0:01:04  lr: 0.000020  loss: 0.1058  time: 0.5650  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [500/563]  eta: 0:00:35  lr: 0.000020  loss: 0.1202  time: 0.5746  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [550/563]  eta: 0:00:07  lr: 0.000020  loss: 0.1605  time: 0.5662  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [562/563]  eta: 0:00:00  lr: 0.000020  loss: 0.0525  time: 0.5564  data: 0.0001  max mem: 14771
+Train Epoch: [0] Total time: 0:05:19 (0.5675 s / it)
+Averaged stats: lr: 0.0000  loss: 0.2876
+Generate VQA test result:  [  0/282]  eta: 0:03:40    time: 0.7824  data: 0.2721  max mem: 14771
+Generate VQA test result:  [ 50/282]  eta: 0:00:49    time: 0.2025  data: 0.0001  max mem: 14771
+Generate VQA test result:  [100/282]  eta: 0:00:38    time: 0.2029  data: 0.0001  max mem: 14771
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2028  data: 0.0001  max mem: 14771
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2027  data: 0.0001  max mem: 14771
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2027  data: 0.0001  max mem: 14771
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2014  data: 0.0001  max mem: 14771
+Generate VQA test result: Total time: 0:00:57 (0.2050 s / it)
+{'1': {'precision': 0.9980732177263969, 'recall': 1.0, 'f1-score': 0.9990356798457087, 'support': 518.0}, '2': {'precision': 0.9753086419753086, 'recall': 0.9729064039408867, 'f1-score': 0.9741060419235512, 'support': 406.0}, '3': {'precision': 0.9384615384615385, 'recall': 0.9651898734177216, 'f1-score': 0.9516380655226209, 'support': 316.0}, '4': {'precision': 0.8243243243243243, 'recall': 0.9568627450980393, 'f1-score': 0.8856624319419237, 'support': 255.0}, '5': {'precision': 0.7195121951219512, 'recall': 0.7695652173913043, 'f1-score': 0.7436974789915967, 'support': 230.0}, '6': {'precision': 0.7894736842105263, 'recall': 0.6417112299465241, 'f1-score': 0.7079646017699115, 'support': 187.0}, '7': {'precision': 0.559322033898305, 'recall': 0.75, 'f1-score': 0.6407766990291263, 'support': 132.0}, '8': {'precision': 0.5375, 'recall': 0.3706896551724138, 'f1-score': 0.4387755102040816, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 0.5833333333333334, 'f1-score': 0.7368421052631579, 'support': 96.0}, 'accuracy': 0.8674645390070922, 'macro avg': {'precision': 0.8157750706353722, 'recall': 0.7789176064778025, 'f1-score': 0.786499846054631, 'support': 2256.0}, 'weighted avg': {'precision': 0.8710255658602798, 'recall': 0.8674645390070922, 'f1-score': 0.864009844987234, 'support': 2256.0}}
+Train Epoch: [1]  [  0/563]  eta: 0:15:40  lr: 0.000019  loss: 0.1161  time: 1.6701  data: 0.9173  max mem: 14771
+Train Epoch: [1]  [ 50/563]  eta: 0:04:57  lr: 0.000019  loss: 0.2956  time: 0.5528  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [100/563]  eta: 0:04:24  lr: 0.000019  loss: 0.1346  time: 0.5638  data: 0.0001  max mem: 14771
+Train Epoch: [1]  [150/563]  eta: 0:03:54  lr: 0.000019  loss: 0.1814  time: 0.5643  data: 0.0001  max mem: 14771
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 364, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 301, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 72, in train
+    loss.backward()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,31 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+reshape position embedding from 256 to 576
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/ALBEF.pth
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias', 'fusion_encoder.embeddings.position_ids', 'fusion_encoder.embeddings.word_embeddings.weight', 'fusion_encoder.embeddings.position_embeddings.weight', 'fusion_encoder.embeddings.token_type_embeddings.weight', 'fusion_encoder.embeddings.LayerNorm.weight', 'fusion_encoder.embeddings.LayerNorm.bias'], unexpected_keys=['temp', 'image_queue', 'text_queue', 'queue_ptr', 'vision_proj.weight', 'vision_proj.bias', 'text_proj.weight', 'text_proj.bias', 'itm_head.weight', 'itm_head.bias', 'vision_proj_m.weight', 'vision_proj_m.bias', 'text_proj_m.weight', 'text_proj_m.bias'])
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/ALBEF.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias', 'fusion_encoder.embeddings.position_ids', 'fusion_encoder.embeddings.word_embeddings.weight', 'fusion_encoder.embeddings.position_embeddings.weight', 'fusion_encoder.embeddings.token_type_embeddings.weight', 'fusion_encoder.embeddings.LayerNorm.weight', 'fusion_encoder.embeddings.LayerNorm.bias'], unexpected_keys=['temp', 'image_queue', 'text_queue', 'queue_ptr', 'vision_proj.weight', 'vision_proj.bias', 'text_proj.weight', 'text_proj.bias', 'itm_head.weight', 'itm_head.bias', 'vision_proj_m.weight', 'vision_proj_m.bias', 'text_proj_m.weight', 'text_proj_m.bias'])
+Start training
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 384, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 314, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 87, in train
+    loss = model(image, question_input, answer_input, train=True, alpha=alpha, k=n, weights=weights)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 75, in forward
+    prompt_emb = self.text_encoder.embeddings(prompt.input_ids)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 207, in forward
+    inputs_embeds = self.word_embeddings(input_ids)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+KeyboardInterrupt

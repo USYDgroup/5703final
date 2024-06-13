@@ -1,0 +1,1089 @@
+2024-05-29 17:53:30,779 INFO    StreamThr :283179 [internal.py:wandb_internal():86] W&B internal server running at pid: 283179, started at: 2024-05-29 17:53:30.778415
+2024-05-29 17:53:30,781 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status
+2024-05-29 17:53:30,783 INFO    WriterThread:283179 [datastore.py:open_for_write():87] open: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/run-xs4s421i.wandb
+2024-05-29 17:53:30,785 DEBUG   SenderThread:283179 [sender.py:send():379] send: header
+2024-05-29 17:53:30,785 DEBUG   SenderThread:283179 [sender.py:send():379] send: run
+2024-05-29 17:53:31,703 INFO    SenderThread:283179 [dir_watcher.py:__init__():211] watching files in: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files
+2024-05-29 17:53:31,703 INFO    SenderThread:283179 [sender.py:_start_run_threads():1124] run started: xs4s421i with start time 1716976410.370169
+2024-05-29 17:53:31,718 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: check_version
+2024-05-29 17:53:31,719 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: check_version
+2024-05-29 17:53:36,719 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 17:53:36,719 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:53:36,770 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: run_start
+2024-05-29 17:53:36,773 DEBUG   HandlerThread:283179 [system_info.py:__init__():26] System info init
+2024-05-29 17:53:36,773 DEBUG   HandlerThread:283179 [system_info.py:__init__():41] System info init done
+2024-05-29 17:53:36,774 INFO    HandlerThread:283179 [system_monitor.py:start():194] Starting system monitor
+2024-05-29 17:53:36,774 INFO    SystemMonitor:283179 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-29 17:53:36,774 INFO    HandlerThread:283179 [system_monitor.py:probe():214] Collecting system info
+2024-05-29 17:53:36,774 INFO    SystemMonitor:283179 [interfaces.py:start():190] Started cpu monitoring
+2024-05-29 17:53:36,775 INFO    SystemMonitor:283179 [interfaces.py:start():190] Started disk monitoring
+2024-05-29 17:53:36,776 INFO    SystemMonitor:283179 [interfaces.py:start():190] Started gpu monitoring
+2024-05-29 17:53:36,776 INFO    SystemMonitor:283179 [interfaces.py:start():190] Started memory monitoring
+2024-05-29 17:53:36,778 INFO    SystemMonitor:283179 [interfaces.py:start():190] Started network monitoring
+2024-05-29 17:53:36,813 DEBUG   HandlerThread:283179 [system_info.py:probe():150] Probing system
+2024-05-29 17:53:36,813 DEBUG   HandlerThread:283179 [system_info.py:probe():198] Probing system done
+2024-05-29 17:53:36,813 DEBUG   HandlerThread:283179 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-67-generic-x86_64-with-glibc2.31', 'python': '3.9.19', 'heartbeatAt': '2024-05-29T09:53:36.813561', 'startedAt': '2024-05-29T09:53:25.414973', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'admin1-desktop', 'username': 'admin1', 'executable': '/home/admin1/anconda3/envs/pytorch2.0/bin/python', 'cpu_count': 14, 'cpu_count_logical': 28, 'cpu_freq': {'current': 2.3720714285714295, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 2.862, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 3.0, 'min': 1200.0, 'max': 3300.0}, {'current': 2.893, 'min': 1200.0, 'max': 3300.0}, {'current': 3.3, 'min': 1200.0, 'max': 3300.0}, {'current': 2.724, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}], 'disk': {'/': {'total': 456.8904724121094, 'used': 186.2681884765625}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.46761703491211}}
+2024-05-29 17:53:36,814 INFO    HandlerThread:283179 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-29 17:53:36,814 INFO    HandlerThread:283179 [system_monitor.py:probe():227] Publishing system info
+2024-05-29 17:53:36,814 DEBUG   HandlerThread:283179 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-29 17:53:37,708 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/conda-environment.yaml
+2024-05-29 17:53:39,705 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/conda-environment.yaml
+2024-05-29 17:53:39,788 DEBUG   HandlerThread:283179 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-29 17:53:39,789 INFO    HandlerThread:283179 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-29 17:53:39,790 DEBUG   SenderThread:283179 [sender.py:send():379] send: files
+2024-05-29 17:53:39,790 INFO    SenderThread:283179 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-29 17:53:39,919 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-29 17:53:39,919 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: python_packages
+2024-05-29 17:53:39,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:53:39,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:53:39,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-29 17:53:39,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-29 17:53:39,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-29 17:53:39,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-29 17:53:39,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:53:40,556 DEBUG   SenderThread:283179 [sender.py:send():379] send: telemetry
+2024-05-29 17:53:40,557 DEBUG   SenderThread:283179 [sender.py:send():379] send: history
+2024-05-29 17:53:40,557 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: summary_record
+2024-05-29 17:53:40,560 INFO    SenderThread:283179 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-29 17:53:40,561 DEBUG   SenderThread:283179 [sender.py:send():379] send: history
+2024-05-29 17:53:40,561 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: summary_record
+2024-05-29 17:53:40,562 INFO    SenderThread:283179 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-29 17:53:40,562 DEBUG   SenderThread:283179 [sender.py:send():379] send: history
+2024-05-29 17:53:40,562 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: summary_record
+2024-05-29 17:53:40,565 INFO    SenderThread:283179 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-29 17:53:40,565 DEBUG   SenderThread:283179 [sender.py:send():379] send: history
+2024-05-29 17:53:40,565 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: summary_record
+2024-05-29 17:53:40,566 INFO    SenderThread:283179 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-29 17:53:40,706 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/wandb-metadata.json
+2024-05-29 17:53:40,706 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/requirements.txt
+2024-05-29 17:53:40,707 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/wandb-summary.json
+2024-05-29 17:53:40,788 INFO    wandb-upload_0:283179 [upload_job.py:push():131] Uploaded file /tmp/tmpg1zgpyt9wandb/37rknef7-wandb-metadata.json
+2024-05-29 17:53:42,566 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:53:47,567 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:53:52,568 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:53:54,920 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:53:54,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:53:54,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:53:58,199 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:03,204 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:03,713 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/config.yaml
+2024-05-29 17:54:08,406 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:09,920 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:54:09,920 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:54:09,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:54:14,150 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:19,151 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:24,152 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:24,920 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:54:24,920 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:54:24,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:54:29,190 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:34,191 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:36,779 DEBUG   SystemMonitor:283179 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-29 17:54:36,781 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:54:39,782 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:39,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:54:39,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:54:39,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:54:45,151 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:50,151 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:54:54,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:54:54,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:54:54,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:54:55,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:00,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:05,219 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:06,782 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:55:09,920 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:55:09,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:55:09,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:55:11,192 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:16,193 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:21,194 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:24,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:55:24,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:55:24,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:55:27,173 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:32,174 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:36,783 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:55:37,784 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:39,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:55:39,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:55:39,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:55:43,180 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:48,181 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:53,182 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:55:54,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:55:54,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:55:54,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:55:59,132 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:04,133 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:06,784 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:56:09,786 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:09,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:56:09,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:56:09,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:56:15,219 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:20,220 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:24,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:56:24,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:56:24,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:56:26,154 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:31,155 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:36,155 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:36,785 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:56:39,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:56:39,921 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:56:39,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:56:41,221 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:46,221 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:51,222 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:56:54,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:56:54,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:56:54,962 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:56:57,158 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:02,159 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:06,786 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:57:06,984 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:57:07,773 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:57:07,986 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:09,773 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:57:09,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:57:09,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:57:09,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:57:13,106 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:18,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:19,189 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:57:21,777 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:57:23,191 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:24,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:57:24,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:57:24,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:57:29,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:31,197 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:57:33,781 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:57:34,199 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:36,787 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:57:39,789 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:39,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:57:39,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:57:39,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:57:45,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:46,990 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:57:49,787 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:57:50,991 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:54,921 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:57:54,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:57:54,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:57:56,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:57:59,233 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:58:01,235 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:01,791 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:58:06,236 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:06,789 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:58:09,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:58:09,922 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:58:09,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:58:12,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:16,993 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:58:17,995 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:19,797 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:58:22,996 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:24,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:58:24,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:58:24,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:58:28,110 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:29,258 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:58:31,802 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:58:33,260 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:36,790 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:58:38,791 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:39,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:58:39,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:58:39,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:58:44,130 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:49,131 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:54,131 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:58:54,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:58:54,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:58:54,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:59:00,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:05,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:06,793 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:59:06,993 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:59:09,816 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:59:09,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:59:09,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:59:09,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:59:10,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:15,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:20,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:24,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:59:24,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:59:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:59:26,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:31,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:36,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:36,792 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 17:59:36,989 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 17:59:39,827 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 17:59:39,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:59:39,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:59:39,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:59:42,106 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:47,106 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:52,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 17:59:54,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 17:59:54,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 17:59:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 17:59:57,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:02,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:06,794 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:00:06,997 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:00:07,998 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:09,838 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:00:09,922 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:00:09,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:00:09,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:00:13,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:18,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:23,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:24,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:00:24,923 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:00:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:00:29,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:34,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:36,795 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:00:36,992 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:00:39,847 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:00:39,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:00:39,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:00:39,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:00:40,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:45,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:50,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:00:54,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:00:54,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:00:54,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:00:55,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:00,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:05,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:06,796 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:01:06,994 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:01:09,858 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:01:09,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:01:09,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:01:09,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:01:11,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:16,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:21,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:24,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:01:24,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:01:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:01:27,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:32,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:36,797 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:01:36,993 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:01:37,994 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:39,868 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:01:39,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:01:39,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:01:39,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:01:43,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:48,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:53,110 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:01:54,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:01:54,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:01:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:01:58,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:03,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:06,798 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:02:07,000 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:02:09,001 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:09,878 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:02:09,923 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:02:09,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:02:09,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:02:14,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:19,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:24,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:24,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:02:24,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:02:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:02:30,107 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:35,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:36,799 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:02:37,002 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:02:39,888 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:02:39,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:02:39,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:02:39,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:02:40,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:45,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:50,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:02:54,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:02:54,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:02:54,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:02:56,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:01,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:06,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:06,804 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:03:07,002 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:03:09,899 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:03:09,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:03:09,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:03:09,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:03:11,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:16,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:21,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:24,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:03:24,924 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:03:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:03:27,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:32,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:36,802 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:03:37,803 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:39,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:03:39,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:03:39,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:03:43,108 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:48,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:53,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:03:54,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:03:54,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:03:54,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:03:58,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:03,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:06,806 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:04:07,000 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:04:09,001 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:09,920 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:04:09,924 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:04:09,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:04:09,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:04:14,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:19,110 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:24,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:24,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:04:24,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:04:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:04:30,109 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:35,110 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:36,805 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:04:37,003 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:04:39,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:04:39,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:04:39,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:04:39,934 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:04:40,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:45,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:50,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:04:54,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:04:54,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:04:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:04:55,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:00,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:05,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:06,810 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:05:07,009 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:05:09,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:05:09,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:05:09,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:05:09,943 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:05:11,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:16,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:21,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:24,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:05:24,925 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:05:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:05:26,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:31,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:36,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:36,807 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:05:39,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:05:39,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:05:39,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:05:42,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:47,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:52,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:05:54,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:05:54,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:05:54,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:05:57,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:02,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:06,810 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:06:07,012 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:06:07,964 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:06:08,014 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:09,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:06:09,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:06:09,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:06:13,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:18,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:23,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:24,925 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:06:24,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:06:24,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:06:29,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:34,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:36,809 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:06:37,012 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:06:37,974 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:06:39,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:06:39,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:06:39,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:06:40,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:45,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:50,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:06:54,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:06:54,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:06:54,966 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:06:55,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:00,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:05,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:06,811 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:07:07,014 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:07:07,984 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:07:09,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:07:09,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:07:09,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:07:11,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:16,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:21,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:24,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:07:24,926 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:07:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:07:27,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:32,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:36,812 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:07:37,010 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:07:37,995 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:07:38,011 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:39,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:07:39,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:07:39,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:07:43,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:48,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:53,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:07:54,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:07:54,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:07:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:07:58,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:03,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:06,813 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:08:07,021 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:08:08,005 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:08:09,022 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:09,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:08:09,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:08:09,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:08:14,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:19,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:24,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:24,926 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:08:24,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:08:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:08:30,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:35,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:36,815 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:08:37,016 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:08:38,015 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:08:39,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:08:39,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:08:39,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:08:40,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:45,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:50,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:08:54,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:08:54,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:08:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:08:56,110 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:01,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:06,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:06,816 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:09:07,014 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:09:08,025 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:09:09,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:09:09,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:09:09,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:09:11,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:16,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:21,126 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:24,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:09:24,927 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:09:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:09:27,110 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:32,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:36,817 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:09:37,018 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:09:38,019 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:38,035 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:09:39,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:09:39,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:09:39,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:09:43,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:48,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:53,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:09:54,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:09:54,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:09:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:09:59,111 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:04,112 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:06,818 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:10:07,015 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:10:08,048 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:10:09,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:10:09,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:10:09,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:10:10,126 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:15,127 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:20,128 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:24,927 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:10:24,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:10:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:10:26,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:31,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:36,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:36,819 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:10:37,020 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:10:38,059 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:10:39,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:10:39,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:10:39,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:10:42,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:47,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:52,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:10:54,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:10:54,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:10:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:10:57,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:02,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:06,821 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:11:07,017 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:11:08,018 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:08,069 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:11:09,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:11:09,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:11:09,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:11:13,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:18,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:23,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:24,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:11:24,928 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:11:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:11:28,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:33,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:36,822 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:11:37,025 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:11:38,079 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:11:39,026 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:39,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:11:39,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:11:39,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:11:44,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:49,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:54,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:11:54,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:11:54,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:11:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:12:00,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:05,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:06,823 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:12:07,026 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:12:08,089 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:12:09,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:12:09,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:12:09,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:12:10,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:15,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:20,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:24,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:12:24,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:12:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:12:26,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:31,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:36,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:36,825 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:12:37,029 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:12:38,098 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:12:39,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:12:39,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:12:39,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:12:41,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:46,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:51,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:12:54,928 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:12:54,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:12:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:12:57,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:02,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:06,825 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:13:07,027 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:13:08,029 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:08,108 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:13:09,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:13:09,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:13:09,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:13:13,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:18,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:23,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:24,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:13:24,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:13:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:13:28,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:33,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:36,827 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:13:37,024 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:13:38,118 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:13:39,025 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:39,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:13:39,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:13:39,929 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:13:44,113 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:49,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:54,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:13:54,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:13:54,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:13:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:13:59,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:04,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:06,828 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:14:07,031 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:14:08,127 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:14:09,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:14:09,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:14:09,933 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:14:10,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:15,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:20,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:24,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:14:24,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:14:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:14:26,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:31,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:36,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:36,830 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:14:37,029 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:14:38,138 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:14:39,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:14:39,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:14:39,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:14:42,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:47,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:52,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:14:54,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:14:54,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:14:54,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:14:58,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:03,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:06,831 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:15:07,032 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:15:08,148 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:15:09,033 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:09,929 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:15:09,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:15:09,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:15:14,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:19,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:24,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:24,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:15:24,930 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:15:24,970 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:15:30,114 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:35,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:36,835 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:15:37,037 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:15:38,158 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:15:39,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:15:39,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:15:39,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:15:40,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:45,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:50,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:15:54,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:15:54,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:15:54,978 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:15:56,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:01,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:06,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:06,834 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:16:09,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:16:09,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:16:09,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:16:11,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:16,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:21,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:24,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:16:24,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:16:24,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:16:26,130 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:31,131 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:36,132 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:36,834 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:16:37,033 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:16:39,179 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:16:39,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:16:39,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:16:39,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:16:42,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:47,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:52,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:16:54,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:16:54,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:16:54,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:16:58,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:03,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:06,835 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:17:07,034 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:17:09,035 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:09,188 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:17:09,930 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:17:09,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:17:09,934 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:17:14,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:19,126 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:24,127 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:24,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:17:24,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:17:24,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:17:30,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:35,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:36,836 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:17:37,037 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:17:39,198 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:17:39,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:17:39,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:17:39,934 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:17:41,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:46,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:51,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:17:54,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:17:54,931 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:17:54,978 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:17:56,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:01,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:06,126 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:06,837 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:18:07,044 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:18:09,207 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:18:09,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:18:09,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:18:09,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:18:12,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:17,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:22,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:24,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:18:24,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:18:24,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:18:28,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:33,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:36,839 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:18:37,046 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:18:39,047 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:39,217 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:18:39,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:18:39,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:18:39,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:18:44,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:49,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:54,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:18:54,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:18:54,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:18:54,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:19:00,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:05,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:06,840 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:19:07,042 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:19:09,227 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:19:09,931 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:19:09,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:19:09,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:19:10,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:15,122 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:20,123 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:24,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:19:24,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:19:24,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:19:26,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:31,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:36,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:36,841 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:19:37,044 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:19:39,237 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:19:39,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:19:39,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:19:39,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:19:42,115 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:47,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:52,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:19:54,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:19:54,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:19:54,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:19:58,116 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:03,117 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:06,842 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:20:07,044 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:20:09,046 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:09,247 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:20:09,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:20:09,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:20:09,933 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:20:14,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:19,118 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:24,119 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:24,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:20:24,932 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:20:24,978 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:20:29,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:34,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:36,843 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:20:37,041 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:20:39,258 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:20:39,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:20:39,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:20:39,935 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:20:40,214 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:45,215 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:50,216 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:20:54,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:20:54,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:20:54,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:20:56,120 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:01,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:06,121 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:06,845 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:21:07,047 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:21:09,268 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:21:09,932 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:21:09,933 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:21:09,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:21:11,128 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:16,129 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:21,129 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:24,933 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:21:24,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:21:24,974 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:21:27,124 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:32,125 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:36,846 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:21:37,050 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:21:38,051 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:39,278 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:21:39,933 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:21:39,933 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:21:39,933 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:21:43,128 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:48,129 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:53,129 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:21:54,940 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:21:54,941 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:21:54,943 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:21:58,144 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:03,151 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:07,597 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:22:16,954 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:22:16,955 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:16,955 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:22:16,956 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:22:16,956 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:22:18,961 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:22:22,158 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:25,199 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:22:25,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:22:25,351 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:22:27,537 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:32,538 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:37,539 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:37,596 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:22:40,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:22:40,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:22:40,351 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:22:42,551 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:47,552 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:52,553 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:22:55,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:22:55,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:22:55,351 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:22:58,538 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:03,539 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:07,599 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:23:07,800 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:23:08,802 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:09,997 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:23:10,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:23:10,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:23:10,351 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:23:14,539 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:19,540 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:24,540 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:25,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:23:25,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:23:25,351 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:23:29,547 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:34,548 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:37,599 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:23:37,802 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:23:39,803 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:40,011 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:23:40,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:23:40,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:23:40,352 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:23:45,547 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:50,548 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:23:55,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:23:55,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:23:55,352 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:23:56,547 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:01,548 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:06,549 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:07,600 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:24:07,804 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:24:10,023 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:24:10,200 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:24:10,351 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:24:10,352 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:24:12,544 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:17,545 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:22,546 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:25,201 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:24:25,352 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:24:25,352 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:24:28,545 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:33,546 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:37,602 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:24:37,800 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:24:38,802 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:40,036 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:24:40,201 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:24:40,352 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:24:40,353 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:24:44,548 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:24:49,549 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:01,513 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:25:01,517 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:01,517 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:25:01,519 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:25:06,723 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:07,603 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:25:07,807 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:25:09,522 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:25:10,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:25:10,368 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:25:10,369 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:25:12,554 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:17,555 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:22,556 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:25,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:25:25,368 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:25:25,369 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:25:27,565 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:32,566 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:37,567 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:37,605 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:25:37,803 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:25:40,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:25:40,368 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:25:40,369 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:25:40,535 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:25:43,563 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:48,564 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:53,566 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:25:55,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:25:55,368 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:25:55,369 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:25:59,556 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:04,557 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:07,606 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:26:07,811 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:26:09,813 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:10,218 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:26:10,369 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:26:10,369 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:26:10,547 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:26:15,562 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:20,563 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:25,219 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:26:25,369 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:26:25,370 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:26:26,562 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:31,563 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:26:52,151 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:05,935 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:08,384 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-29 18:27:11,384 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-29 18:27:12,081 DEBUG   SenderThread:283179 [sender.py:send_request():406] send_request: stop_status
+2024-05-29 18:27:12,082 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:12,094 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 18:27:12,094 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 18:27:12,094 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 18:27:12,288 DEBUG   SenderThread:283179 [sender.py:send():379] send: stats
+2024-05-29 18:27:12,305 ERROR   FileStreamThread:283179 [file_stream.py:_handle_response():523] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/wenxuan_zhao/test/xs4s421i/file_stream
+NoneType: None
+2024-05-29 18:27:13,311 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:14,084 INFO    Thread-24 :283179 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240529_175325-xs4s421i/files/output.log
+2024-05-29 18:27:15,066 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 18:27:18,312 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:20,066 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 18:27:23,313 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:25,067 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: keepalive
+2024-05-29 18:27:28,314 DEBUG   HandlerThread:283179 [handler.py:handle_request():146] handle_request: status_report
+2024-05-29 18:27:29,324 INFO    MainThread:283179 [internal.py:handle_exit():76] Internal process exited
+2024-05-29 18:27:29,324 INFO    MainThread:283179 [internal.py:handle_exit():76] Internal process exited

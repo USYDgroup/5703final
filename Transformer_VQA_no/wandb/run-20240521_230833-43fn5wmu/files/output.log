@@ -1,0 +1,20 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+Cosine annealing scheduler will have no effect on the learning rate since t_initial = t_mul = eta_mul = 1.
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [  0/563]  eta: 0:22:09  lr: 0.000010  loss: 0.6989  time: 2.3614  data: 0.7565  max mem: 11149
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 406, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 336, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 86, in train
+    loss = model(image, question_input, answer_input, train=True, alpha=alpha, k=n, weights=weights)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 71, in forward
+    new_image_atts = torch.ones(new_image_embeds.size()[:-1],dtype=torch.long).to(image.device)
+KeyboardInterrupt

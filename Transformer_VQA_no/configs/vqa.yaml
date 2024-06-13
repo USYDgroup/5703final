@@ -1,0 +1,44 @@
+#train_file: ['dataset/pre/pre_train.json']
+#test_file: ['dataset/pre/pre_test.json']
+
+train_file: ['/home/admin1/5703-upload/5703/Transformer_VQA_COCO/vqa_train.json']
+test_file: ['/home/admin1/5703-upload/5703/Transformer_VQA_COCO/vqa_val.json']
+
+# train_file: ['/home/admin1/5703-upload/5703/Transformer_VQA_no/dataset/pre/pre_train.json']
+# test_file: ['/home/admin1/5703-upload/5703/Transformer_VQA_no/dataset/pre/pre_test.json']
+answer_list: 'dataset/vqa2/answer_list.json'
+
+#vqa_root: 'D:/Transformer_VQA-main/dataset/vqa/' #train2014/ 
+#data_root: '/home/admin1/5703-upload/5703/Transformer_VQA_no/dataset/pre'  
+data_root: '/home/admin1/5703-upload/5703/Transformer_VQA_COCO' 
+
+#vg_root: '' #/export/share/datasets/vision/visual-genome/ #image/
+
+image_res: 384
+batch_size_train: 16   
+batch_size_test: 8     
+k_test: 128
+prompt: a photo of [CLS]
+
+alpha: 0.4  #l= (1-a)l1 + a*momentaum
+distill: False 
+warm_up: True
+
+eos: '[SEP]'
+
+bert_config: 'configs/bert_config.json'
+
+
+# optimizer: {opt: adamW, lr: 2e-4, weight_decay: 0.02}
+# optimizer: {opt: adamW, lr: 2e-5, weight_decay: 0.01}
+optimizer: {opt: adamW, lr: 2e-5, weight_decay: 0.05}
+# optimizer: {opt: adamW, lr: 2e-3, weight_decay: 0.01}
+# optimizer: {opt: rmsprop, lr: 2e-5, weight_decay: 0.02, momentum: 0.9} 
+# optimizer: {opt: adadelta, lr: 2e-5, weight_decay: 0.02} 
+# optimizer: {opt: adamW, lr: 2e-5, weight_decay: 0.02}  
+# schedular: {sched: cosine, lr: 2e-5, epochs: 8, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 4, cooldown_epochs: 0}
+schedular: {sched: plateau, lr: 2e-5, epochs: 8, min_lr: 1e-6, decay_rate: 0.99, warmup_lr: 1e-5, warmup_epochs: 4, patience_epochs: 5}
+# schedular: {sched: cosine, lr: 2e-5, epochs: 8, min_lr: 1e-6, decay_rate: 0.99, warmup_lr: 1e-5, warmup_epochs: 4, cooldown_epochs: 0}
+#schedular: {sched: cosine, lr: 2e-5, epochs: 8, min_lr: 1e-6, decay_rate: 0.999, warmup_lr: 1e-5, warmup_epochs: 4, cooldown_epochs: 0}
+# schedular: {sched: cosine, lr: 2e-5, epochs: 8, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 5, cooldown_epochs: 0}
+# schedular: {sched: cosine, lr: 2e-5, epochs: 8, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 4, cooldown_epochs: 1}

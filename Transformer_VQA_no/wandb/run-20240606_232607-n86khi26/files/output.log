@@ -1,0 +1,51 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/output_vqa2/vqa/checkpoint_07.pth ,evaluate.
+<All keys matched successfully>
+Start training
+Generate VQA test result:  [    0/26794]  eta: 7:24:44  acc: 0.6250  time: 0.9959  data: 0.3850  max mem: 4164
+Generate VQA test result:  [   50/26794]  eta: 1:36:24  acc: 0.8235  time: 0.2000  data: 0.0002  max mem: 4194
+Generate VQA test result:  [  100/26794]  eta: 1:33:04  acc: 0.8144  time: 0.2023  data: 0.0002  max mem: 4194
+Generate VQA test result:  [  150/26794]  eta: 1:31:49  acc: 0.8204  time: 0.2018  data: 0.0002  max mem: 4194
+Generate VQA test result:  [  200/26794]  eta: 1:31:07  acc: 0.8265  time: 0.2014  data: 0.0002  max mem: 4194
+Generate VQA test result:  [  250/26794]  eta: 1:30:43  acc: 0.8272  time: 0.2034  data: 0.0002  max mem: 4194
+Generate VQA test result:  [  300/26794]  eta: 1:30:25  acc: 0.8243  time: 0.2040  data: 0.0002  max mem: 4194
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 401, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 360, in main
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 141, in evaluation
+    topk_ids, topk_probs = model(image, question_input, answer_input, train=False, k=config['k_test'])
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 161, in forward
+    question_output = self.text_encoder(quesiton.input_ids,
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 1059, in forward
+    encoder_outputs = self.encoder(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 597, in forward
+    layer_outputs = layer_module(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 473, in forward
+    self_attention_outputs = self.attention(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 402, in forward
+    self_outputs = self.self(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 277, in forward
+    mixed_query_layer = self.query(hidden_states)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

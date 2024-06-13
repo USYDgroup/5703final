@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/wandb/sdk/wandb_config.py", line 162, in __getattr__
+    return self.__getitem__(key)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/wandb/sdk/wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+KeyError: 'batch_size_train'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 398, in <module>
+    wandb.agent(sweep_id, function=main(args, config), count=5)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 192, in main
+    config['batch_size_train'] = wandb.config.batch_size_train
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/wandb/sdk/wandb_config.py", line 164, in __getattr__
+    raise AttributeError(
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'batch_size_train'

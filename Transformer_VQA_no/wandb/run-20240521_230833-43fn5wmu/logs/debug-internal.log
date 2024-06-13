@@ -1,0 +1,345 @@
+2024-05-21 23:08:34,002 INFO    StreamThr :49711 [internal.py:wandb_internal():86] W&B internal server running at pid: 49711, started at: 2024-05-21 23:08:34.001647
+2024-05-21 23:08:34,005 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status
+2024-05-21 23:08:34,009 INFO    WriterThread:49711 [datastore.py:open_for_write():87] open: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/run-43fn5wmu.wandb
+2024-05-21 23:08:34,012 DEBUG   SenderThread:49711 [sender.py:send():379] send: header
+2024-05-21 23:08:34,012 DEBUG   SenderThread:49711 [sender.py:send():379] send: run
+2024-05-21 23:08:37,348 INFO    SenderThread:49711 [dir_watcher.py:__init__():211] watching files in: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files
+2024-05-21 23:08:37,349 INFO    SenderThread:49711 [sender.py:_start_run_threads():1124] run started: 43fn5wmu with start time 1716304114.000649
+2024-05-21 23:08:37,365 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: check_version
+2024-05-21 23:08:37,365 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: check_version
+2024-05-21 23:08:38,183 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: run_start
+2024-05-21 23:08:38,218 DEBUG   HandlerThread:49711 [system_info.py:__init__():26] System info init
+2024-05-21 23:08:38,218 DEBUG   HandlerThread:49711 [system_info.py:__init__():41] System info init done
+2024-05-21 23:08:38,218 INFO    HandlerThread:49711 [system_monitor.py:start():194] Starting system monitor
+2024-05-21 23:08:38,218 INFO    SystemMonitor:49711 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-21 23:08:38,219 INFO    HandlerThread:49711 [system_monitor.py:probe():214] Collecting system info
+2024-05-21 23:08:38,220 INFO    SystemMonitor:49711 [interfaces.py:start():190] Started cpu monitoring
+2024-05-21 23:08:38,220 INFO    SystemMonitor:49711 [interfaces.py:start():190] Started disk monitoring
+2024-05-21 23:08:38,222 INFO    SystemMonitor:49711 [interfaces.py:start():190] Started gpu monitoring
+2024-05-21 23:08:38,223 INFO    SystemMonitor:49711 [interfaces.py:start():190] Started memory monitoring
+2024-05-21 23:08:38,224 INFO    SystemMonitor:49711 [interfaces.py:start():190] Started network monitoring
+2024-05-21 23:08:38,245 DEBUG   HandlerThread:49711 [system_info.py:probe():150] Probing system
+2024-05-21 23:08:38,245 DEBUG   HandlerThread:49711 [system_info.py:probe():198] Probing system done
+2024-05-21 23:08:38,245 DEBUG   HandlerThread:49711 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-67-generic-x86_64-with-glibc2.31', 'python': '3.9.19', 'heartbeatAt': '2024-05-21T15:08:38.245404', 'startedAt': '2024-05-21T15:08:33.992157', 'docker': None, 'cuda': None, 'args': ('--config', './configs/vqa.yaml', '--output_dir', 'output/vqa', '--checkpoint', '/home/admin1/5703-upload/5703/Transformer_VQA/8-epoch.pth', '--checkpoint_before_vqa2', '/home/admin1/5703-upload/5703/Transformer_VQA/ALBEF.pth'), 'state': 'running', 'program': '/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py', 'codePathLocal': 'run.py', 'codePath': 'run.py', 'host': 'admin1-desktop', 'username': 'admin1', 'executable': '/home/admin1/anconda3/envs/pytorch2.0/bin/python', 'cpu_count': 14, 'cpu_count_logical': 28, 'cpu_freq': {'current': 1.2966428571428572, 'min': 1200.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.859, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.6, 'min': 1200.0, 'max': 3300.0}, {'current': 1.3, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.6, 'min': 1200.0, 'max': 3300.0}, {'current': 1.3, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.3, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}, {'current': 1.2, 'min': 1200.0, 'max': 3300.0}], 'disk': {'/': {'total': 456.8904724121094, 'used': 112.25056838989258}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 15.46761703491211}}
+2024-05-21 23:08:38,245 INFO    HandlerThread:49711 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-21 23:08:38,245 INFO    HandlerThread:49711 [system_monitor.py:probe():227] Publishing system info
+2024-05-21 23:08:38,245 DEBUG   HandlerThread:49711 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-21 23:08:38,353 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/conda-environment.yaml
+2024-05-21 23:08:40,350 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/conda-environment.yaml
+2024-05-21 23:08:40,471 DEBUG   HandlerThread:49711 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-21 23:08:40,472 INFO    HandlerThread:49711 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-21 23:08:40,476 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:08:40,478 DEBUG   SenderThread:49711 [sender.py:send():379] send: files
+2024-05-21 23:08:40,478 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2024-05-21 23:08:40,578 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: python_packages
+2024-05-21 23:08:40,578 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: python_packages
+2024-05-21 23:08:40,579 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 23:08:40,580 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 23:08:40,583 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 23:08:41,166 DEBUG   SenderThread:49711 [sender.py:send():379] send: telemetry
+2024-05-21 23:08:41,350 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-metadata.json
+2024-05-21 23:08:41,351 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:08:41,351 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/requirements.txt
+2024-05-21 23:08:41,739 INFO    wandb-upload_0:49711 [upload_job.py:push():131] Uploaded file /tmp/tmp94hbqm5pwandb/1zwcljwb-wandb-metadata.json
+2024-05-21 23:08:43,351 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:08:44,785 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:08:47,353 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:08:49,354 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:08:49,694 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:49,696 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:49,697 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:49,697 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:50,287 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:50,288 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:50,289 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:50,289 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:08:50,290 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:50,354 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_created():271] file/dir created: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:50,866 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:50,867 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:50,867 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:50,868 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:51,355 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:51,355 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:08:51,425 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:51,427 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:51,428 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:51,428 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:51,963 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:51,964 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:51,964 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:51,965 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:52,355 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:52,523 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:52,524 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:52,525 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:52,525 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:53,064 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:53,066 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:53,066 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:53,067 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:53,355 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:53,633 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:53,634 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:53,634 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:53,637 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:54,189 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:54,190 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:54,191 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:54,191 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:54,356 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:54,750 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:54,751 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:54,751 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:54,752 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:55,296 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:55,298 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:55,298 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:55,298 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:08:55,299 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:55,356 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:55,579 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 23:08:55,579 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: stop_status
+2024-05-21 23:08:55,583 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 23:08:55,854 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:55,855 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:55,855 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:55,858 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:56,357 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:56,411 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:56,412 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:56,413 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:56,413 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:56,967 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:56,968 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:56,968 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:56,969 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:57,357 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:57,509 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:57,510 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:57,510 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:57,511 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:58,053 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:58,054 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:58,054 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:58,057 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:58,358 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:58,593 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:58,594 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:58,594 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:58,595 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:59,153 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:59,154 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:59,154 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:59,155 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:08:59,358 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:08:59,692 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:08:59,693 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:08:59,693 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:08:59,693 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:00,256 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:00,257 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:00,257 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:00,259 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:00,358 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:00,796 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:00,797 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:00,797 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:00,798 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:09:00,799 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:01,357 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:01,359 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:01,359 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:01,360 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:01,360 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:01,916 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:01,917 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:01,918 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:01,918 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:02,361 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:02,477 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:02,478 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:02,478 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:02,481 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:03,019 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:03,019 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:03,020 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:03,020 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:03,361 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:03,590 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:03,591 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:03,592 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:03,592 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:03,593 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:03,593 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:03,593 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:03,594 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:04,148 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:04,149 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:04,149 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:04,150 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:04,362 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:04,695 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:04,696 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:04,696 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:04,698 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:05,257 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:05,258 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:05,259 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:05,259 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:05,362 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:05,837 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:05,838 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:05,847 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:09:06,072 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:06,072 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:06,362 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/config.yaml
+2024-05-21 23:09:06,363 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:06,421 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:06,422 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:06,422 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:06,422 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:06,992 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 23:09:06,993 DEBUG   SenderThread:49711 [sender.py:send():379] send: history
+2024-05-21 23:09:06,993 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: summary_record
+2024-05-21 23:09:06,996 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:07,202 DEBUG   SenderThread:49711 [sender.py:send():379] send: exit
+2024-05-21 23:09:07,202 INFO    SenderThread:49711 [sender.py:send_exit():586] handling exit code: 255
+2024-05-21 23:09:07,202 INFO    SenderThread:49711 [sender.py:send_exit():588] handling runtime: 29
+2024-05-21 23:09:07,203 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:07,203 INFO    SenderThread:49711 [sender.py:send_exit():594] send defer
+2024-05-21 23:09:07,204 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,204 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-21 23:09:07,204 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,205 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-05-21 23:09:07,205 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 1
+2024-05-21 23:09:07,205 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,205 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-21 23:09:07,205 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,205 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-05-21 23:09:07,205 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 2
+2024-05-21 23:09:07,206 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,206 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-21 23:09:07,206 INFO    HandlerThread:49711 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-21 23:09:07,206 DEBUG   SystemMonitor:49711 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-21 23:09:07,207 DEBUG   SystemMonitor:49711 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-21 23:09:07,207 INFO    HandlerThread:49711 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-21 23:09:07,207 DEBUG   SystemMonitor:49711 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-21 23:09:07,208 INFO    HandlerThread:49711 [interfaces.py:finish():202] Joined disk monitor
+2024-05-21 23:09:07,289 INFO    HandlerThread:49711 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-21 23:09:07,290 INFO    HandlerThread:49711 [interfaces.py:finish():202] Joined memory monitor
+2024-05-21 23:09:07,290 INFO    HandlerThread:49711 [interfaces.py:finish():202] Joined network monitor
+2024-05-21 23:09:07,291 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,291 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-05-21 23:09:07,291 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 3
+2024-05-21 23:09:07,291 DEBUG   SenderThread:49711 [sender.py:send():379] send: stats
+2024-05-21 23:09:07,291 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,292 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-21 23:09:07,292 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,292 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-05-21 23:09:07,292 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 4
+2024-05-21 23:09:07,293 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,293 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-21 23:09:07,293 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,293 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-05-21 23:09:07,293 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 5
+2024-05-21 23:09:07,293 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,293 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-21 23:09:07,294 DEBUG   SenderThread:49711 [sender.py:send():379] send: summary
+2024-05-21 23:09:07,294 INFO    SenderThread:49711 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2024-05-21 23:09:07,295 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,295 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-05-21 23:09:07,295 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 6
+2024-05-21 23:09:07,295 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,295 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-21 23:09:07,296 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,296 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-05-21 23:09:07,296 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 7
+2024-05-21 23:09:07,296 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 23:09:07,296 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:07,296 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-21 23:09:07,297 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:07,297 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-05-21 23:09:07,363 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:08,202 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 23:09:09,364 INFO    Thread-12 :49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:09:10,820 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 8
+2024-05-21 23:09:10,821 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 23:09:10,821 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:10,821 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-21 23:09:10,822 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:10,822 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-05-21 23:09:10,822 INFO    SenderThread:49711 [job_builder.py:build():318] Attempting to build job artifact
+2024-05-21 23:09:10,823 INFO    SenderThread:49711 [job_builder.py:_get_source_type():466] no source found
+2024-05-21 23:09:10,823 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 9
+2024-05-21 23:09:10,823 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:10,823 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-21 23:09:10,824 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:10,824 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-05-21 23:09:10,824 INFO    SenderThread:49711 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-21 23:09:11,204 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 23:09:11,365 INFO    SenderThread:49711 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:09:11,366 INFO    SenderThread:49711 [dir_watcher.py:finish():388] scan: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files
+2024-05-21 23:09:11,366 INFO    SenderThread:49711 [dir_watcher.py:finish():402] scan save: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/requirements.txt requirements.txt
+2024-05-21 23:09:11,367 INFO    SenderThread:49711 [dir_watcher.py:finish():402] scan save: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/conda-environment.yaml conda-environment.yaml
+2024-05-21 23:09:11,367 INFO    SenderThread:49711 [dir_watcher.py:finish():402] scan save: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-metadata.json wandb-metadata.json
+2024-05-21 23:09:11,367 INFO    SenderThread:49711 [dir_watcher.py:finish():402] scan save: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json wandb-summary.json
+2024-05-21 23:09:11,368 INFO    SenderThread:49711 [dir_watcher.py:finish():402] scan save: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log output.log
+2024-05-21 23:09:11,368 INFO    SenderThread:49711 [dir_watcher.py:finish():402] scan save: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/config.yaml config.yaml
+2024-05-21 23:09:11,377 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 10
+2024-05-21 23:09:11,383 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 23:09:11,392 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:11,392 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-21 23:09:11,392 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:11,392 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-05-21 23:09:11,393 INFO    SenderThread:49711 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-21 23:09:11,951 INFO    wandb-upload_0:49711 [upload_job.py:push():131] Uploaded file /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/requirements.txt
+2024-05-21 23:09:12,204 INFO    wandb-upload_2:49711 [upload_job.py:push():131] Uploaded file /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/wandb-summary.json
+2024-05-21 23:09:12,206 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 23:09:12,206 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 23:09:12,396 INFO    wandb-upload_1:49711 [upload_job.py:push():131] Uploaded file /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/conda-environment.yaml
+2024-05-21 23:09:12,496 INFO    wandb-upload_3:49711 [upload_job.py:push():131] Uploaded file /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/output.log
+2024-05-21 23:09:12,498 INFO    wandb-upload_4:49711 [upload_job.py:push():131] Uploaded file /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/files/config.yaml
+2024-05-21 23:09:12,698 INFO    Thread-11 :49711 [sender.py:transition_state():614] send defer: 11
+2024-05-21 23:09:12,699 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:12,699 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-21 23:09:12,700 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:12,700 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-05-21 23:09:12,700 INFO    SenderThread:49711 [file_pusher.py:join():178] waiting for file pusher
+2024-05-21 23:09:12,700 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 12
+2024-05-21 23:09:12,701 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:12,701 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-21 23:09:12,701 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:12,702 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-05-21 23:09:12,702 INFO    SenderThread:49711 [file_stream.py:finish():614] file stream finish called
+2024-05-21 23:09:12,919 INFO    SenderThread:49711 [file_stream.py:finish():618] file stream finish is done
+2024-05-21 23:09:12,919 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 13
+2024-05-21 23:09:12,919 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:12,919 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-21 23:09:12,920 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:12,920 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-05-21 23:09:12,920 INFO    SenderThread:49711 [sender.py:transition_state():614] send defer: 14
+2024-05-21 23:09:12,921 DEBUG   SenderThread:49711 [sender.py:send():379] send: final
+2024-05-21 23:09:12,921 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: defer
+2024-05-21 23:09:12,921 DEBUG   SenderThread:49711 [sender.py:send():379] send: footer
+2024-05-21 23:09:12,922 INFO    HandlerThread:49711 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-21 23:09:12,922 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: defer
+2024-05-21 23:09:12,922 INFO    SenderThread:49711 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-05-21 23:09:12,923 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 23:09:12,924 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 23:09:12,925 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-21 23:09:12,925 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: poll_exit
+2024-05-21 23:09:12,926 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: server_info
+2024-05-21 23:09:12,927 DEBUG   SenderThread:49711 [sender.py:send_request():406] send_request: server_info
+2024-05-21 23:09:12,930 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-21 23:09:12,931 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-21 23:09:12,932 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 23:09:13,174 INFO    MainThread:49711 [wandb_run.py:_footer_history_summary_info():3920] rendering history
+2024-05-21 23:09:13,174 INFO    MainThread:49711 [wandb_run.py:_footer_history_summary_info():3952] rendering summary
+2024-05-21 23:09:13,174 INFO    MainThread:49711 [wandb_run.py:_footer_sync_info():3879] logging synced files
+2024-05-21 23:09:13,175 DEBUG   HandlerThread:49711 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-21 23:09:13,175 INFO    HandlerThread:49711 [handler.py:finish():866] shutting down handler
+2024-05-21 23:09:13,927 INFO    WriterThread:49711 [datastore.py:close():296] close: /home/admin1/5703-upload/5703/Transformer_VQA_no/wandb/run-20240521_230833-43fn5wmu/run-43fn5wmu.wandb
+2024-05-21 23:09:14,173 INFO    SenderThread:49711 [sender.py:finish():1546] shutting down sender
+2024-05-21 23:09:14,174 INFO    SenderThread:49711 [file_pusher.py:finish():172] shutting down file pusher
+2024-05-21 23:09:14,174 INFO    SenderThread:49711 [file_pusher.py:join():178] waiting for file pusher

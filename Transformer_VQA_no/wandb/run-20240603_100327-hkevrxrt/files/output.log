@@ -1,0 +1,74 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['text_encoder.encoder.layer.12.attention.self.query.weight', 'text_encoder.encoder.layer.12.attention.self.query.bias', 'text_encoder.encoder.layer.12.attention.self.key.weight', 'text_encoder.encoder.layer.12.attention.self.key.bias', 'text_encoder.encoder.layer.12.attention.self.value.weight', 'text_encoder.encoder.layer.12.attention.self.value.bias', 'text_encoder.encoder.layer.12.attention.output.dense.weight', 'text_encoder.encoder.layer.12.attention.output.dense.bias', 'text_encoder.encoder.layer.12.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.12.crossattention.self.query.weight', 'text_encoder.encoder.layer.12.crossattention.self.query.bias', 'text_encoder.encoder.layer.12.crossattention.self.key.weight', 'text_encoder.encoder.layer.12.crossattention.self.key.bias', 'text_encoder.encoder.layer.12.crossattention.self.value.weight', 'text_encoder.encoder.layer.12.crossattention.self.value.bias', 'text_encoder.encoder.layer.12.crossattention.output.dense.weight', 'text_encoder.encoder.layer.12.crossattention.output.dense.bias', 'text_encoder.encoder.layer.12.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.12.intermediate.dense.weight', 'text_encoder.encoder.layer.12.intermediate.dense.bias', 'text_encoder.encoder.layer.12.output.dense.weight', 'text_encoder.encoder.layer.12.output.dense.bias', 'text_encoder.encoder.layer.12.output.LayerNorm.weight', 'text_encoder.encoder.layer.12.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.attention.self.query.weight', 'text_encoder.encoder.layer.13.attention.self.query.bias', 'text_encoder.encoder.layer.13.attention.self.key.weight', 'text_encoder.encoder.layer.13.attention.self.key.bias', 'text_encoder.encoder.layer.13.attention.self.value.weight', 'text_encoder.encoder.layer.13.attention.self.value.bias', 'text_encoder.encoder.layer.13.attention.output.dense.weight', 'text_encoder.encoder.layer.13.attention.output.dense.bias', 'text_encoder.encoder.layer.13.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.crossattention.self.query.weight', 'text_encoder.encoder.layer.13.crossattention.self.query.bias', 'text_encoder.encoder.layer.13.crossattention.self.key.weight', 'text_encoder.encoder.layer.13.crossattention.self.key.bias', 'text_encoder.encoder.layer.13.crossattention.self.value.weight', 'text_encoder.encoder.layer.13.crossattention.self.value.bias', 'text_encoder.encoder.layer.13.crossattention.output.dense.weight', 'text_encoder.encoder.layer.13.crossattention.output.dense.bias', 'text_encoder.encoder.layer.13.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.13.intermediate.dense.weight', 'text_encoder.encoder.layer.13.intermediate.dense.bias', 'text_encoder.encoder.layer.13.output.dense.weight', 'text_encoder.encoder.layer.13.output.dense.bias', 'text_encoder.encoder.layer.13.output.LayerNorm.weight', 'text_encoder.encoder.layer.13.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.attention.self.query.weight', 'text_encoder.encoder.layer.14.attention.self.query.bias', 'text_encoder.encoder.layer.14.attention.self.key.weight', 'text_encoder.encoder.layer.14.attention.self.key.bias', 'text_encoder.encoder.layer.14.attention.self.value.weight', 'text_encoder.encoder.layer.14.attention.self.value.bias', 'text_encoder.encoder.layer.14.attention.output.dense.weight', 'text_encoder.encoder.layer.14.attention.output.dense.bias', 'text_encoder.encoder.layer.14.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.crossattention.self.query.weight', 'text_encoder.encoder.layer.14.crossattention.self.query.bias', 'text_encoder.encoder.layer.14.crossattention.self.key.weight', 'text_encoder.encoder.layer.14.crossattention.self.key.bias', 'text_encoder.encoder.layer.14.crossattention.self.value.weight', 'text_encoder.encoder.layer.14.crossattention.self.value.bias', 'text_encoder.encoder.layer.14.crossattention.output.dense.weight', 'text_encoder.encoder.layer.14.crossattention.output.dense.bias', 'text_encoder.encoder.layer.14.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.14.intermediate.dense.weight', 'text_encoder.encoder.layer.14.intermediate.dense.bias', 'text_encoder.encoder.layer.14.output.dense.weight', 'text_encoder.encoder.layer.14.output.dense.bias', 'text_encoder.encoder.layer.14.output.LayerNorm.weight', 'text_encoder.encoder.layer.14.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.attention.self.query.weight', 'text_encoder.encoder.layer.15.attention.self.query.bias', 'text_encoder.encoder.layer.15.attention.self.key.weight', 'text_encoder.encoder.layer.15.attention.self.key.bias', 'text_encoder.encoder.layer.15.attention.self.value.weight', 'text_encoder.encoder.layer.15.attention.self.value.bias', 'text_encoder.encoder.layer.15.attention.output.dense.weight', 'text_encoder.encoder.layer.15.attention.output.dense.bias', 'text_encoder.encoder.layer.15.attention.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.attention.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.crossattention.self.query.weight', 'text_encoder.encoder.layer.15.crossattention.self.query.bias', 'text_encoder.encoder.layer.15.crossattention.self.key.weight', 'text_encoder.encoder.layer.15.crossattention.self.key.bias', 'text_encoder.encoder.layer.15.crossattention.self.value.weight', 'text_encoder.encoder.layer.15.crossattention.self.value.bias', 'text_encoder.encoder.layer.15.crossattention.output.dense.weight', 'text_encoder.encoder.layer.15.crossattention.output.dense.bias', 'text_encoder.encoder.layer.15.crossattention.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.crossattention.output.LayerNorm.bias', 'text_encoder.encoder.layer.15.intermediate.dense.weight', 'text_encoder.encoder.layer.15.intermediate.dense.bias', 'text_encoder.encoder.layer.15.output.dense.weight', 'text_encoder.encoder.layer.15.output.dense.bias', 'text_encoder.encoder.layer.15.output.LayerNorm.weight', 'text_encoder.encoder.layer.15.output.LayerNorm.bias', 'inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [   0/1125]  eta: 1:00:26  lr: 0.000010  loss: 1.6340  time: 3.2233  data: 1.3498  max mem: 11560
+Train Epoch: [0]  [  50/1125]  eta: 0:11:26  lr: 0.000010  loss: 0.4809  time: 0.5939  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 100/1125]  eta: 0:10:28  lr: 0.000010  loss: 0.5360  time: 0.5860  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 150/1125]  eta: 0:09:51  lr: 0.000013  loss: 0.2844  time: 0.5969  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 200/1125]  eta: 0:09:17  lr: 0.000013  loss: 0.3204  time: 0.5939  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 250/1125]  eta: 0:08:46  lr: 0.000015  loss: 0.2909  time: 0.5911  data: 0.0001  max mem: 15655
+Train Epoch: [0]  [ 300/1125]  eta: 0:08:13  lr: 0.000015  loss: 0.3931  time: 0.5848  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 350/1125]  eta: 0:07:43  lr: 0.000018  loss: 0.2836  time: 0.6084  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 400/1125]  eta: 0:07:12  lr: 0.000018  loss: 0.3848  time: 0.5879  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 450/1125]  eta: 0:06:42  lr: 0.000020  loss: 0.5091  time: 0.5953  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 500/1125]  eta: 0:06:12  lr: 0.000020  loss: 0.3389  time: 0.5925  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 550/1125]  eta: 0:05:42  lr: 0.000020  loss: 0.3617  time: 0.5780  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 600/1125]  eta: 0:05:12  lr: 0.000020  loss: 0.1152  time: 0.5888  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 650/1125]  eta: 0:04:42  lr: 0.000020  loss: 0.1649  time: 0.5825  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 700/1125]  eta: 0:04:12  lr: 0.000020  loss: 0.2116  time: 0.5879  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 750/1125]  eta: 0:03:42  lr: 0.000020  loss: 0.1057  time: 0.5919  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 800/1125]  eta: 0:03:12  lr: 0.000020  loss: 0.2055  time: 0.5963  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 850/1125]  eta: 0:02:43  lr: 0.000020  loss: 0.2081  time: 0.6000  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 900/1125]  eta: 0:02:13  lr: 0.000020  loss: 0.2867  time: 0.5911  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [ 950/1125]  eta: 0:01:43  lr: 0.000020  loss: 0.1808  time: 0.6018  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [1000/1125]  eta: 0:01:14  lr: 0.000020  loss: 0.3656  time: 0.5869  data: 0.0001  max mem: 15656
+Train Epoch: [0]  [1050/1125]  eta: 0:00:44  lr: 0.000020  loss: 0.1089  time: 0.5854  data: 0.0001  max mem: 15660
+Train Epoch: [0]  [1100/1125]  eta: 0:00:14  lr: 0.000020  loss: 0.1357  time: 0.5859  data: 0.0001  max mem: 15660
+Train Epoch: [0]  [1124/1125]  eta: 0:00:00  lr: 0.000020  loss: 0.1673  time: 0.5803  data: 0.0001  max mem: 15660
+Train Epoch: [0] Total time: 0:11:06 (0.5925 s / it)
+Averaged stats: lr: 0.0000  loss: 0.2647
+Generate VQA test result:  [  0/563]  eta: 0:08:27    time: 0.9020  data: 0.3545  max mem: 15660
+Generate VQA test result:  [ 50/563]  eta: 0:01:54    time: 0.2093  data: 0.0001  max mem: 15660
+Generate VQA test result:  [100/563]  eta: 0:01:40    time: 0.2090  data: 0.0001  max mem: 15660
+Generate VQA test result:  [150/563]  eta: 0:01:28    time: 0.2097  data: 0.0001  max mem: 15660
+Generate VQA test result:  [200/563]  eta: 0:01:17    time: 0.2096  data: 0.0001  max mem: 15660
+Generate VQA test result:  [250/563]  eta: 0:01:06    time: 0.2095  data: 0.0001  max mem: 15660
+Generate VQA test result:  [300/563]  eta: 0:00:55    time: 0.2101  data: 0.0001  max mem: 15660
+Generate VQA test result:  [350/563]  eta: 0:00:45    time: 0.2098  data: 0.0001  max mem: 15660
+Generate VQA test result:  [400/563]  eta: 0:00:34    time: 0.2099  data: 0.0001  max mem: 15660
+Generate VQA test result:  [450/563]  eta: 0:00:23    time: 0.2111  data: 0.0002  max mem: 15660
+Generate VQA test result:  [500/563]  eta: 0:00:13    time: 0.2097  data: 0.0001  max mem: 15660
+Generate VQA test result:  [550/563]  eta: 0:00:02    time: 0.2093  data: 0.0001  max mem: 15660
+Generate VQA test result:  [562/563]  eta: 0:00:00    time: 0.2084  data: 0.0001  max mem: 15660
+Generate VQA test result: Total time: 0:01:58 (0.2112 s / it)
+0.94449378330373
+Train Epoch: [1]  [   0/1125]  eta: 0:35:21  lr: 0.000019  loss: 0.1047  time: 1.8861  data: 1.1931  max mem: 15660
+Train Epoch: [1]  [  50/1125]  eta: 0:10:52  lr: 0.000019  loss: 0.4398  time: 0.5822  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 100/1125]  eta: 0:10:13  lr: 0.000019  loss: 0.0577  time: 0.5871  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 150/1125]  eta: 0:09:40  lr: 0.000019  loss: 0.7781  time: 0.5846  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 200/1125]  eta: 0:09:10  lr: 0.000019  loss: 0.1125  time: 0.5938  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 250/1125]  eta: 0:08:39  lr: 0.000019  loss: 0.0567  time: 0.5811  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 300/1125]  eta: 0:08:08  lr: 0.000019  loss: 0.0389  time: 0.5910  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 350/1125]  eta: 0:07:38  lr: 0.000019  loss: 0.0706  time: 0.5885  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 400/1125]  eta: 0:07:09  lr: 0.000019  loss: 0.0429  time: 0.5947  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 450/1125]  eta: 0:06:39  lr: 0.000019  loss: 0.0221  time: 0.5884  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 500/1125]  eta: 0:06:09  lr: 0.000019  loss: 0.0250  time: 0.5741  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 550/1125]  eta: 0:05:39  lr: 0.000019  loss: 0.1171  time: 0.5934  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 600/1125]  eta: 0:05:10  lr: 0.000019  loss: 0.0650  time: 0.5943  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 650/1125]  eta: 0:04:40  lr: 0.000019  loss: 0.0490  time: 0.5943  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 700/1125]  eta: 0:04:10  lr: 0.000019  loss: 0.0159  time: 0.5868  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 750/1125]  eta: 0:03:41  lr: 0.000019  loss: 0.0703  time: 0.5899  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 800/1125]  eta: 0:03:11  lr: 0.000019  loss: 0.0296  time: 0.5950  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 850/1125]  eta: 0:02:42  lr: 0.000019  loss: 0.0889  time: 0.5887  data: 0.0001  max mem: 15660
+Train Epoch: [1]  [ 900/1125]  eta: 0:02:12  lr: 0.000019  loss: 0.0211  time: 0.5963  data: 0.0001  max mem: 15660
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 426, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 356, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py", line 94, in train
+    metric_logger.update(loss=loss.item())
+KeyboardInterrupt

@@ -1,0 +1,10 @@
+wandb_version: 1
+
+batch_size_test:
+  value: 16
+batch_size_train:
+  value: 16
+optimizer.opt:
+  value: RMSprop
+scheduler.sched:
+  value: StepLR

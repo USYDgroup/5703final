@@ -1,0 +1,262 @@
+2024-05-21 22:09:39 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 311\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:39 DEBUG send: b'{"query": "query RunStoppedStatus($projectName: String, $entityName: String, $runId: String!) {\\n  project(name: $projectName, entityName: $entityName) {\\n    run(name: $runId) {\\n      stopped\\n    }\\n  }\\n}\\n", "variables": {"projectName": "my-first-sweep", "entityName": "wenxuan_zhao", "runId": "6k2ssk95"}}'
+2024-05-21 22:09:39 DEBUG send: b'PUT /wandb-production.appspot.com/wenxuan_zhao/my-first-sweep/6k2ssk95/wandb-metadata.json?Expires=1716386979&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=IzfA8iIaveXIsNe%2FGGnu1C3AIqeyDiQkIb%2BmBLoG23r6CbV2kVGeZQFSXaJ6e7AOUUcUi7ysXpIbHPv4VPry%2FaDmvt9wArZRw1k8avRsjLGib18iBsvuNwpKz7TihlhHiCHaNbF645QcCCP3g%2Bb5go17y9MdWXVMhMRWd5SAN9gFLZUt0YHsFcGnb6qhygU%2BKCtbLKkpDSy9MXy3%2BoxQ%2Ftv33n4Zoff9qw4mf4zUPsVYWR1lyz7v3xO5BacQDZOkPHG%2FdoYtKnfbSI9hgAYtm6J1XjjA3ZrdMcP3xP0JHg4Zmv0z3YU1LO4e3Ry4bMMMjrCtEXRqXwQfkfDc2059yg%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 4241\r\n\r\n'
+2024-05-21 22:09:39 DEBUG send: b'{\n    "os": "Linux-5.15.0-67-generic-x86_64-with-glibc2.31",\n    "python": "3.9.19",\n    "heartbeatAt": "2024-05-21T14:09:36.571528",\n    "startedAt": "2024-05-21T14:09:30.578602",\n    "docker": null,\n    "cuda": null,\n    "args": [\n        "--config",\n        "./configs/vqa.yaml",\n        "--output_dir",\n        "output/vqa",\n        "--checkpoint",\n        "/home/admin1/5703-upload/5703/Transformer_VQA/8-epoch.pth",\n        "--checkpoint_before_vqa2",\n        "/home/admin1/5703-upload/5703/Transformer_VQA/ALBEF.pth"\n    ],\n    "state": "running",\n    "program": "/home/admin1/5703-upload/5703/Transformer_VQA_no/run.py",\n    "codePathLocal": "run.py",\n    "codePath": "run.py",\n    "host": "admin1-desktop",\n    "username": "admin1",\n    "executable": "/home/admin1/anconda3/envs/pytorch2.0/bin/python",\n    "cpu_count": 14,\n    "cpu_count_logical": 28,\n    "cpu_freq": {\n        "current": 1.2862500000000001,\n        "min": 1200.0,\n        "max": 3300.0\n    },\n    "cpu_freq_per_core": [\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.3,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 2.046,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.3,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.627,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.6,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        },\n        {\n            "current": 1.2,\n            "min": 1200.0,\n            "max": 3300.0\n        }\n    ],\n    "disk": {\n        "/": {\n            "total": 456.8904724121094,\n            "used": 112.24805068969727\n        }\n    },\n    "gpu": "NVIDIA GeForce RTX 3090",\n    "gpu_count": 1,\n    "gpu_devices": [\n        {\n            "name": "NVIDIA GeForce RTX 3090",\n            "memory_total": 25769803776\n        }\n    ],\n    "memory": {\n        "total": 15.46761703491211\n    }\n}\n'
+2024-05-21 22:09:39 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:39 DEBUG header: ETag: "e418db178d23c97eced7a5a04e7023ef"
+2024-05-21 22:09:39 DEBUG header: x-goog-generation: 1716300579609673
+2024-05-21 22:09:39 DEBUG header: x-goog-metageneration: 1
+2024-05-21 22:09:39 DEBUG header: x-goog-hash: crc32c=3d0JkA==
+2024-05-21 22:09:39 DEBUG header: x-goog-hash: md5=5BjbF40jyX7O16WgTnAj7w==
+2024-05-21 22:09:39 DEBUG header: x-goog-stored-content-length: 4241
+2024-05-21 22:09:39 DEBUG header: x-goog-stored-content-encoding: identity
+2024-05-21 22:09:39 DEBUG header: Vary: Origin
+2024-05-21 22:09:39 DEBUG header: X-GUploader-UploadID: ABPtcPpUz8p7-GeweAc-lD5zlnrzgT-EZ3EhbOJYcowGI8KBnjmT9_oRB_mghJbYQvXCKyFQy6o
+2024-05-21 22:09:39 DEBUG header: Content-Length: 0
+2024-05-21 22:09:39 DEBUG header: Date: Tue, 21 May 2024 14:09:39 GMT
+2024-05-21 22:09:39 DEBUG header: Server: UploadServer
+2024-05-21 22:09:39 DEBUG header: Content-Type: text/html; charset=UTF-8
+2024-05-21 22:09:39 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:40 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:40 DEBUG header: Vary: Origin
+2024-05-21 22:09:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:40 DEBUG header: X-Ratelimit-Remaining: 743
+2024-05-21 22:09:40 DEBUG header: Date: Tue, 21 May 2024 14:09:39 GMT
+2024-05-21 22:09:40 DEBUG header: Content-Length: 47
+2024-05-21 22:09:40 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:40 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 1894\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:40 DEBUG send: b'{"query": "mutation UpsertBucket($id: String, $name: String, $project: String, $entity: String, $groupName: String, $description: String, $displayName: String, $notes: String, $commit: String, $config: JSONString, $host: String, $debug: Boolean, $program: String, $repo: String, $jobType: String, $state: String, $sweep: String, $tags: [String!], $summaryMetrics: JSONString) {\\n  upsertBucket(input: {id: $id, name: $name, groupName: $groupName, modelName: $project, entityName: $entity, description: $description, displayName: $displayName, notes: $notes, config: $config, commit: $commit, host: $host, debug: $debug, jobProgram: $program, jobRepo: $repo, jobType: $jobType, state: $state, sweep: $sweep, tags: $tags, summaryMetrics: $summaryMetrics}) {\\n    bucket {\\n      id\\n      name\\n      displayName\\n      description\\n      config\\n      sweepName\\n      project {\\n        id\\n        name\\n        entity {\\n          id\\n          name\\n        }\\n      }\\n      historyLineCount\\n    }\\n    inserted\\n  }\\n}\\n", "variables": {"id": null, "entity": "wenxuan_zhao", "name": "6k2ssk95", "project": "my-first-sweep", "groupName": null, "tags": null, "description": null, "config": "{\\"config\\": {\\"desc\\": null, \\"value\\": \\"config2\\"}, \\"_wandb\\": {\\"desc\\": null, \\"value\\": {\\"python_version\\": \\"3.9.19\\", \\"cli_version\\": \\"0.16.5\\", \\"framework\\": \\"huggingface\\", \\"huggingface_version\\": \\"4.37.2\\", \\"is_jupyter_run\\": false, \\"is_kaggle_kernel\\": false, \\"start_time\\": 1716300570.0, \\"t\\": {\\"1\\": [1, 5, 11, 41, 49, 53, 55, 63], \\"2\\": [1, 5, 11, 41, 49, 53, 55, 63], \\"3\\": [16, 23], \\"4\\": \\"3.9.19\\", \\"5\\": \\"0.16.5\\", \\"6\\": \\"4.37.2\\", \\"8\\": [8], \\"13\\": \\"linux-x86_64\\"}}}}", "commit": null, "displayName": null, "notes": null, "host": null, "debug": false, "repo": null, "program": null, "jobType": null, "state": null, "sweep": null, "summaryMetrics": null}}'
+2024-05-21 22:09:40 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:40 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:40 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:40 DEBUG header: Vary: Origin
+2024-05-21 22:09:40 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:40 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:40 DEBUG header: X-Ratelimit-Remaining: 740
+2024-05-21 22:09:40 DEBUG header: Date: Tue, 21 May 2024 14:09:40 GMT
+2024-05-21 22:09:40 DEBUG header: Content-Length: 492
+2024-05-21 22:09:40 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:40 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:41 DEBUG send: b'POST /files/wenxuan_zhao/my-first-sweep/6k2ssk95/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 109\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:41 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"_wandb\\": {\\"runtime\\": 3}}"]}}, "dropped": 0}'
+2024-05-21 22:09:41 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:41 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:41 DEBUG header: Ratelimit-Limit: 1000
+2024-05-21 22:09:41 DEBUG header: Ratelimit-Remaining: 996
+2024-05-21 22:09:41 DEBUG header: Ratelimit-Reset: 19
+2024-05-21 22:09:41 DEBUG header: Vary: Origin
+2024-05-21 22:09:41 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-21 22:09:41 DEBUG header: X-Ratelimit-Remaining: 74
+2024-05-21 22:09:41 DEBUG header: Date: Tue, 21 May 2024 14:09:41 GMT
+2024-05-21 22:09:41 DEBUG header: Content-Length: 208
+2024-05-21 22:09:41 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:41 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:41 DEBUG send: b'POST /files/wenxuan_zhao/my-first-sweep/6k2ssk95/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 87\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:41 DEBUG send: b'{"complete": false, "failed": false, "dropped": 0, "uploaded": ["wandb-metadata.json"]}'
+2024-05-21 22:09:42 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 428\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 422\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "my-first-sweep", "run": "6k2ssk95", "entity": "wenxuan_zhao", "files": ["requirements.txt"]}}'
+2024-05-21 22:09:42 DEBUG send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "my-first-sweep", "run": "6k2ssk95", "entity": "wenxuan_zhao", "files": ["conda-environment.yaml"]}}'
+2024-05-21 22:09:42 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:42 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:42 DEBUG header: Ratelimit-Limit: 1000
+2024-05-21 22:09:42 DEBUG header: Ratelimit-Remaining: 993
+2024-05-21 22:09:42 DEBUG header: Ratelimit-Reset: 19
+2024-05-21 22:09:42 DEBUG header: Vary: Origin
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Remaining: 73
+2024-05-21 22:09:42 DEBUG header: Date: Tue, 21 May 2024 14:09:41 GMT
+2024-05-21 22:09:42 DEBUG header: Content-Length: 208
+2024-05-21 22:09:42 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:42 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:42 DEBUG send: b'POST /files/wenxuan_zhao/my-first-sweep/6k2ssk95/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 319\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'{"files": {"wandb-summary.json": {"offset": 0, "content": ["{\\"_wandb\\": {\\"runtime\\": 3}}"]}, "output.log": {"offset": 0, "content": ["ERROR 2024-05-21T14:09:42.085123 \\u001b[34m\\u001b[1mwandb\\u001b[39m\\u001b[22m: \\u001b[33mWARNING\\u001b[39m Calling wandb.login() after wandb.init() has no effect.\\n"]}}, "dropped": 0}'
+2024-05-21 22:09:42 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:42 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:42 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:42 DEBUG header: Vary: Origin
+2024-05-21 22:09:42 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Remaining: 738
+2024-05-21 22:09:42 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:42 DEBUG header: Content-Length: 589
+2024-05-21 22:09:42 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:42 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:42 DEBUG send: b'PUT /wandb-production.appspot.com/wenxuan_zhao/my-first-sweep/6k2ssk95/conda-environment.yaml?Expires=1716386982&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pycVQi8Dyr17nzoSEYaKV89bSMwJpdQSadpdJVbeLkwHFPrgORq11MSzSUk%2FvS2pBwrgcSLQnuGgLyCIxjSKyVMU1s%2BwwnrevoEX12V0z1ZQX2CA3mYwGTX1m5FHx%2BOKiFx64ubRrpr%2B%2FpISYb23kztSRr60eHWFBGRFG8pKRJrBIP9OXm8USNa%2BzfJGuN4vUcbs%2B2NLH%2F3jAOlOj%2FNpWe%2BCD%2BrLYeXvJiNHQwJmcJIIgFoFT2nrUj8%2FAS33zC7PnKedVAzjOziRoMEH2XD0VcSgz1DqoD%2FWe8WMoERc1dBXWtTxfTmjoxh4cqgneXHIgNM5T2zDaGh4MHUiLPRErw%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 9100\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'name: pytorch2.0\nchannels:\n  - pytorch\n  - nvidia\n  - conda-forge\n  - defaults\ndependencies:\n  - _libgcc_mutex=0.1=conda_forge\n  - _openmp_mutex=4.5=2_gnu\n  - alsa-lib=1.2.8=h166bdaf_0\n  - aom=3.5.0=h27087fc_0\n  - appdirs=1.4.4=pyh9f0ad1d_0\n  - asttokens=2.0.5=pyhd3eb1b0_0\n  - attr=2.5.1=h166bdaf_1\n  - backcall=0.2.0=pyhd3eb1b0_0\n  - blas=1.0=mkl\n  - brotli-python=1.0.9=py39h6a678d5_8\n  - bzip2=1.0.8=h5eee18b_6\n  - c-ares=1.19.1=h5eee18b_0\n  - ca-certificates=2024.3.11=h06a4308_0\n  - cairo=1.16.0=ha61ee94_1014\n  - certifi=2024.2.2=pyhd8ed1ab_0\n  - charset-normalizer=2.0.4=pyhd3eb1b0_0\n  - click=8.1.7=unix_pyh707e725_0\n  - comm=0.2.1=py39h06a4308_0\n  - cuda-cudart=11.8.89=0\n  - cuda-cupti=11.8.87=0\n  - cuda-libraries=11.8.0=0\n  - cuda-nvrtc=11.8.89=0\n  - cuda-nvtx=11.8.86=0\n  - cuda-runtime=11.8.0=0\n  - cuda-version=12.4=hbda6634_3\n  - dbus=1.13.18=hb2f20db_0\n  - debugpy=1.6.7=py39h6a678d5_0\n  - decorator=5.1.1=pyhd3eb1b0_0\n  - docker-pycreds=0.4.0=py_0\n  - exceptiongroup=1.2.0=py39h06a4308_0\n  - executing=0.8.3=pyhd3eb1b0_0\n  - expat=2.6.2=h6a678d5_0\n  - ffmpeg=5.1.2=gpl_h8dda1f0_106\n  - fftw=3.3.10=nompi_hc118613_108\n  - filelock=3.13.1=py39h06a4308_0\n  - font-ttf-dejavu-sans-mono=2.37=hd3eb1b0_0\n  - font-ttf-inconsolata=2.001=hcb22688_0\n  - font-ttf-source-code-pro=2.030=hd3eb1b0_0\n  - font-ttf-ubuntu=0.83=h8b1ccd4_0\n  - fontconfig=2.14.2=h14ed4e7_0\n  - fonts-anaconda=1=h8fa9717_0\n  - fonts-conda-ecosystem=1=hd3eb1b0_0\n  - freeglut=3.2.2=h9c3ff4c_1\n  - freetype=2.12.1=h4a9f257_0\n  - fsspec=2024.3.1=py39h06a4308_0\n  - gettext=0.22.5=h59595ed_2\n  - gettext-tools=0.22.5=h59595ed_2\n  - giflib=5.2.1=h5eee18b_3\n  - gitdb=4.0.11=pyhd8ed1ab_0\n  - gitpython=3.1.43=pyhd8ed1ab_0\n  - glib=2.78.4=h6a678d5_0\n  - glib-tools=2.78.4=h6a678d5_0\n  - gmp=6.2.1=h295c915_3\n  - gmpy2=2.1.2=py39heeb90bb_0\n  - gnutls=3.7.9=hb077bed_0\n  - graphite2=1.3.14=h295c915_1\n  - gst-plugins-base=1.22.0=h4243ec0_2\n  - gstreamer=1.22.0=h25f0c4b_2\n  - gstreamer-orc=0.4.38=hd590300_0\n  - harfbuzz=6.0.0=h8e241bc_0\n  - hdf5=1.14.0=nompi_hb72d44e_103\n  - huggingface_hub=0.20.3=py39h06a4308_0\n  - icu=70.1=h27087fc_0\n  - idna=3.7=py39h06a4308_0\n  - importlib-metadata=7.0.1=py39h06a4308_0\n  - importlib_metadata=7.0.1=hd3eb1b0_0\n  - intel-openmp=2021.4.0=h06a4308_3561\n  - ipykernel=6.29.3=pyhd33586a_0\n  - ipython=8.15.0=py39h06a4308_0\n  - jack=1.9.22=h11f4161_0\n  - jasper=2.0.33=h0ff4b12_1\n  - jedi=0.18.1=py39h06a4308_1\n  - jinja2=3.1.3=py39h06a4308_0\n  - joblib=1.4.0=py39h06a4308_0\n  - jpeg=9e=h5eee18b_1\n  - jupyter_client=8.6.0=py39h06a4308_0\n  - jupyter_core=5.5.0=py39h06a4308_0\n  - krb5=1.20.1=h143b758_1\n  - lame=3.100=h7b6447c_0\n  - lcms2=2.12=h3be6417_0\n  - ld_impl_linux-64=2.38=h1181459_1\n  - lerc=3.0=h295c915_0\n  - libaec=1.1.3=h59595ed_0\n  - libasprintf=0.22.5=h661eb56_2\n  - libasprintf-devel=0.22.5=h661eb56_2\n  - libblas=3.9.0=12_linux64_mkl\n  - libcap=2.66=ha37c62d_0\n  - libcblas=3.9.0=12_linux64_mkl\n  - libclang=15.0.7=default_h127d8a8_5\n  - libclang13=15.0.7=default_h5d6823c_5\n  - libcublas=11.11.3.6=0\n  - libcufft=10.9.0.58=0\n  - libcufile=1.9.1.3=h99ab3db_1\n  - libcups=2.3.3=h36d4200_3\n  - libcurand=10.3.5.147=h99ab3db_1\n  - libcurl=8.7.1=h251f7ec_0\n  - libcusolver=11.4.1.48=0\n  - libcusparse=11.7.5.86=0\n  - libdb=6.2.32=h6a678d5_1\n  - libdeflate=1.17=h5eee18b_1\n  - libdrm=2.4.120=hd590300_0\n  - libedit=3.1.20230828=h5eee18b_0\n  - libev=4.33=h7f8727e_1\n  - libevent=2.1.10=h28343ad_4\n  - libffi=3.4.4=h6a678d5_1\n  - libflac=1.4.3=h59595ed_0\n  - libgcc-ng=13.2.0=h77fa898_7\n  - libgcrypt=1.10.3=hd590300_0\n  - libgettextpo=0.22.5=h59595ed_2\n  - libgettextpo-devel=0.22.5=h59595ed_2\n  - libgfortran-ng=13.2.0=h69a702a_7\n  - libgfortran5=13.2.0=hca663fb_7\n  - libglib=2.78.4=hdc74915_0\n  - libglu=9.0.0=hf484d3e_1\n  - libgomp=13.2.0=h77fa898_7\n  - libgpg-error=1.49=h4f305b6_0\n  - libiconv=1.17=hd590300_2\n  - libidn2=2.3.4=h5eee18b_0\n  - liblapack=3.9.0=12_linux64_mkl\n  - liblapacke=3.9.0=12_linux64_mkl\n  - libllvm15=15.0.7=hadd5161_1\n  - libllvm9=9.0.1=h4a3c616_1\n  - libnghttp2=1.57.0=h2d74bed_0\n  - libnpp=11.8.0.86=0\n  - libnvjpeg=11.9.0.86=0\n  - libogg=1.3.5=h27cfd23_1\n  - libopencv=4.7.0=py39h2ca4621_1\n  - libopus=1.3.1=h7b6447c_0\n  - libpciaccess=0.18=hd590300_0\n  - libpng=1.6.39=h5eee18b_0\n  - libpq=15.2=hb675445_0\n  - libprotobuf=3.21.12=hfc55251_2\n  - libsndfile=1.2.2=hc60ed4a_1\n  - libsodium=1.0.18=h7b6447c_0\n  - libsqlite=3.45.3=h2797004_0\n  - libssh2=1.11.0=h251f7ec_0\n  - libstdcxx-ng=13.2.0=hc0a3c3a_7\n  - libsystemd0=252=h2a991cd_0\n  - libtasn1=4.19.0=h5eee18b_0\n  - libtiff=4.5.1=h6a678d5_0\n  - libtool=2.4.7=h27087fc_0\n  - libudev1=253=h0b41bf4_0\n  - libunistring=0.9.10=h27cfd23_0\n  - libuuid=2.32.1=h7f98852_1000\n  - libva=2.17.0=h0b41bf4_0\n  - libvorbis=1.3.7=h7b6447c_0\n  - libvpx=1.11.0=h295c915_0\n  - libwebp=1.3.2=h11a3e52_0\n  - libwebp-base=1.3.2=h5eee18b_0\n  - libxcb=1.13=h1bed415_1\n  - libxkbcommon=1.5.0=h79f4944_1\n  - libxml2=2.10.3=hca2bb57_4\n  - libzlib=1.2.13=hd590300_5\n  - lz4-c=1.9.4=h6a678d5_1\n  - markupsafe=2.1.3=py39h5eee18b_0\n  - matplotlib-inline=0.1.6=py39h06a4308_0\n  - mkl=2021.4.0=h06a4308_640\n  - mkl-service=2.4.0=py39h7f8727e_0\n  - mkl_fft=1.3.1=py39hd3c417c_0\n  - mkl_random=1.2.2=py39h51133e4_0\n  - mpc=1.1.0=h10f8cd9_1\n  - mpfr=4.0.2=hb69a4c5_1\n  - mpg123=1.32.6=h59595ed_0\n  - mpmath=1.3.0=py39h06a4308_0\n  - mysql-common=8.0.32=ha901b37_0\n  - mysql-libs=8.0.32=hd7da12d_0\n  - ncurses=6.4=h6a678d5_0\n  - nest-asyncio=1.6.0=py39h06a4308_0\n  - nettle=3.9.1=h7ab15ed_0\n  - networkx=3.1=py39h06a4308_0\n  - nspr=4.35=h6a678d5_0\n  - nss=3.89.1=h6a678d5_0\n  - numpy=1.24.3=py39h14f4228_0\n  - numpy-base=1.24.3=py39h31eccc5_0\n  - opencv=4.7.0=py39hf3d152e_1\n  - openh264=2.3.1=hcb278e6_2\n  - openjpeg=2.4.0=h3ad879b_0\n  - openssl=3.1.5=hd590300_0\n  - p11-kit=0.24.1=hc5aa10d_0\n  - packaging=23.2=py39h06a4308_0\n  - pandas=2.2.2=py39hfc16268_1\n  - parso=0.8.3=pyhd3eb1b0_0\n  - pathtools=0.1.2=py_1\n  - pcre=8.45=h295c915_0\n  - pcre2=10.42=hebb0a14_1\n  - pexpect=4.8.0=pyhd3eb1b0_3\n  - pickleshare=0.7.5=pyhd3eb1b0_1003\n  - pillow=10.3.0=py39h5eee18b_0\n  - pip=24.0=py39h06a4308_0\n  - pixman=0.40.0=h7f8727e_1\n  - platformdirs=3.10.0=py39h06a4308_0\n  - pooch=1.7.0=py39h06a4308_0\n  - prompt-toolkit=3.0.43=py39h06a4308_0\n  - protobuf=4.21.12=py39h227be39_0\n  - psutil=5.9.0=py39h5eee18b_0\n  - ptyprocess=0.7.0=pyhd3eb1b0_2\n  - pulseaudio=16.1=ha8d29e2_1\n  - pure_eval=0.2.2=pyhd3eb1b0_0\n  - py-opencv=4.7.0=py39hcca971b_1\n  - pygments=2.15.1=py39h06a4308_1\n  - pysocks=1.7.1=py39h06a4308_0\n  - python=3.9.19=h955ad1f_1\n  - python-dateutil=2.9.0post0=py39h06a4308_0\n  - python-tzdata=2024.1=pyhd8ed1ab_0\n  - python_abi=3.9=2_cp39\n  - pytorch=2.0.1=py3.9_cuda11.8_cudnn8.7.0_0\n  - pytorch-cuda=11.8=h7e8668a_5\n  - pytorch-mutex=1.0=cuda\n  - pytz=2024.1=pyhd8ed1ab_0\n  - pyyaml=6.0.1=py39h5eee18b_0\n  - pyzmq=25.1.2=py39h6a678d5_0\n  - qt=5.15.8=hf11cfaa_0\n  - qt-main=5.15.8=h5d23da1_6\n  - qt-webengine=5.15.8=h77d6d84_0\n  - readline=8.2=h5eee18b_0\n  - regex=2023.10.3=py39h5eee18b_0\n  - requests=2.31.0=py39h06a4308_1\n  - ruamel=1.0=py39h06a4308_2\n  - ruamel.yaml=0.17.21=py39h5eee18b_0\n  - ruamel.yaml.clib=0.2.6=py39h5eee18b_1\n  - safetensors=0.4.2=py39ha89cbab_0\n  - scikit-learn=1.4.2=py39h1128e8f_1\n  - scipy=1.10.1=py39h14f4228_0\n  - sentry-sdk=2.2.0=pyhd8ed1ab_0\n  - setproctitle=1.3.3=py39hd1e30aa_0\n  - setuptools=69.5.1=py39h06a4308_0\n  - six=1.16.0=pyhd3eb1b0_1\n  - smmap=5.0.0=pyhd8ed1ab_0\n  - sqlite=3.45.3=h5eee18b_0\n  - stack_data=0.2.0=pyhd3eb1b0_0\n  - svt-av1=1.4.1=hcb278e6_0\n  - sympy=1.12=py39h06a4308_0\n  - threadpoolctl=2.2.0=pyh0d69192_0\n  - tk=8.6.14=h39e8969_0\n  - tokenizers=0.15.1=py39h22610ee_0\n  - torchaudio=2.0.2=py39_cu118\n  - torchtriton=2.0.0=py39\n  - torchvision=0.15.2=py39_cu118\n  - tornado=6.3.3=py39h5eee18b_0\n  - tqdm=4.66.2=py39h2f386ee_0\n  - traitlets=5.7.1=py39h06a4308_0\n  - transformers=4.37.2=py39h06a4308_0\n  - typing-extensions=4.11.0=py39h06a4308_0\n  - typing_extensions=4.11.0=py39h06a4308_0\n  - tzdata=2024a=h04d1e81_0\n  - urllib3=2.2.1=py39h06a4308_0\n  - wandb=0.16.5=pyhd8ed1ab_0\n  - wcwidth=0.2.5=pyhd3eb1b0_0\n  - wheel=0.43.0=py39h06a4308_0\n  - x264=1!164.3095=h166bdaf_2\n  - x265=3.5=h924138e_3\n  - xcb-util=0.4.0=h516909a_0\n  - xcb-util-image=0.4.0=h166bdaf_0\n  - xcb-util-keysyms=0.4.0=h516909a_0\n  - xcb-util-renderutil=0.3.9=h166bdaf_0\n  - xcb-util-wm=0.4.1=h516909a_0\n  - xkeyboard-config=2.38=h0b41bf4_0\n  - xorg-fixesproto=5.0=h7f98852_1002\n  - xorg-inputproto=2.3.2=h7f98852_1002\n  - xorg-kbproto=1.0.7=h7f98852_1002\n  - xorg-libice=1.0.10=h7f98852_0\n  - xorg-libsm=1.2.3=hd9c2040_1000\n  - xorg-libx11=1.7.2=h7f98852_0\n  - xorg-libxau=1.0.11=hd590300_0\n  - xorg-libxext=1.3.4=h7f98852_1\n  - xorg-libxfixes=5.0.3=h7f98852_1004\n  - xorg-libxi=1.7.10=h7f98852_0\n  - xorg-libxrender=0.9.10=h7f98852_1003\n  - xorg-renderproto=0.11.1=h7f98852_1002\n  - xorg-xextproto=7.3.0=h7f98852_1002\n  - xorg-xproto=7.0.31=h27cfd23_1007\n  - xz=5.4.6=h5eee18b_1\n  - yaml=0.2.5=h7b6447c_0\n  - zeromq=4.3.5=h6a678d5_0\n  - zipp=3.17.0=py39h06a4308_0\n  - zlib=1.2.13=hd590300_5\n  - zstd=1.5.5=hc292b87_2\n  - pip:\n      - timm==0.6.7\nprefix: /home/admin1/anconda3/envs/pytorch2.0\n'
+2024-05-21 22:09:42 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:42 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:42 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:42 DEBUG header: Vary: Origin
+2024-05-21 22:09:42 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Remaining: 739
+2024-05-21 22:09:42 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:42 DEBUG header: Content-Length: 587
+2024-05-21 22:09:42 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:42 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:42 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 416\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "my-first-sweep", "run": "6k2ssk95", "entity": "wenxuan_zhao", "files": ["output.log"]}}'
+2024-05-21 22:09:42 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 424\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "my-first-sweep", "run": "6k2ssk95", "entity": "wenxuan_zhao", "files": ["wandb-summary.json"]}}'
+2024-05-21 22:09:42 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:42 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:42 DEBUG header: Ratelimit-Limit: 1000
+2024-05-21 22:09:42 DEBUG header: Ratelimit-Remaining: 990
+2024-05-21 22:09:42 DEBUG header: Ratelimit-Reset: 18
+2024-05-21 22:09:42 DEBUG header: Vary: Origin
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Remaining: 72
+2024-05-21 22:09:42 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:42 DEBUG header: Content-Length: 208
+2024-05-21 22:09:42 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:42 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:42 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 417\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'{"query": "mutation CreateRunFiles($entity: String!, $project: String!, $run: String!, $files: [String!]!) {\\n  createRunFiles(input: {entityName: $entity, projectName: $project, runName: $run, files: $files}) {\\n    runID\\n    uploadHeaders\\n    files {\\n      name\\n      uploadUrl\\n    }\\n  }\\n}\\n", "variables": {"project": "my-first-sweep", "run": "6k2ssk95", "entity": "wenxuan_zhao", "files": ["config.yaml"]}}'
+2024-05-21 22:09:42 DEBUG send: b'PUT /wandb-production.appspot.com/wenxuan_zhao/my-first-sweep/6k2ssk95/requirements.txt?Expires=1716386982&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=kQ35ADnhTFBfmnrIsMWxnCiApHRgO5K4toY7ALeGi146wsIQVUhP76Zk%2FywCLdtoJPNIPS8EFq%2BNEShaMu5uUj%2BK3tgqR0DEqFkTy0h1DWC5g155kCPfG1%2FH%2Bp0dUMmOwwtRc%2FiLJs5x5RddkeXjoQWxG%2Bkub7lla8Ln8Yh5ff0MHv95vCEwSTZ30n2wwIOQlfigYbazOtOP1CP9rwptfI1gNq%2Be8BRkAkeNVHENHPP4gnw7IXTr1sAmkWhoMuyZNPGW4w1GhmOiUQ5ztopBK7ycPvjkGNLC3%2FnFENFTC7UaovLw4LLS%2B3fAMWGzKWUKrm%2B5A1LI6yo%2FuDznTRg5IQ%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 1535\r\n\r\n'
+2024-05-21 22:09:42 DEBUG send: b'Brotli==1.0.9\nGitPython==3.1.43\nJinja2==3.1.3\nMarkupSafe==2.1.3\nPySocks==1.7.1\nPyYAML==6.0.1\nPygments==2.15.1\nappdirs==1.4.4\nasttokens==2.0.5\nbackcall==0.2.0\ncertifi==2024.2.2\ncharset-normalizer==2.0.4\nclick==8.1.7\ncomm==0.2.1\ndebugpy==1.6.7\ndecorator==5.1.1\ndocker-pycreds==0.4.0\nexceptiongroup==1.2.0\nexecuting==0.8.3\nfilelock==3.13.1\nfsspec==2024.3.1\ngitdb==4.0.11\ngmpy2==2.1.2\nhuggingface-hub==0.20.3\nidna==3.7\nimportlib-metadata==7.0.1\nipykernel==6.29.3\nipython==8.15.0\njedi==0.18.1\njoblib==1.4.0\njupyter_client==8.6.0\njupyter_core==5.5.0\nmatplotlib-inline==0.1.6\nmkl-fft==1.3.1\nmkl-random==1.2.2\nmkl-service==2.4.0\nmpmath==1.3.0\nnest-asyncio==1.6.0\nnetworkx==3.1\nnumpy==1.24.3\nopencv-python==4.7.0\npackaging==23.2\npandas==2.2.2\nparso==0.8.3\npathtools==0.1.2\npexpect==4.8.0\npickleshare==0.7.5\npillow==10.3.0\npip==24.0\nplatformdirs==3.10.0\npooch==1.7.0\nprompt-toolkit==3.0.43\nprotobuf==4.21.12\npsutil==5.9.0\nptyprocess==0.7.0\npure-eval==0.2.2\npython-dateutil==2.8.2\npytz==2024.1\npyzmq==25.1.2\nregex==2023.10.3\nrequests==2.31.0\nruamel.yaml.clib==0.2.6\nruamel.yaml==0.17.21\nsafetensors==0.4.2\nscikit-learn==1.4.2\nscipy==1.10.1\nsentry-sdk==2.2.0\nsetproctitle==1.3.3\nsetuptools==69.5.1\nsix==1.16.0\nsmmap==5.0.0\nstack-data==0.2.0\nsympy==1.12\nthreadpoolctl==2.2.0\ntimm==0.6.7\ntokenizers==0.15.1\ntorch==2.0.1\ntorchaudio==2.0.2\ntorchvision==0.15.2\ntornado==6.3.3\ntqdm==4.66.2\ntraitlets==5.7.1\ntransformers==4.37.2\ntriton==2.0.0\ntyping_extensions==4.11.0\ntzdata==2024.1\nurllib3==2.2.1\nwandb==0.16.5\nwcwidth==0.2.5\nwheel==0.43.0\nzipp==3.17.0'
+2024-05-21 22:09:42 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:42 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:42 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:42 DEBUG header: Vary: Origin
+2024-05-21 22:09:42 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Remaining: 737
+2024-05-21 22:09:42 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:42 DEBUG header: Content-Length: 574
+2024-05-21 22:09:42 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:42 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:42 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:42 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:42 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:42 DEBUG header: Vary: Origin
+2024-05-21 22:09:42 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:42 DEBUG header: X-Ratelimit-Remaining: 736
+2024-05-21 22:09:42 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:42 DEBUG header: Content-Length: 589
+2024-05-21 22:09:42 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:42 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:43 DEBUG header: ETag: "feef70d32bbc42fca9d25a470da72307"
+2024-05-21 22:09:43 DEBUG header: x-goog-generation: 1716300582822238
+2024-05-21 22:09:43 DEBUG header: x-goog-metageneration: 1
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: crc32c=T+0aJw==
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: md5=/u9w0yu8Qvyp0lpHDacjBw==
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-length: 9100
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-encoding: identity
+2024-05-21 22:09:43 DEBUG header: Vary: Origin
+2024-05-21 22:09:43 DEBUG header: X-GUploader-UploadID: ABPtcPp9ZENyVNE99amaGT7db8q6tuVsKp9IzsGGhPj1O-ndeG5PzdSHkp4lOecEnJ0HsTwfBw
+2024-05-21 22:09:43 DEBUG header: Content-Length: 0
+2024-05-21 22:09:43 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:43 DEBUG header: Server: UploadServer
+2024-05-21 22:09:43 DEBUG header: Content-Type: text/html; charset=UTF-8
+2024-05-21 22:09:43 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:43 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:43 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:43 DEBUG header: Vary: Origin
+2024-05-21 22:09:43 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:43 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:43 DEBUG header: X-Ratelimit-Remaining: 735
+2024-05-21 22:09:43 DEBUG header: Date: Tue, 21 May 2024 14:09:42 GMT
+2024-05-21 22:09:43 DEBUG header: Content-Length: 588
+2024-05-21 22:09:43 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:43 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG send: b'PUT /wandb-production.appspot.com/wenxuan_zhao/my-first-sweep/6k2ssk95/config.yaml?Expires=1716386982&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=i%2FQi74C%2FSUq4P1BEfHr4GC3t4OKsOv1Rb1XE%2FaioTaSV6IqI%2F9WDiW78CGm3ckn4qJwKcSoGVRO7T%2F%2BB3MidBgTK2utXW5f%2F%2F9h1ZqKfvp8THE40y2mCbiiquZ5qubzlSpQRhayPgV1bw3LAnkjJJy0TA4%2FCLKr%2FosvBwYyDok6gCGupWeM1wUybmp6AvN7pv1%2Be2f1NVeE%2B56dkED4A1PSBbOXiItIgzIjhuadiOSlKzHIbLuACaSmy49mepmj8%2F3TWi0UjGkbGwkDLwNh%2F22HVDFia73D%2F%2BtHyWqwPErl%2BYrjY5aoign756Lqb5vxc%2F7xc%2FsPi038yuej1zjahZw%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 597\r\n\r\n'
+2024-05-21 22:09:43 DEBUG send: b'wandb_version: 1\n\nconfig:\n  desc: null\n  value: config2\n_wandb:\n  desc: null\n  value:\n    python_version: 3.9.19\n    cli_version: 0.16.5\n    framework: huggingface\n    huggingface_version: 4.37.2\n    is_jupyter_run: false\n    is_kaggle_kernel: false\n    start_time: 1716300570.0\n    t:\n      1:\n      - 1\n      - 5\n      - 11\n      - 41\n      - 49\n      - 53\n      - 55\n      - 63\n      2:\n      - 1\n      - 5\n      - 11\n      - 41\n      - 49\n      - 53\n      - 55\n      - 63\n      3:\n      - 16\n      - 23\n      4: 3.9.19\n      5: 0.16.5\n      6: 4.37.2\n      8:\n      - 8\n      13: linux-x86_64\n'
+2024-05-21 22:09:43 DEBUG send: b'PUT /wandb-production.appspot.com/wenxuan_zhao/my-first-sweep/6k2ssk95/output.log?Expires=1716386982&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=Q57M%2BeuQSi5ebYHDjE%2FtfeK9PJszzgJP7dRTGcf0Dr7%2BTCGvSptz5yPSIvaTukJx8%2BmOwSNCX4vkQtgTOspCEnbsdWUsU21XmEMnCxYBy0V4U4QItkEtKvzG8Xwdy3D1hlGqPMBBrW3rQLoqq4gl5MXljGQlpidYJqDBak18ML%2Bu7QBi5UerQMer7eHR9eR59GS3GmeFnpie01iAaBLwHwnhS7Z7G%2BIVxBCf5iIltzX7ryUJWkupwp13Srukc4T6M582NZnBUTUPziEKTSU794JjvgGDU6l9BZFJs18DRyBonyaroxo2I%2FA7WoyduM0Xlj4wvGeQFFnJs6MfnlRuzA%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 100\r\n\r\n'
+2024-05-21 22:09:43 DEBUG send: b'\n\x1b[34m\x1b[1mwandb\x1b[39m\x1b[22m: \x1b[33mWARNING\x1b[39m Calling wandb.login() after wandb.init() has no effect.'
+2024-05-21 22:09:43 DEBUG send: b'PUT /wandb-production.appspot.com/wenxuan_zhao/my-first-sweep/6k2ssk95/wandb-summary.json?Expires=1716386982&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=jKx7riowj0tZeJqK914jXqduESrnREYVEqGieFmtgCkOrgxDXXt5flSeYBEC5%2Bv5PE5xBQ04jfN7wFElMqihwP2ENS5A9dSqM%2BdtN2zS%2FY3a7T9TRfCz7uEnEowuB%2BZvNAYOdRBcF8o8Y3t6wavr8mvocw1HLMVcWNTKt1JkmcC1%2FbFBNY%2B3h%2BXQyZsaI4oK3gpNDfhHSZoNHUO7NVuxoCXeoopuJivg6ZuiQUbkhx%2FKzS%2Bb4BOwDeIaJ2UAdKPsItAs%2F7RkPLzEencm%2BRMeK0G9Miz29RSK3wpYSQ7mvnhbomi%2BwquIbLRU45zojd%2ByY92cWpWOgorK%2Fp%2BkwycSdw%3D%3D HTTP/1.1\r\nHost: storage.googleapis.com\r\nUser-Agent: python-requests/2.31.0\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 26\r\n\r\n'
+2024-05-21 22:09:43 DEBUG send: b'{"_wandb": {"runtime": 3}}'
+2024-05-21 22:09:43 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:43 DEBUG header: ETag: "faa0fe27ce34aaf5a7e6e927e0037708"
+2024-05-21 22:09:43 DEBUG header: x-goog-generation: 1716300583038300
+2024-05-21 22:09:43 DEBUG header: x-goog-metageneration: 1
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: crc32c=kNFweA==
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: md5=+qD+J840qvWn5ukn4AN3CA==
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-length: 1535
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-encoding: identity
+2024-05-21 22:09:43 DEBUG header: Vary: Origin
+2024-05-21 22:09:43 DEBUG header: X-GUploader-UploadID: ABPtcPol3js-Tyu23333CmBpjE0Gr5M6xyWVm0RXLzG5lgl_OSn3R4-ja1AHAvLfObMpuzZTQfk
+2024-05-21 22:09:43 DEBUG header: Content-Length: 0
+2024-05-21 22:09:43 DEBUG header: Date: Tue, 21 May 2024 14:09:43 GMT
+2024-05-21 22:09:43 DEBUG header: Server: UploadServer
+2024-05-21 22:09:43 DEBUG header: Content-Type: text/html; charset=UTF-8
+2024-05-21 22:09:43 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:43 DEBUG header: ETag: "9179817e0eeb7464bc164634dd027323"
+2024-05-21 22:09:43 DEBUG header: x-goog-generation: 1716300583251386
+2024-05-21 22:09:43 DEBUG header: x-goog-metageneration: 1
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: crc32c=VmPxjg==
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: md5=kXmBfg7rdGS8FkY03QJzIw==
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-length: 597
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-encoding: identity
+2024-05-21 22:09:43 DEBUG header: Vary: Origin
+2024-05-21 22:09:43 DEBUG header: X-GUploader-UploadID: ABPtcPp_A-dmHhlm1hF6Vh51AqeL6_OzZcnMH2BoFTFMCq4_onKrHxPmb8Ts4DjipxUt96BhuV0
+2024-05-21 22:09:43 DEBUG header: Content-Length: 0
+2024-05-21 22:09:43 DEBUG header: Date: Tue, 21 May 2024 14:09:43 GMT
+2024-05-21 22:09:43 DEBUG header: Server: UploadServer
+2024-05-21 22:09:43 DEBUG header: Content-Type: text/html; charset=UTF-8
+2024-05-21 22:09:43 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:43 DEBUG header: ETag: "573f8b7fa311aab1b4631dcd9416633a"
+2024-05-21 22:09:43 DEBUG header: x-goog-generation: 1716300583358790
+2024-05-21 22:09:43 DEBUG header: x-goog-metageneration: 1
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: crc32c=dK5WUA==
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: md5=Vz+Lf6MRqrG0Yx3NlBZjOg==
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-length: 26
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-encoding: identity
+2024-05-21 22:09:43 DEBUG header: Vary: Origin
+2024-05-21 22:09:43 DEBUG header: X-GUploader-UploadID: ABPtcPpjEoTTZTPVhgJg5kAp5bZWjzfSCylQSXG1OaDrPBg8-vgBbYoHhGpsM_hPuSYrH40x-Q
+2024-05-21 22:09:43 DEBUG header: Content-Length: 0
+2024-05-21 22:09:43 DEBUG header: Date: Tue, 21 May 2024 14:09:43 GMT
+2024-05-21 22:09:43 DEBUG header: Server: UploadServer
+2024-05-21 22:09:43 DEBUG header: Content-Type: text/html; charset=UTF-8
+2024-05-21 22:09:43 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:43 DEBUG header: ETag: "4a57744f77be876df4ff5fd30816989e"
+2024-05-21 22:09:43 DEBUG header: x-goog-generation: 1716300583340839
+2024-05-21 22:09:43 DEBUG header: x-goog-metageneration: 1
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: crc32c=r5KjOg==
+2024-05-21 22:09:43 DEBUG header: x-goog-hash: md5=Sld0T3e+h230/1/TCBaYng==
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-length: 100
+2024-05-21 22:09:43 DEBUG header: x-goog-stored-content-encoding: identity
+2024-05-21 22:09:43 DEBUG header: Vary: Origin
+2024-05-21 22:09:43 DEBUG header: X-GUploader-UploadID: ABPtcPpOwwQV0HI2yjjUC77i0hqiU8a9CpbhM3Bpk8fFyZKlcQLRLzaJtvYpmTlILNr4UhJ7qBw
+2024-05-21 22:09:43 DEBUG header: Content-Length: 0
+2024-05-21 22:09:43 DEBUG header: Date: Tue, 21 May 2024 14:09:43 GMT
+2024-05-21 22:09:43 DEBUG header: Server: UploadServer
+2024-05-21 22:09:43 DEBUG header: Content-Type: text/html; charset=UTF-8
+2024-05-21 22:09:43 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:43 DEBUG send: b'POST /files/wenxuan_zhao/my-first-sweep/6k2ssk95/file_stream HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 158\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:43 DEBUG send: b'{"complete": true, "exitcode": 0, "dropped": 0, "uploaded": ["config.yaml", "wandb-summary.json", "conda-environment.yaml", "output.log", "requirements.txt"]}'
+2024-05-21 22:09:44 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:44 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:44 DEBUG header: Ratelimit-Limit: 1000
+2024-05-21 22:09:44 DEBUG header: Ratelimit-Remaining: 986
+2024-05-21 22:09:44 DEBUG header: Ratelimit-Reset: 17
+2024-05-21 22:09:44 DEBUG header: Vary: Origin
+2024-05-21 22:09:44 DEBUG header: X-Ratelimit-Limit: 75
+2024-05-21 22:09:44 DEBUG header: X-Ratelimit-Remaining: 71
+2024-05-21 22:09:44 DEBUG header: Date: Tue, 21 May 2024 14:09:43 GMT
+2024-05-21 22:09:44 DEBUG header: Content-Length: 211
+2024-05-21 22:09:44 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:44 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+2024-05-21 22:09:44 DEBUG send: b'POST /graphql HTTP/1.1\r\nHost: api.wandb.ai\r\nUser-Agent: W&B Internal Client 0.16.5\r\nAccept-Encoding: gzip, deflate, br\r\nAccept: */*\r\nConnection: keep-alive\r\nContent-Length: 366\r\nContent-Type: application/json\r\nAuthorization: Basic YXBpOmI5ZDg1NzA3NzU5MjI3YWJjMGIyOTRlZDhkYmI3NzVlYjlhODZmNTE=\r\n\r\n'
+2024-05-21 22:09:44 DEBUG send: b'{"query": "query Viewer {\\n  viewer {\\n    id\\n    entity\\n    username\\n    email\\n    flags\\n    teams {\\n      edges {\\n        node {\\n          name\\n        }\\n      }\\n    }\\n  }\\n  serverInfo {\\n    cliVersionInfo\\n    latestLocalVersionInfo {\\n      outOfDate\\n      latestVersionString\\n      versionOnThisInstanceString\\n    }\\n  }\\n}\\n", "variables": {}}'
+2024-05-21 22:09:44 DEBUG reply: 'HTTP/1.1 200 OK\r\n'
+2024-05-21 22:09:44 DEBUG header: Content-Encoding: br
+2024-05-21 22:09:44 DEBUG header: Content-Type: application/json; charset=utf-8
+2024-05-21 22:09:44 DEBUG header: Vary: Origin
+2024-05-21 22:09:44 DEBUG header: X-Content-Type-Options: nosniff
+2024-05-21 22:09:44 DEBUG header: X-Ratelimit-Limit: 750
+2024-05-21 22:09:44 DEBUG header: X-Ratelimit-Remaining: 734
+2024-05-21 22:09:44 DEBUG header: Date: Tue, 21 May 2024 14:09:44 GMT
+2024-05-21 22:09:44 DEBUG header: Content-Length: 372
+2024-05-21 22:09:44 DEBUG header: Via: 1.1 google
+2024-05-21 22:09:44 DEBUG header: Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000

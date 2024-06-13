@@ -1,0 +1,1 @@
+{"loss": 0.02343497961293906, "_timestamp": 1716563022.5775735, "_runtime": 3128.183379650116, "_step": 211, "macro_prec": 1.0, "macro_recall": 1.0, "macro_f1": 1.0, "micro_prec": 1.0, "micro_recall": 1.0, "micro_f1": 1.0, "weighted_prec": 1.0, "weighted_recall": 1.0, "weighted_f1": 1.0, "Accuracy": 1.0, "_wandb": {"runtime": 3124}}

@@ -1,0 +1,181 @@
+{
+    "os": "Linux-5.15.0-67-generic-x86_64-with-glibc2.31",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-05-29T09:53:36.813561",
+    "startedAt": "2024-05-29T09:53:25.414973",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "admin1-desktop",
+    "username": "admin1",
+    "executable": "/home/admin1/anconda3/envs/pytorch2.0/bin/python",
+    "cpu_count": 14,
+    "cpu_count_logical": 28,
+    "cpu_freq": {
+        "current": 2.3720714285714295,
+        "min": 1200.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.862,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3.0,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.893,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 3.3,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2.724,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 456.8904724121094,
+            "used": 186.2681884765625
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 15.46761703491211
+    }
+}

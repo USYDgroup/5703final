@@ -1,0 +1,63 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/output_vqa2/vqa/checkpoint_07.pth ,evaluate.
+<All keys matched successfully>
+Start training
+[['down[SEP]' 'down[SEP]' 'at table[SEP]' 'skateboard[SEP]' 'down[SEP]'
+  'table[SEP]' 'down[SEP]' 'down[SEP]']
+ ['down[SEP]' 'down[SEP]' 'spectating[SEP]' 'watching[SEP]'
+  'watching[SEP]' 'watching[SEP]' 'watching[SEP]' 'watching[SEP]']
+ ['watching[SEP]' 'watching[SEP]' 'watching[SEP]' 'watching[SEP]'
+  'table[SEP]' 'table[SEP]' 'table[SEP]' 'picnic table[SEP]']
+ ['picnic table[SEP]' 'picnic table[SEP]' 'picnic table[SEP]'
+  'picnic table[SEP]' 'skateboard[SEP]' 'picnic table[SEP]'
+  'foodiebakercom[SEP]' 'foodiebakercom[SEP]']
+ ['foodiebaker[SEP]' 'foodiebakercom[SEP]' 'foodiebakercom[SEP]'
+  'http: foodiebakercom[SEP]' 'foodiebakercom[SEP]' 'foodiebakercom[SEP]'
+  'foodiebakercom[SEP]' 'foodiebaker[SEP]']
+ ['no[SEP]' 'no[SEP]' 'no[SEP]' 'no[SEP]' 'no[SEP]' 'no[SEP]' 'no[SEP]'
+  'no[SEP]']
+ ['no[SEP]' 'no[SEP]' 'yes[SEP]' 'yes[SEP]' 'yes[SEP]' 'yes[SEP]'
+  'yes[SEP]' 'yes[SEP]']
+ ['yes[SEP]' 'yes[SEP]' 'yes[SEP]' 'yes[SEP]' 'chopsticks[SEP]'
+  'chopsticks[SEP]' 'chopsticks[SEP]' 'chopsticks[SEP]']
+ ['chopsticks[SEP]' 'shrimp[SEP]' 'chopsticks[SEP]' 'chopsticks[SEP]'
+  'chopsticks[SEP]' 'chopsticks spoon[SEP]' 'crossing it[SEP]'
+  'walking[SEP]']
+ ['walking[SEP]' 'crossing[SEP]' 'crossing road[SEP]' 'walking[SEP]'
+  'crossing[SEP]' 'walking[SEP]' 'crossing[SEP]' 'walking[SEP]']]
+Generate VQA test result:  [    0/26794]  eta: 7:14:21  acc: 0.0000  time: 0.9727  data: 0.3776  max mem: 4164
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 401, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 360, in main
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 136, in evaluation
+    for n, (image, question, question_id,ans) in enumerate(metric_logger.log_every(data_loader, print_freq, header)):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/utils.py", line 137, in log_every
+    for obj in iterable:
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1325, in _next_data
+    return self._process_data(data)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/_utils.py", line 644, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/dataset/__init__.py", line 101, in vqa_val_collate_fn
+    return torch.stack(image_list,dim=0),question_list,question_id_list,np.reshape(np.array(answer_list),(-1,len(batch)))
+  File "<__array_function__ internals>", line 200, in reshape
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/numpy/core/fromnumeric.py", line 298, in reshape
+    return _wrapfunc(a, 'reshape', newshape, order=order)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: cannot reshape array of size 79 into shape (8)

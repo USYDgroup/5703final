@@ -1,0 +1,53 @@
+wandb.config: {'config': 'config2'}
+Not using distributed mode
+Creating vqa datasets
+Creating model
+Cosine annealing scheduler will have no effect on the learning rate since t_initial = t_mul = eta_mul = 1.
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA/8-epoch.pth and ALBEF.fusion ##new , fuse the img and pseduo prompt after inversion
+_IncompatibleKeys(missing_keys=['inversion.0.weight', 'inversion.0.bias', 'inversion.2.weight', 'inversion.2.bias', 'inversion.4.weight', 'inversion.4.bias'], unexpected_keys=['fusion_encoder.cls.predictions.bias', 'fusion_encoder.cls.predictions.transform.dense.weight', 'fusion_encoder.cls.predictions.transform.dense.bias', 'fusion_encoder.cls.predictions.transform.LayerNorm.weight', 'fusion_encoder.cls.predictions.transform.LayerNorm.bias', 'fusion_encoder.cls.predictions.decoder.weight', 'fusion_encoder.cls.predictions.decoder.bias'])
+Start training
+Train Epoch: [0]  [  0/563]  eta: 0:24:11  lr: 0.000010  loss: 0.6989  time: 2.5779  data: 1.1967  max mem: 11149
+Train Epoch: [0]  [ 50/563]  eta: 0:05:09  lr: 0.000010  loss: 0.4902  time: 0.5634  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [100/563]  eta: 0:04:29  lr: 0.000010  loss: 0.3096  time: 0.5623  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [150/563]  eta: 0:03:57  lr: 0.000013  loss: 0.2158  time: 0.5629  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [200/563]  eta: 0:03:28  lr: 0.000013  loss: 0.1727  time: 0.5676  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [250/563]  eta: 0:02:59  lr: 0.000015  loss: 0.2563  time: 0.5717  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [300/563]  eta: 0:02:30  lr: 0.000015  loss: 0.2277  time: 0.5554  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [350/563]  eta: 0:02:01  lr: 0.000018  loss: 0.2807  time: 0.5658  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [400/563]  eta: 0:01:32  lr: 0.000018  loss: 0.1456  time: 0.5606  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [450/563]  eta: 0:01:04  lr: 0.000020  loss: 0.1471  time: 0.5622  data: 0.0001  max mem: 14771
+Train Epoch: [0]  [500/563]  eta: 0:00:35  lr: 0.000020  loss: 0.1103  time: 0.5622  data: 0.0001  max mem: 14773
+Train Epoch: [0]  [550/563]  eta: 0:00:07  lr: 0.000020  loss: 0.1254  time: 0.5716  data: 0.0001  max mem: 14773
+Train Epoch: [0]  [562/563]  eta: 0:00:00  lr: 0.000020  loss: 0.0704  time: 0.5563  data: 0.0002  max mem: 14773
+Train Epoch: [0] Total time: 0:05:19 (0.5674 s / it)
+Averaged stats: lr: 0.0000  loss: 0.2847
+Generate VQA test result:  [  0/282]  eta: 0:03:56    time: 0.8375  data: 0.3181  max mem: 14773
+Generate VQA test result:  [ 50/282]  eta: 0:00:50    time: 0.2036  data: 0.0001  max mem: 14773
+Generate VQA test result:  [100/282]  eta: 0:00:38    time: 0.2038  data: 0.0001  max mem: 14773
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2045  data: 0.0001  max mem: 14773
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2041  data: 0.0001  max mem: 14773
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2041  data: 0.0001  max mem: 14773
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2023  data: 0.0001  max mem: 14773
+Generate VQA test result: Total time: 0:00:58 (0.2065 s / it)
+{'1': {'precision': 0.9980732177263969, 'recall': 1.0, 'f1-score': 0.9990356798457087, 'support': 518.0}, '2': {'precision': 0.9727722772277227, 'recall': 0.9679802955665024, 'f1-score': 0.9703703703703703, 'support': 406.0}, '3': {'precision': 0.7575, 'recall': 0.9588607594936709, 'f1-score': 0.8463687150837989, 'support': 316.0}, '4': {'precision': 0.6292134831460674, 'recall': 0.6588235294117647, 'f1-score': 0.6436781609195402, 'support': 255.0}, '5': {'precision': 0.5739130434782609, 'recall': 0.5739130434782609, 'f1-score': 0.5739130434782609, 'support': 230.0}, '6': {'precision': 0.6617647058823529, 'recall': 0.48128342245989303, 'f1-score': 0.5572755417956656, 'support': 187.0}, '7': {'precision': 0.554140127388535, 'recall': 0.6590909090909091, 'f1-score': 0.6020761245674741, 'support': 132.0}, '8': {'precision': 0.7230769230769231, 'recall': 0.4051724137931034, 'f1-score': 0.5193370165745856, 'support': 116.0}, '9': {'precision': 1.0, 'recall': 0.8125, 'f1-score': 0.896551724137931, 'support': 96.0}, 'accuracy': 0.8049645390070922, 'macro avg': {'precision': 0.7633837531029177, 'recall': 0.7241804859215671, 'f1-score': 0.7342895974192596, 'support': 2256.0}, 'weighted avg': {'precision': 0.8069770963790717, 'recall': 0.8049645390070922, 'f1-score': 0.8001143314406028, 'support': 2256.0}}
+Generate VQA test result:  [  0/282]  eta: 0:02:45    time: 0.5872  data: 0.3495  max mem: 14773
+Generate VQA test result:  [ 50/282]  eta: 0:00:48    time: 0.2034  data: 0.0001  max mem: 14773
+Generate VQA test result:  [100/282]  eta: 0:00:37    time: 0.2034  data: 0.0001  max mem: 14773
+Generate VQA test result:  [150/282]  eta: 0:00:27    time: 0.2041  data: 0.0001  max mem: 14773
+Generate VQA test result:  [200/282]  eta: 0:00:16    time: 0.2041  data: 0.0001  max mem: 14773
+Generate VQA test result:  [250/282]  eta: 0:00:06    time: 0.2039  data: 0.0001  max mem: 14773
+Generate VQA test result:  [281/282]  eta: 0:00:00    time: 0.2030  data: 0.0001  max mem: 14773
+Generate VQA test result: Total time: 0:00:57 (0.2053 s / it)
+result file saved to output/vqa/result/vqa_result_epoch0.json
+Training time 0:07:21
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+2024-05-21 21:28:54,896 - wandb.wandb_agent - INFO - Running runs: []
+2024-05-21 21:28:55,272 - wandb.wandb_agent - INFO - Agent received command: run
+2024-05-21 21:28:55,272 - wandb.wandb_agent - INFO - Agent starting run with config:
+	batch_size_test: 32
+	batch_size_train: 16
+	optimizer.opt: RMSprop
+	scheduler.sched: ReduceLROnPlateau
+2024-05-21 21:28:55,278 - wandb.wandb_agent - INFO - About to run command: /usr/bin/env python  --batch_size_test=32 --batch_size_train=16 --optimizer.opt=RMSprop --scheduler.sched=ReduceLROnPlateau
+2024-05-21 21:29:00,403 - wandb.wandb_agent - INFO - Running runs: ['6o43m0kh']
+2024-05-21 21:29:00,404 - wandb.wandb_agent - INFO - Cleaning up finished run: 6o43m0kh

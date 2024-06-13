@@ -1,0 +1,145 @@
+Not using distributed mode
+Creating vqa datasets
+Creating model
+load checkpoint from /home/admin1/5703-upload/5703/Transformer_VQA_no/output_vqa2/vqa/checkpoint_07.pth ,evaluate.
+<All keys matched successfully>
+Start training
+down[SEP] ground
+down[SEP] watching
+at table[SEP] bench
+skateboard[SEP] i don't know
+down[SEP] no
+table[SEP] yes
+down[SEP] chopsticks
+down[SEP] walking
+Generate VQA test result:  [    0/26794]  eta: 7:20:29  acc: 0.0000  time: 0.9864  data: 0.3573  max mem: 4164
+1[SEP] 1
+1[SEP] ice cream
+4[SEP] roof
+4[SEP] yes
+4[SEP] tired
+1[SEP] gray
+1[SEP] yes
+4[SEP] 1
+no[SEP] no
+no[SEP] yes
+no[SEP] no
+no[SEP] 1
+no[SEP] yellow
+no[SEP] 6
+no[SEP] no
+no[SEP] 2
+no[SEP] no
+no[SEP] no
+no[SEP] no
+no[SEP] leather
+no[SEP] yes
+no[SEP] bedroom
+yes[SEP] no
+no[SEP] no
+yes[SEP] yes
+yes[SEP] no
+no[SEP] no
+yes[SEP] bedroom
+yes[SEP] 2
+yes[SEP] no
+yes just one[SEP] yes
+yes[SEP] 2
+7[SEP] 6
+7[SEP] white
+7[SEP] no
+7[SEP] yes
+7[SEP] leopard
+7[SEP] desk
+7[SEP] queen
+7[SEP] 6
+yes[SEP] yes
+no[SEP] donut
+yes[SEP] no
+no[SEP] blonde
+yes[SEP] no
+yes[SEP] forest
+no[SEP] hat
+yes[SEP] no
+no[SEP] no
+no[SEP] forward
+no[SEP] yes
+no[SEP] camping
+no[SEP] camper
+no[SEP] background
+no[SEP] black
+no[SEP] yes
+black[SEP] red
+red[SEP] yes
+red[SEP] no
+red[SEP] 3
+red and blue[SEP] 3
+red[SEP] green
+red[SEP] squash
+red[SEP] red
+no[SEP] no
+no[SEP] green
+no[SEP] black
+no[SEP] wine
+no[SEP] they aren't
+no[SEP] wine tasting
+right[SEP] 2
+no[SEP] brown
+yes[SEP] yes
+yes[SEP] yes
+yes[SEP] no
+yes[SEP] 3
+yes[SEP] no
+yes[SEP] 0
+yes[SEP] 1
+yes[SEP] backpack
+0[SEP] 1
+2[SEP] brown
+1[SEP] no
+1[SEP] yes
+0[SEP] 6
+1[SEP] no
+0[SEP] birthday
+0[SEP] girl
+train[SEP] train
+train[SEP] no
+train[SEP] yes
+train[SEP] shadow
+train[SEP] fence
+yes[SEP] no
+train[SEP] yes
+train[SEP] no
+Traceback (most recent call last):
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 401, in <module>
+    main(args, config)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 360, in main
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/run_vqa2.py", line 141, in evaluation
+    topk_ids, topk_probs = model(image, question_input, answer_input, train=False, k=config['k_test'])
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/pre_vqa.py", line 80, in forward
+    fusion_output = self.fusion_encoder(inputs_embeds=text_output,
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 1059, in forward
+    encoder_outputs = self.encoder(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 597, in forward
+    layer_outputs = layer_module(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 473, in forward
+    self_attention_outputs = self.attention(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 402, in forward
+    self_outputs = self.self(
+  File "/home/admin1/anconda3/envs/pytorch2.0/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/admin1/5703-upload/5703/Transformer_VQA_no/src/xbert.py", line 324, in forward
+    attention_scores = attention_scores + attention_mask
+KeyboardInterrupt
